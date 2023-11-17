@@ -1,21 +1,21 @@
-const { Doctors, Specialty, Sure } = require('../db')
+const { Medico, Especialidad, ObraSocial } = require('../db')
 
 const getAllDoctors = async (req, res) => {
 
     try {
 
-        const data = await Doctors.findAll({
+        const data = await Medico.findAll({
             include: [
                 {
-                    model: Specialty,
-                    attributes: ['name'],
+                    model: Especialidad,
+                    attributes: ['nombre', 'id'],
                     through: {
                         attributes: []
                     }
                 },
                 {
-                    model: Sure,
-                    attributes: ['name'],
+                    model: ObraSocial,
+                    attributes: ['nombre', 'id'],
                     through: {
                         attributes: []
                     }
