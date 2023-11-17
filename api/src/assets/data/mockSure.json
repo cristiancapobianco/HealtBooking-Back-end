@@ -1,13 +1,13 @@
 { 
     "sure":[
         {
-            "name":"Osde"
+            "name":"OSDE"
         },
         {
             "name":"Swiss Medical"
         },
         {
-            "name":"Medife"
+            "name":"Medifé"
         },
         {
             "name":"Galeno"
@@ -17,3 +17,4 @@
         }
     ]
 }
+
