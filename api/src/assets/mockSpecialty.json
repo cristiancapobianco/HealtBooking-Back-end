@@ -1,0 +1,49 @@
+{
+    "specialty":[
+        {
+            "name": "Neurocirugía"
+
+        },
+        {
+            "name": "Radiología e Imágenes Médicas"
+        },
+        {
+            "name": "Neumonología"
+            
+        },
+        {
+            "name": "Endocrinología y Nutrición"
+            
+        },
+        {
+            "name": "Geriatría"
+            
+        },
+        {
+            "name": "Ginecología y Obstetricia"
+            
+        },
+        {
+            "name": "Cardiología"
+            
+        },
+        {
+            "name": "Cirugía Ortopédica y Traumatología"
+           
+        },
+        {
+            "name":  "Oftalmología"
+            
+        },
+        {
+            "name": "Otorrinolaringología"
+        }
+    ]
+}
+
+
+
+
+ 
+
+
