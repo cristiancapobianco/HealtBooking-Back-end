@@ -1,41 +1,51 @@
 {
     "specialty":[
         {
+            "id": 1,
             "name": "Neurocirugía"
 
         },
-        {
+        {   
+            "id":2,
             "name": "Radiología e Imágenes Médicas"
         },
-        {
+        {   
+            "id":3,
             "name": "Neumonología"
             
         },
         {
+            "id":4,
             "name": "Endocrinología y Nutrición"
             
         },
         {
+            "id":5,
             "name": "Geriatría"
             
         },
         {
+            "id":6,
             "name": "Ginecología y Obstetricia"
             
         },
         {
+            "id":7,
             "name": "Cardiología"
             
         },
         {
+            "id":8,
             "name": "Cirugía Ortopédica y Traumatología"
            
         },
         {
+            "id":9,
             "name":  "Oftalmología"
             
         },
         {
+            "id":10,
             "name": "Otorrinolaringología"
         }
     ]
