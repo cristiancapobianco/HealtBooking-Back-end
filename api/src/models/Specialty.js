@@ -1,15 +1,15 @@
 const {DataTypes} = require("sequelize");
 
 module.exports = (sequelize) => {
-    sequelize.define("ObraSocial",{
+    sequelize.define("Specialty",{
         id:{
             type: DataTypes.INTEGER,
-            primaryKey: true,
             autoIncrement: true,
+            primaryKey: true,
         },
-        nombre:{
+        name:{
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
         }
     })
 }
