@@ -1,5 +1,5 @@
-
 require("dotenv").config();
+
 const { Sequelize } = require("sequelize");
 
 const fs = require('fs');
@@ -22,20 +22,19 @@ fs.readdirSync(path.join(__dirname, '/models'))
     modelDefiners.push(require(path.join(__dirname, '/models', file)));
   });
 
-
 modelDefiners.forEach(model => model(sequelize));
 
 let entries = Object.entries(sequelize.models);
 let capsEntries = entries.map((entry) => [entry[0][0].toUpperCase() + entry[0].slice(1), entry[1]]);
 sequelize.models = Object.fromEntries(capsEntries);
 
-const { Medico, Especialidad, ObraSocial } = sequelize.models;
+const { Doctor, Specialty, Sure } = sequelize.models;
 
 // Aca vendrian las relaciones
-Medico.belongsToMany(ObraSocial, { through: "medicoObraSocial" });
-ObraSocial.belongsToMany(Medico, { through: "medicoObraSocial" });
-Especialidad.hasMany(Medico, { foreignKey: 'especialidadId' });
-Medico.belongsTo(Especialidad, { foreignKey: 'especialidadId' });
+Doctor.belongsToMany(Sure, { through: "DoctorSure" });
+Sure.belongsToMany(Doctor, { through: "DoctorSure" });
+Specialty.hasMany(Doctor, { foreignKey: 'SpecialtyId' });
+Doctor.belongsTo(Specialty, { foreignKey: 'SpecialtyId' });
 // Product.hasMany(Reviews);
 
 module.exports = {

@@ -1,16 +1,17 @@
 // ACA POST DOCTOR
 
-const { Doctors, Specialty, Sure } = require('../db')
+const { Doctor, Specialty, Sure } = require('../db')
 
 
 const postDoctor = async (req, res) => {
     try {
         const newDoc = req.body
-        const { name, id, email, profilePicture, sure, specialty } = newDoc
+        console.log(newDoc);
+        const { name, id, email, phone, profilePicture, sure, specialty } = newDoc
 
-        const existingDoc = await Doctors.findOne({
+        const existingDoc = await Doctor.findOne({
             where: {
-                tuition
+                id
             }
         })
 
@@ -18,7 +19,11 @@ const postDoctor = async (req, res) => {
             res.send({ message: "La matricula ya esta registrada" })
         } else {
             try {
-                const doc = await Doctors.create({ name, id, email, profilePicture })
+                const doc = await Doctor.create({ name, id, phone, email, profilePicture })
+
+                if (!Array.isArray(sure)) {
+                    return res.status(400).send({ message: "La propiedad 'sure' debe ser un array." });
+                }
 
                 for (const sureName of sure) {
                     const existingSure = await Sure.findOne({
@@ -26,7 +31,7 @@ const postDoctor = async (req, res) => {
                     });
 
                     if (existingSure) {
-                        await Doctors.addSure(existingSure);
+                        await Doctor.addSure(existingSure);
                     } else {
                         console.log(`Sure '${sureName}' no encontrado.`);
                     }
@@ -38,7 +43,7 @@ const postDoctor = async (req, res) => {
                     });
 
                     if (existingSpecialty) {
-                        await Doctors.addSpecialty(existingSpecialty);
+                        await Doctor.addSpecialty(existingSpecialty);
                     } else {
                         res.send(`Especialidad '${specialty}' no encontrada.`);
                     }
