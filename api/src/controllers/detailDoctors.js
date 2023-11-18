@@ -1,12 +1,12 @@
 const { Op } = require('sequelize');
-const { Doctors, Specialty, Sure } = require('../db')
+const { Doctor, Specialty, Sure } = require('../db')
 
-const detailDoctors = async (req, res) => {
+const detailDoctor = async (req, res) => {
     const { idDoc } = req.params
 
     try {
         if (idDoc) {
-            const data = await Doctors.findOne({
+            const data = await Doctor.findOne({
                 where: {
                     id: {
                         [Op.iLike]: `%${idDoc}%`
@@ -37,4 +37,4 @@ const detailDoctors = async (req, res) => {
     }
 }
 
-module.exports = { detailDoctors }
+module.exports = { detailDoctor }
