@@ -8,14 +8,14 @@ const getAllDoctors = async (req, res) => {
             include: [
                 {
                     model: Specialty,
-                    attributes: ['name'],
+                    attributes: ['name', 'id'],
                     through: {
                         attributes: []
                     }
                 },
                 {
                     model: Sure,
-                    attributes: ['name'],
+                    attributes: ['name', 'id'],
                     through: {
                         attributes: []
                     }
