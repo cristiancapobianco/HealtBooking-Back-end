@@ -8,7 +8,7 @@ const getAllDoctors = async (req, res) => {
             include: [
                 {
                     model: Specialty,
-                    attributes: [, 'id'],
+                    attributes: ['name', 'id'],
                     through: {
                         attributes: []
                     }
