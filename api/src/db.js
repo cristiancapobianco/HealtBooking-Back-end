@@ -1,3 +1,4 @@
+
 require("dotenv").config();
 const { Sequelize } = require("sequelize");
 
@@ -8,8 +9,8 @@ const {
 } = process.env;
 
 const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/healthbooking`, {
-  logging: false, 
-  native: false, 
+  logging: false,
+  native: false,
 });
 const basename = path.basename(__filename);
 
@@ -28,11 +29,11 @@ let entries = Object.entries(sequelize.models);
 let capsEntries = entries.map((entry) => [entry[0][0].toUpperCase() + entry[0].slice(1), entry[1]]);
 sequelize.models = Object.fromEntries(capsEntries);
 
-const { Medico,Especialidad,ObraSocial } = sequelize.models;
+const { Medico, Especialidad, ObraSocial } = sequelize.models;
 
 // Aca vendrian las relaciones
-Medico.belongsToMany(ObraSocial,{through:"medicoObraSocial"}); 
-ObraSocial.belongsToMany(Medico,{through:"medicoObraSocial"});
+Medico.belongsToMany(ObraSocial, { through: "medicoObraSocial" });
+ObraSocial.belongsToMany(Medico, { through: "medicoObraSocial" });
 Especialidad.hasMany(Medico, { foreignKey: 'especialidadId' });
 Medico.belongsTo(Especialidad, { foreignKey: 'especialidadId' });
 // Product.hasMany(Reviews);

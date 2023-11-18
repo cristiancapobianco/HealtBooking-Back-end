@@ -1,32 +1,31 @@
 const {DataTypes} = require("sequelize");
 
 module.exports = (sequelize) => {
-    sequelize.define("Medico",{
+    sequelize.define("Doctors",{
         id:{
             type: DataTypes.INTEGER,
             primaryKey: true,
         },
-        nombre:{
+        name:{
            type: DataTypes.STRING,
            allowNull: false, 
         },
-        apellido:{
+        phone:{
             type: DataTypes.STRING,
             allowNull: false,
         },
-        mail:{
+       email:{
             type: DataTypes.STRING,
             unique: true,
             validate:{
                 isEmail:{
-                    msg: "Ingrese una dirección de correo electrónico válida",
+                    msg: "Enter a valid email address",
                 },
             },
-
         },
-        foto:{
+        profilePicture:{
             type: DataTypes.STRING,
-            allowNull: true,
+            allowNull: false,
         }
     })
 }
