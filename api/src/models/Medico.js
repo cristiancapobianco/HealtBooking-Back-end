@@ -24,5 +24,9 @@ module.exports = (sequelize) => {
             },
 
         },
+        foto:{
+            type: DataTypes.STRING,
+            allowNull: true,
+        }
     })
 }
