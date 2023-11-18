@@ -1,28 +1,28 @@
 const { Op } = require('sequelize');
-const { Medico, Especialidad, ObraSocial } = require('../db')
+const { Doctors, Specialty, Sure } = require('../db')
 
 const detailDoctors = async (req, res) => {
     const { idDoc } = req.params
 
     try {
         if (idDoc) {
-            const data = await Medico.findOne({
+            const data = await Doctors.findOne({
                 where: {
                     id: {
-                        [Op.iLike]: `%${idPais}%`
+                        [Op.iLike]: `%${idDoc}%`
                     }
                 },
                 include: [
                     {
-                        model: Especialidad,
-                        attributes: ['nombre', 'id'],
+                        model: Specialty,
+                        attributes: ['name', 'id'],
                         through: {
                             attributes: []
                         }
                     },
                     {
-                        model: ObraSocial,
-                        attributes: ['nombre', 'id'],
+                        model: Sure,
+                        attributes: ['name', 'id'],
                         through: {
                             attributes: []
                         }
