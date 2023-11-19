@@ -25,7 +25,7 @@ const detailDoctor = async (req, res) => {
                         attributes: ['name', 'id'],
                         through: {
                             attributes: []
-                        }
+                        },
                     }
                 ]
             })

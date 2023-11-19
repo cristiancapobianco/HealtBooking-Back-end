@@ -1,24 +1,24 @@
-{ 
-    "sure":[
+{
+    "sure": [
         {
-            "id":1,
-            "name":"OSDE"
+            "id": 1,
+            "name": "OSDE"
         },
         {
-            "id":2,
-            "name":"Swiss Medical"
+            "id": 2,
+            "name": "Swiss Medical"
         },
         {
-            "id":3,
-            "name":"Medifé"
+            "id": 3,
+            "name": "Medifé"
         },
         {
-            "id":4,
-            "name":"Galeno"
+            "id": 4,
+            "name": "Galeno"
         },
         {
-            "id":5,
-            "name":"Sancor Salud"
+            "id": 5,
+            "name": "Sancor Salud"
         }
     ]
 }
