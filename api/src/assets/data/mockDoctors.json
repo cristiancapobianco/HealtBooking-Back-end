@@ -5,7 +5,7 @@
           "license": "33326",
           "email": "alejandro.cruz@gmail.com",
           "phone": "+541155943326",
-          "specialty": "Gastroenterología",
+          "specialty":  "Radiología e Imágenes Médicas",
           "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/jdcch5dshqe6cupwdubx.jpg",
           "arraySure": []
         },
@@ -23,7 +23,7 @@
           "license": "40981",
           "email": "carlos.lopez@gmail.com",
           "phone": "+541156740981",
-          "specialty": "Gastroenterología",
+          "specialty":  "Radiología e Imágenes Médicas",
           "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/fiox2awavxyrmgljijgy.jpg",
           "arraySure": ["Galeno"]
         },
@@ -41,7 +41,7 @@
             "license": "45289",
             "email": "diego.rojas@gmail.com",
             "phone": "+541153545289",
-            "specialty": "Gastroenterología",
+            "specialty":  "Endocrinología y Nutrición",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/zgxq5hnchjd6whytswy4.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Medifé"]
           },
@@ -68,7 +68,7 @@
             "license": "37401",
             "email": "hernan.reyes@gmail.com",
             "phone": "+541153337401",
-            "specialty":"Neurología",
+            "specialty": "Neurología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/x48ibmgp9zcugsrelr45.jpg",
             "arraySure": ["OSDE", "Sancor Salud"]
           },
@@ -77,7 +77,7 @@
             "license": "73513",
             "email": "javier.hernandez@gmail.com",
             "phone": "+541154573513",
-            "specialty":"Cirugía Ortopédica y Traumatología",
+            "specialty": "Cirugía Ortopédica y Traumatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/juxkpxyyoq4sikugllfc.jpg",
             "arraySure": ["Medifé"]
           },
@@ -95,7 +95,7 @@
             "license": "20457",
             "email": "juan.martinez@hospital.com",
             "phone": "+541150246833",
-            "specialty": "Neurocirugía",
+            "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/tv7jwqgm69wrpyxgeh41.jpg",
             "arraySure": ["Swiss Medical"]
         },
@@ -141,7 +141,7 @@
             "license": "63926",
             "email": "pablo.mendoza@gmail.com",
             "phone": "+541158563926",
-            "specialty": "Gastroenterología",
+            "specialty":  "Oftalmología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/ajnqiwfe0tli6qjtqnxs.jpg",
             "arraySure": ["Swiss Medical", "Medifé", "Galeno"]
           },
@@ -160,7 +160,7 @@
             "license": "39825",
             "email": "ricardo.rojas@gmail.com",
             "phone": "+541157403982",
-            "specialty": "Geriatría",
+            "specialty": "Neumonología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/u02jgg0rsj4pgujq0bvl.jpg",
             "arraySure": ["OSDE", "Medifé", "Sancor Salud"]
         },
@@ -188,7 +188,7 @@
             "license": "85781",
             "email":  "sebastian.diaz@gmail.com",
             "phone": "+541155185781",
-            "specialty": "Psiquiatría",
+            "specialty": "Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/f9ugyqjbhzz2ybg1g7v5.jpg",
             "arraySure": ["Galeno", "Sancor Salud"]
           },
@@ -197,7 +197,7 @@
             "license": "28076",
             "email": "adriana.navarro@gmail.com",
             "phone": "+541151428076",
-            "specialty":"Psiquiatría",
+            "specialty":"Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189767/doctors/women/vkc7qw9313n3oppah4nh.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Galeno"]
           },
@@ -235,7 +235,7 @@
             "license": "92734",
             "email": "antonella.nieva@gmail.com",
             "phone": "+541151892734",
-            "specialty": "Endocrinología",
+            "specialty":  "Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/id231fv4ulkvxlbcy440.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Sancor Salud"]
           },
@@ -253,7 +253,7 @@
             "license": "96140",
             "email":  "carmen.lopez@gmail.com",
             "phone": "+541158396140",
-            "specialty": "Gastroenterología",
+            "specialty": "Cirugía Ortopédica y Traumatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/kdy6xd8tctnn340zp2uv.jpg",
             "arraySure": ["OSDE", "Medifé", "Galeno", "Sancor Salud"]
           },
@@ -262,7 +262,7 @@
             "license": "28143",
             "email": "carolina.ramirez@gmail.com",
             "phone": "+541157028143",
-            "specialty": "Psiquiatría",
+            "specialty": "Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/dqtdzdkz5rcuf5ouogzl.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Medifé", "Galeno"]
           },
@@ -281,7 +281,7 @@
             "license": "54607",
             "email": "florencia.sanchez@gmail.com",
             "phone": "+541155254607",
-            "specialty": "Pediatría",
+            "specialty": "Neumonología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/yzz96ougt7nlbgdmx2ir.jpg",
             "arraySure": ["Medifé", "Sancor Salud"]
           },
@@ -290,7 +290,7 @@
             "license": "765982",
             "email": "gabriela.ortega@gmail.com",
             "phone": "+541159765982",
-            "specialty": "Endocrinología",
+            "specialty":  "Oftalmología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/eazbqmd9uwbynjgknqld.jpg",
             "arraySure": ["Swiss Medical", "Sancor Salud"]
           },
@@ -299,7 +299,7 @@
             "license": "57836",
             "email": "julieta.godoy@gmail.com", 
             "phone": "+541159257836",
-            "specialty": "Endocrinología",
+            "specialty":  "Endocrinología y Nutrición",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/iggyfil7fpazdeyttezd.jpg",
             "arraySure": ["Swiss Medical", "Medifé", "Sancor Salud"]
           },
@@ -309,7 +309,7 @@
             "license": "51472",
             "email": "laura.fernandez@gmail.com",
             "phone": "+541159814625",
-            "specialty": "Endocrinología y Nutrición",
+            "specialty":  "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/whgme8zkratrwllcujco.jpg",
             "arraySure": ["OSDE", "Medifé"]
         },
@@ -366,7 +366,7 @@
             "license": "14865",
             "email": "valeria.perez@gmail.com",
             "phone": "+541153714865",
-            "specialty": "Otorrinolaringología",
+            "specialty": "Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189770/doctors/women/r0z9ptldvmiprxcofron.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Sancor Salud"]
           }
