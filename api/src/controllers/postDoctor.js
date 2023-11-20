@@ -1,17 +1,16 @@
 // ACA POST DOCTOR
 
-const { Doctors, Specialty, Sure } = require('../db')
+const { Doctor, Specialty, Sure } = require('../db')
 
 
 const postDoctor = async (req, res) => {
     try {
         const newDoc = req.body
-        const { name, lastName, tuition, email, image } = newDoc
+        const { name, id, email, phone, profilePicture, sure, specialty } = newDoc
 
-        //nombre de los modelos a definir
-        const existingDoc = await Doctors.findOne({
+        const existingDoc = await Doctor.findOne({
             where: {
-                tuition
+                id
             }
         })
 
@@ -19,15 +18,36 @@ const postDoctor = async (req, res) => {
             res.send({ message: "La matricula ya esta registrada" })
         } else {
             try {
-                const doc = await Doctors.create({ name, lastName, tuition, email, imageUrl })
-                /* 
-                falta verificar como mandarian las especialidades y manjarlas
-                falta hacer las relaciones de las especialidades con los doctores
-                */
 
-                res.send("Doctor creado", doc)
+                const existingSpecialty = await Specialty.findOne({
+                    where: { name: specialty }
+                });
+                if (!existingSpecialty) {
+                    return res.status(404).send({ message: `Especialidad '${specialty}' no encontrada.` });
+                }
+
+                const doc = await Doctor.create({ name, id, phone, email, profilePicture, SpecialtyId: existingSpecialty.id })
+
+                if (!Array.isArray(sure)) {
+                    return res.status(400).send({ message: "La propiedad 'sure' debe ser un array." });
+                }
+
+                for (const sureName of sure) {
+                    const existingSure = await Sure.findOne({
+                        where: { name: sureName }
+                    });
+
+                    if (existingSure) {
+                        await doc.addSure(existingSure);
+                    } else {
+                        console.log(`Sure '${sureName}' no encontrado.`);
+                    }
+                }
+
+
+                res.status(200).send({ message: "Doctor creado", doc })
             } catch (error) {
-                res.send("Error al crear doctor", error.message)
+                res.status(400).send(error.message)
             }
         }
 
