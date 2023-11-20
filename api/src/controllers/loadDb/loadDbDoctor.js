@@ -12,9 +12,7 @@ const loadDbDoctor=async()=>{
             profilePicture: doctor.profilePicture
         }
     })
-    console.log(doctors);
     const loadDoctors= await Doctor.bulkCreate(doctors)
-    console.log(loadDoctors);
     return loadDoctors;
 }
 

@@ -1,7 +1,7 @@
 const { Specialty } = require('../db')
 
 
-const getspecialtys = async (req, res) => {
+const getSpecialty = async (req, res) => {
     try {
         const specialtys = await Specialty.findAll()
         if (specialtys) {
@@ -16,5 +16,5 @@ const getspecialtys = async (req, res) => {
 }
 
 module.exports = {
-    getspecialtys
+    getSpecialty
 }

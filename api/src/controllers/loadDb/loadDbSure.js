@@ -4,8 +4,6 @@ const {Sure}= require('../../db')
 const loadDbSure=async()=>{
 
     const loadSure = await Sure.bulkCreate(mockSure.sure)
-    
-    console.log(loadSure);
 
     return loadSure;
 }

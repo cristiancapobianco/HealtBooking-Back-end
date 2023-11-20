@@ -10,8 +10,6 @@ const loadRelationships= ()=>{
         }
     })
 
-    console.log(sureAndSpecialty);
-
     const loadRelations= sureAndSpecialty.map(async(doctor)=>{
         const doctorExist= await Doctor.findOne({where: {id: doctor.id}})
 

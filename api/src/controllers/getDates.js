@@ -1,6 +1,6 @@
 const { nombretablaturnos } = require('../db')
 
-const getdates = async (req, res) => {
+const getDate = async (req, res) => {
     try {
         const allDates = await nombretablaturnos.findAll({
             attributes: ['doctorid', 'date']
@@ -16,5 +16,5 @@ const getdates = async (req, res) => {
 }
 
 module.exports = {
-    getdates
+    getDate
 }

@@ -1,7 +1,7 @@
 const { Sure } = require('../db')
 
 
-const getSures = async (req, res) => {
+const getSure = async (req, res) => {
     try {
         const sures = await Sure.findAll()
         if (sures) {
@@ -16,5 +16,5 @@ const getSures = async (req, res) => {
 }
 
 module.exports = {
-    getSures
+    getSure
 }
