@@ -6,7 +6,6 @@ const { Doctor, Specialty, Sure } = require('../db')
 const postDoctor = async (req, res) => {
     try {
         const newDoc = req.body
-        console.log(newDoc);
         const { name, id, email, phone, profilePicture, sure, specialty } = newDoc
 
         const existingDoc = await Doctor.findOne({
@@ -19,7 +18,15 @@ const postDoctor = async (req, res) => {
             res.send({ message: "La matricula ya esta registrada" })
         } else {
             try {
-                const doc = await Doctor.create({ name, id, phone, email, profilePicture })
+
+                const existingSpecialty = await Specialty.findOne({
+                    where: { name: specialty }
+                });
+                if (!existingSpecialty) {
+                    return res.status(404).send({ message: `Especialidad '${specialty}' no encontrada.` });
+                }
+
+                const doc = await Doctor.create({ name, id, phone, email, profilePicture, SpecialtyId: existingSpecialty.id })
 
                 if (!Array.isArray(sure)) {
                     return res.status(400).send({ message: "La propiedad 'sure' debe ser un array." });
@@ -31,27 +38,16 @@ const postDoctor = async (req, res) => {
                     });
 
                     if (existingSure) {
-                        await Doctor.addSure(existingSure);
+                        await doc.addSure(existingSure);
                     } else {
                         console.log(`Sure '${sureName}' no encontrado.`);
                     }
                 }
 
-                if (specialty) {
-                    const existingSpecialty = await Specialty.findOne({
-                        where: { name: specialty }
-                    });
 
-                    if (existingSpecialty) {
-                        await Doctor.addSpecialty(existingSpecialty);
-                    } else {
-                        res.send(`Especialidad '${specialty}' no encontrada.`);
-                    }
-                }
-
-                res.send("Doctor creado", doc)
+                res.status(200).send({ message: "Doctor creado", doc })
             } catch (error) {
-                res.send("Error al crear doctor", error.message)
+                res.status(400).send(error.message)
             }
         }
 

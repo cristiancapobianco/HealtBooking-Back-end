@@ -8,7 +8,7 @@ module.exports = (sequelize) => {
         },
         name:{
            type: DataTypes.STRING,
-           allowNull: false, 
+           allowNull: false,
         },
         phone:{
             type: DataTypes.STRING,
@@ -16,7 +16,6 @@ module.exports = (sequelize) => {
         },
        email:{
             type: DataTypes.STRING,
-            unique: true,
             validate:{
                 isEmail:{
                     msg: "Enter a valid email address",
