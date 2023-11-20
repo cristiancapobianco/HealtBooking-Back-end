@@ -31,11 +31,11 @@ sequelize.models = Object.fromEntries(capsEntries);
 const { Doctor, Specialty, Sure } = sequelize.models;
 
 // Aca vendrian las relaciones
-Doctor.belongsToMany(Sure, { through: "DoctorSure", foreignKey: "Doctorid" });
-Sure.belongsToMany(Doctor, { through: "DoctorSure", foreignKey: "Sureid" });
-Specialty.hasMany(Doctor, { foreignKey: 'SpecialtyId', sourceKey: "id" });
-Doctor.belongsTo(Specialty, { foreignKey: 'SpecialtyId', targetKey: "id" });
-// Product.hasMany(Reviews);
+Doctor.belongsToMany(Sure, { through: "DoctorSure" });
+Sure.belongsToMany(Doctor, { through: "DoctorSure" });
+Specialty.hasMany(Doctor, { foreignKey: 'SpecialtyId'});
+Doctor.belongsTo(Specialty, { foreignKey: 'SpecialtyId'});
+
 
 module.exports = {
   ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
