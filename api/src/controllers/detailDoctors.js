@@ -1,5 +1,5 @@
 const { Op } = require('sequelize');
-const { Doctor, Specialty, Sure } = require('../db')
+const { Doctor, Specialty, Sure, DoctorSure } = require('../db')
 
 const detailDoctor = async (req, res) => {
     const { idDoc } = req.params
@@ -7,6 +7,7 @@ const detailDoctor = async (req, res) => {
     try {
         if (idDoc) {
             const data = await Doctor.findOne({
+                attributes: ['name', 'id', 'phone', 'email', 'profilePicture'],
                 where: {
                     id: {
                         [Op.eq]: idDoc
@@ -15,15 +16,13 @@ const detailDoctor = async (req, res) => {
                 include: [
                     {
                         model: Specialty,
-                        attributes: ['name', 'id'],
-                        through: {
-                            attributes: []
-                        }
+                        attributes: ['name', 'id']
                     },
                     {
                         model: Sure,
                         attributes: ['name', 'id'],
                         through: {
+                            model: DoctorSure,
                             attributes: []
                         },
                     }
@@ -32,8 +31,8 @@ const detailDoctor = async (req, res) => {
             return res.status(200).json(data);
         }
     }
-    catch {
-        return res.status(404).json({ message: 'Error al encontrar detalle del medico' });
+    catch (error) {
+        return res.status(404).json({ message: 'Error al encontrar detalle del medico', error: error.message });
     }
 }
 
