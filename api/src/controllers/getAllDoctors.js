@@ -1,4 +1,4 @@
-const { Doctor, Specialty, Sure } = require('../db')
+const { Doctor, Specialty, Sure, DoctorSure } = require('../db')
 
 const getAllDoctors = async (req, res) => {
 
@@ -9,12 +9,13 @@ const getAllDoctors = async (req, res) => {
             include: [
                 {
                     model: Specialty,
-                    attributes: ['name', 'id']
+                    attributes: ['id']
                 },
                 {
                     model: Sure,
-                    attributes: ['name', 'id'],
+                    attributes: ['id'],
                     through: {
+                        model: DoctorSure,
                         attributes: []
                     },
                 }
