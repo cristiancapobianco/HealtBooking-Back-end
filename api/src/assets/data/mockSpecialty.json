@@ -2,7 +2,7 @@
     "specialty":[
         {
             "id": 1,
-            "name": "Neurocirugía"
+            "name": "Neurología"
 
         },
         {   
@@ -21,7 +21,7 @@
         },
         {
             "id":5,
-            "name": "Geriatría"
+            "name": "Psiquiatría"
             
         },
         {
@@ -46,7 +46,7 @@
         },
         {
             "id":10,
-            "name": "Otorrinolaringología"
+            "name": "Dermatología"
         }
     ]
 }
