@@ -9,7 +9,7 @@ const detailDoctors = async (req, res) => {
             const data = await Doctors.findOne({
                 where: {
                     id: {
-                        [Op.iLike]: `%${idDoc}%`
+                        [Op.eq]: idDoc
                     }
                 },
                 include: [
