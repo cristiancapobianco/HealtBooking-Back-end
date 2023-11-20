@@ -14,13 +14,14 @@ const getAllDoctors = async (req, res) => {
                 {
                     model: Sure,
                     attributes: ['name', 'id'],
-                    througth: {
+                    through: {
                         attributes: []
                     },
                 }
             ]
 
         })
+        
         return res.status(200).json(data);
 
     }
