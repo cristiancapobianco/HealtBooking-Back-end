@@ -35,7 +35,7 @@ Doctor.belongsToMany(Sure, { through: "DoctorSure" });
 Sure.belongsToMany(Doctor, { through: "DoctorSure" });
 Specialty.hasMany(Doctor, { foreignKey: 'SpecialtyId'});
 Doctor.belongsTo(Specialty, { foreignKey: 'SpecialtyId'});
-// Product.hasMany(Reviews);
+
 
 module.exports = {
   ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
