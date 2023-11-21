@@ -1,40 +1,39 @@
 const { Op } = require('sequelize');
-const { Doctors, Specialty, Sure } = require('../db')
+const { Doctor, Specialty, Sure, DoctorSure } = require('../db')
 
-const detailDoctors = async (req, res) => {
+const detailDoctor = async (req, res) => {
     const { idDoc } = req.params
 
     try {
         if (idDoc) {
-            const data = await Doctors.findOne({
+            const data = await Doctor.findOne({
+                attributes: ['name', 'id', 'phone', 'email', 'profilePicture'],
                 where: {
                     id: {
-                        [Op.iLike]: `%${idDoc}%`
+                        [Op.eq]: idDoc
                     }
                 },
                 include: [
                     {
                         model: Specialty,
-                        attributes: ['name', 'id'],
-                        through: {
-                            attributes: []
-                        }
+                        attributes: ['name', 'id']
                     },
                     {
                         model: Sure,
                         attributes: ['name', 'id'],
                         through: {
+                            model: DoctorSure,
                             attributes: []
-                        }
+                        },
                     }
                 ]
             })
             return res.status(200).json(data);
         }
     }
-    catch {
-        return res.status(404).json({ message: 'Error al encontrar detalle del medico' });
+    catch (error) {
+        return res.status(404).json({ message: 'Error al encontrar detalle del medico', error: error.message });
     }
 }
 
-module.exports = { detailDoctors }
+module.exports = { detailDoctor }
