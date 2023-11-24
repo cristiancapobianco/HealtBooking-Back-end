@@ -3,645 +3,645 @@
     "patients":[
         {
           "id": 52841367,
-          "nombre": "Ana Martínez",
+          "name": "Ana Martínez",
           "email": "ana.martinez@gmail.com",
           "password": "Abcdefg1",
           "phone": "+541168432907",
-          "seguro": "Sancor Salud"
+          "sure": "Sancor Salud"
         },
         {
           "id": 69382514,
-          "nombre": "Juan Rodríguez",
+          "name": "Juan Rodríguez",
           "email": "juan.rodriguez@gmail.com",
           "password": "Hijklmn2",
           "phone": "+541150321976",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 47135698,
-          "nombre": "María López",
+          "name": "María López",
           "email": "maria.lopez@gmail.com",
           "password": "Opqrstuv3",
           "phone": "+541182964157",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 81492763,
-          "nombre": "Carlos González",
+          "name": "Carlos González",
           "email": "carlos.gonzalez@gmail.com",
           "password": "Wxyzabc4",
           "phone": "+541167503829",
-          "seguro": "Medifé"
+          "sure": "Medifé"
         },
         {
           "id": 63928417,
-          "nombre": "Laura Pérez",
+          "name": "Laura Pérez",
           "email": "laura.perez@gmail.com",
           "password": "Defghij5",
           "phone": "+541119875062",
-          "seguro": "OSDE"
+          "sure": "OSDE"
         },
         {
           "id": 75219834,
-          "nombre": "Pedro Hernández",
+          "name": "Pedro Hernández",
           "email": "pedro.hernandez@gmail.com",
           "password": "Klmnopq6",
           "phone": "+541134526897",
-          "seguro": "Sancor Salud"
+          "sure": "Sancor Salud"
         },
         {
           "id": 61739428,
-          "nombre": "Gabriela Díaz",
+          "name": "Gabriela Díaz",
           "email": "gabriela.diaz@gmail.com",
           "password": "Rstuvwx7",
           "phone": "+541171029486",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 89513264,
-          "nombre": "Andrés Sánchez",
+          "name": "Andrés Sánchez",
           "email": "andres.sanchez@gmail.com",
           "password": "Yzabcd8",
           "phone": "+541189431765",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 42675931,
-          "nombre": "Sofía Ramírez",
+          "name": "Sofía Ramírez",
           "email": "sofia.ramirez@gmail.com",
           "password": "Efghij9",
           "phone": "+541165283094",
-          "seguro": "Medifé"
+          "sure": "Medifé"
         },
         {
           "id": 58362197,
-          "nombre": "Luis Torres",
+          "name": "Luis Torres",
           "email": "luis.torres@gmail.com",
           "password": "Klmnopq0",
           "phone": "+541174105286",
-          "seguro": "Sancor Salud"
+          "sure": "Sancor Salud"
         },
         {
           "id": 31927485,
-          "nombre": "Valentina Flores",
+          "name": "Valentina Flores",
           "email": "valentina.flores@gmail.com",
           "password": "Rstuvwx1",
           "phone": "+541123876154",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 76419832,
-          "nombre": "Javier Jiménez",
+          "name": "Javier Jiménez",
           "email": "javier.jimenez@gmail.com",
           "password": "Yzabcd2",
           "phone": "+541179618432",
-          "seguro": "OSDE"
+          "sure": "OSDE"
         },
         {
           "id": 92856314,
-          "nombre": "Carolina Vargas",
+          "name": "Carolina Vargas",
           "email": "carolina.vargas@gmail.com",
           "password": "Bcdefgh3",
           "phone": "+541150496723",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 53729184,
-          "nombre": "Alejandro Cruz",
+          "name": "Alejandro Cruz",
           "email": "alejandro.cruz@gmail.com",
           "password": "Ijklmno4",
           "phone": "+541138621759",
-          "seguro": "Medifé"
+          "sure": "Medifé"
         },
         {
           "id": 49283675,
-          "nombre": "Camila Morales",
+          "name": "Camila Morales",
           "email": "camila.morales@gmail.com",
           "password": "Pqrstuv5",
           "phone": "+541192074386",
-          "seguro": "Sancor Salud"
+          "sure": "Sancor Salud"
         },
         {
           "id": 76521498,
-          "nombre": "Miguel Castro",
+          "name": "Miguel Castro",
           "email": "miguel.castro@gmail.com",
           "password": "Wxyzab6",
           "phone": "+541156841932",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 34857219,
-          "nombre": "Isabella Ortega",
+          "name": "Isabella Ortega",
           "email": "isabella.ortega@gmail.com",
           "password": "Cdefghi7",
           "phone": "+541130798412",
-          "seguro": "Sancor Salud"
+          "sure": "Sancor Salud"
         },
         {
           "id": 98134257,
-          "nombre": "José Mendoza",
+          "name": "José Mendoza",
           "email": "jose.mendoza@gmail.com",
           "password": "Jklmnop8",
           "phone": "+541125638974",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 25719384,
-          "nombre": "Daniela Ruiz",
+          "name": "Daniela Ruiz",
           "email": "daniela.ruiz@gmail.com",
           "password": "Qrstuvw9",
           "phone": "+541187401963",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 64371928,
-          "nombre": "Francisco Herrera",
+          "name": "Francisco Herrera",
           "email": "francisco.herrera@gmail.com",
           "password": "Xyzabcd0",
           "phone": "+541153217894",
-          "seguro": "Medifé"
+          "sure": "Medifé"
         },
         {
           "id": 19824573,
-          "nombre": "Victoria Medina",
+          "name": "Victoria Medina",
           "email": "victoria.medina@gmail.com",
           "password": "Defghij1",
           "phone": "+541196745812",
-          "seguro": "OSDE"
+          "sure": "OSDE"
         },
         {
           "id": 72583691,
-          "nombre": "Diego Guzmán",
+          "name": "Diego Guzmán",
           "email": "diego.guzman@gmail.com",
           "password": "Lmnopqr2",
           "phone": "+541140826957",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 35918274,
-          "nombre": "Paula Romero",
+          "name": "Paula Romero",
           "email": "paula.romero@gmail.com",
           "password": "Stuvwx3",
           "phone": "+541173498162",
-          "seguro": "Medifé"
+          "sure": "Medifé"
         },
         {
           "id": 81736425,
-          "nombre": "Rafael Gómez",
+          "name": "Rafael Gómez",
           "email": "rafael.gomez@gmail.com",
           "password": "Yzabcd4",
           "phone": "+541158963027",
-          "seguro": "Sancor Salud"
+          "sure": "Sancor Salud"
         },
         {
           "id": 92634715,
-          "nombre": "Natalia Castro",
+          "name": "Natalia Castro",
           "email": "natalia.castro@gmail.com",
           "password": "Efghij5",
           "phone": "+541125694738",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 48375129,
-          "nombre": "Martín Herrera",
+          "name": "Martín Herrera",
           "email": "martin.herrera@gmail.com",
           "password": "Mnopqr6",
           "phone": "+541170936285",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 67219834,
-          "nombre": "Antonia Reyes",
+          "name": "Antonia Reyes",
           "email": "antonia.reyes@gmail.com",
           "password": "Tuvwx7",
           "phone": "+541138421509",
-          "seguro": "Medifé"
+          "sure": "Medifé"
         },
         {
           "id": 31597284,
-          "nombre": "Felipe Torres",
+          "name": "Felipe Torres",
           "email": "felipe.torres@gmail.com",
           "password": "Yzabcd8",
           "phone": "+541191654072",
-          "seguro": "Sancor Salud"
+          "sure": "Sancor Salud"
         },
         {
           "id": 84971326,
-          "nombre": "Emma Núñez",
+          "name": "Emma Núñez",
           "email": "emma.nunez@gmail.com",
           "password": "Fghij9",
           "phone": "+541150867923",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 59428617,
-          "nombre": "Raúl Martínez",
+          "name": "Raúl Martínez",
           "email": "raul.martinez@gmail.com",
           "password": "Nopqrs0",
           "phone": "+541126738945",
-          "seguro": "Sancor Salud"
+          "sure": "Sancor Salud"
         },
         {
           "id": 73196428,
-          "nombre": "Renata Morales",
+          "name": "Renata Morales",
           "email": "renata.morales@gmail.com",
           "password": "Uvwxy1",
           "phone": "+541175392806",
-          "seguro": "Medifé"
+          "sure": "Medifé"
         },
         {
           "id": 26984317,
-          "nombre": "Sergio García",
+          "name": "Sergio García",
           "email": "sergio.garcia@gmail.com",
           "password": "Yzabcd2",
           "phone": "+541161083972",
-          "seguro": "OSDE"
+          "sure": "OSDE"
         },
         {
           "id": 51849763,
-          "nombre": "Valeria Aguilar",
+          "name": "Valeria Aguilar",
           "email": "valeria.aguilar@gmail.com",
           "password": "Ghijsd3",
           "phone": "+541148209753",
-          "seguro": "Sancor Salud"
+          "sure": "Sancor Salud"
         },
         {
           "id": 63718924,
-          "nombre": "Ricardo Soto",
+          "name": "Ricardo Soto",
           "email": "ricardo.soto@gmail.com",
           "password": "Opmntu4",
           "phone": "+541193542167",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 92531478,
-          "nombre": "Gabriela Paredes",
+          "name": "Gabriela Paredes",
           "email": "gabriela.paredes@gmail.com",
           "password": "Vwxysf5",
           "phone": "+541157628319",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 46791832,
-          "nombre": "Mario Ramírez",
+          "name": "Mario Ramírez",
           "email": "mario.ramirez@gmail.com",
           "password": "Yzabcd6",
           "phone": "+541130984752",
-          "seguro": "Medifé"
+          "sure": "Medifé"
         },
         {
           "id": 58247193,
-          "nombre": "Fernanda Castro",
+          "name": "Fernanda Castro",
           "email": "fernanda.castro@gmail.com",
           "password": "Hijklt7",
           "phone": "+541115467803",
-          "seguro": "Sancor Salud"
+          "sure": "Sancor Salud"
         },
         {
           "id": 31972845,
-          "nombre": "Ernesto González",
+          "name": "Ernesto González",
           "email": "ernesto.gonzalez@gmail.com",
           "password": "Qrsghu8",
           "phone": "+541192735084",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 84513729,
-          "nombre": "Mariana Pérez",
+          "name": "Mariana Pérez",
           "email": "mariana.perez@gmail.com",
           "password": "Wxyzab9",
           "phone": "+541168351294",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 57298641,
-          "nombre": "Guillermo Sánchez",
+          "name": "Guillermo Sánchez",
           "email": "guillermo.sanchez@gmail.com",
           "password": "Yzabcd0",
           "phone": "+541174209163",
-          "seguro": "OSDE"
+          "sure": "OSDE"
         },
 
         {
           "id": 39421857,
-          "nombre": "Adriana Torres",
+          "name": "Adriana Torres",
           "email": "adriana.torres@gmail.com",
           "password": "Ijkjwn1",
           "phone": "+541158034671",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 71639284,
-          "nombre": "Omar Ruiz",
+          "name": "Omar Ruiz",
           "email": "omar.ruiz@gmail.com",
           "password": "Qrswnu2",
           "phone": "+541143697815",
-          "seguro": "Sancor Salud"
+          "sure": "Sancor Salud"
         },
         {
           "id": 48516372,
-          "nombre": "Vanessa Núñez",
+          "name": "Vanessa Núñez",
           "email": "vanessa.nunez@gmail.com",
           "password": "Yzabcd3",
           "phone": "+541197286531",
-          "seguro": "OSDE"
+          "sure": "OSDE"
         },
         {
           "id": 63748192,
-          "nombre": "Gilberto Díaz",
+          "name": "Gilberto Díaz",
           "email": "gilberto.diaz@gmail.com",
           "password": "Lmopsd4",
           "phone": "+541138519276",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 21984637,
-          "nombre": "Verónica Medina",
+          "name": "Verónica Medina",
           "email": "veronica.medina@gmail.com",
           "password": "Tuvkwe5",
           "phone": "+541161923748",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 75328194,
-          "nombre": "Salvador Rodríguez",
+          "name": "Salvador Rodríguez",
           "email": "salvador.rodriguez@gmail.com",
           "password": "Yzabcd6",
           "phone": "+541179461852",
-          "seguro": "Medifé"
+          "sure": "Medifé"
         },
         {
           "id": 94613728,
-          "nombre": "Elena Flores",
+          "name": "Elena Flores",
           "email": "elena.flores@gmail.com",
           "password": "Mnoygh7",
           "phone": "+541153876124",
-          "seguro": "Sancor Salud"
+          "sure": "Sancor Salud"
         },
         {
           "id": 38291746,
-          "nombre": "Arturo Herrera",
+          "name": "Arturo Herrera",
           "email": "arturo.herrera@gmail.com",
           "password": "Uvwdef8",
           "phone": "+541112764389",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 67428193,
-          "nombre": "Clara Torres",
+          "name": "Clara Torres",
           "email": "clara.torres@gmail.com",
           "password": "Yzabcd9",
           "phone": "+541191482037",
-          "seguro": "OSDE"
+          "sure": "OSDE"
         },
         {
           "id": 59382746,
-          "nombre": "Armando Soto",
+          "name": "Armando Soto",
           "email": "armando.soto@gmail.com",
           "password": "Pqrsdf0",
           "phone": "+541165729481",
-          "seguro": "Sancor Salud"
+          "sure": "Sancor Salud"
         },
         {
           "id": 21894573,
-          "nombre": "Aurora Guzmán",
+          "name": "Aurora Guzmán",
           "email": "aurora.guzman@gmail.com",
           "password": "Vwxstg1",
           "phone": "+541140897652",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 79643128,
-          "nombre": "Héctor López",
+          "name": "Héctor López",
           "email": "hector.lopez@gmail.com",
           "password": "Yzabcd2",
           "phone": "+541123516974",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 12475983,
-          "nombre": "Regina Díaz",
+          "name": "Regina Díaz",
           "email": "regina.diaz@gmail.com",
           "password": "Rqwi3",
           "phone": "+541196738102",
-          "seguro": "Medifé"
+          "sure": "Medifé"
         },
         {
           "id": 98531724,
-          "nombre": "Raquel Paredes",
+          "name": "Raquel Paredes",
           "email": "raquel.paredes@gmail.com",
           "password": "Zxysj4",
           "phone": "+541171085329",
-          "seguro": "Sancor Salud"
+          "sure": "Sancor Salud"
         },
         {
           "id": 63718925,
-          "nombre": "Max Ramírez",
+          "name": "Max Ramírez",
           "email": "max.ramirez@gmail.com",
           "password": "Yzabcd5",
           "phone": "+541158432971",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 19472853,
-          "nombre": "Isabel Morales",
+          "name": "Isabel Morales",
           "email": "isabel.morales@gmail.com",
           "password": "Stquk6",
           "phone": "+541132978564",
-          "seguro": "OSDE"
+          "sure": "OSDE"
         },
         {
           "id": 36582194,
-          "nombre": "Federico Castro",
+          "name": "Federico Castro",
           "email": "federico.castro@gmail.com",
           "password": "Yzabcd7",
           "phone": "+541147631895",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 74819326,
-          "nombre": "Rosario Núñez",
+          "name": "Rosario Núñez",
           "email": "rosario.nunez@gmail.com",
           "password": "Zxvnmc7",
           "phone": "+541186153472",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 93186574,
-          "nombre": "Ignacio González",
+          "name": "Ignacio González",
           "email": "ignacio.gonzalez@gmail.com",
           "password": "Qwerty8",
           "phone": "+541159342781",
-          "seguro": "Sancor Salud"
+          "sure": "Sancor Salud"
         },
         {
           "id": 24619785,
-          "nombre": "Lourdes Sánchez",
+          "name": "Lourdes Sánchez",
           "email": "lourdes.sanchez@gmail.com",
           "password": "Yzabcd9",
           "phone": "+541172891506",
-          "seguro": "Medifé"
+          "sure": "Medifé"
         },
       
         {
           "id": 59381726,
-          "nombre": "Julio Medina",
+          "name": "Julio Medina",
           "email": "julio.medina@gmail.com",
           "password": "Zxlbv0",
           "phone": "+541160587391",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 71839254,
-          "nombre": "Consuelo Torres",
+          "name": "Consuelo Torres",
           "email": "consuelo.torres@gmail.com",
           "password": "Arewq1",
           "phone": "+541184973621",
-          "seguro": "OSDE"
+          "sure": "OSDE"
         },
         {
           "id": 46927381,
-          "nombre": "Esteban Ruiz",
+          "name": "Esteban Ruiz",
           "email": "esteban.ruiz@gmail.com",
           "password": "Yzabcd2",
           "phone": "+541193726041",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 83519724,
-          "nombre": "Patricia Herrera",
+          "name": "Patricia Herrera",
           "email": "patricia.herrera@gmail.com",
           "password": "Zxqaz3",
           "phone": "+541126854937",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 21794368,
-          "nombre": "Víctor Paredes",
+          "name": "Víctor Paredes",
           "email": "victor.paredes@gmail.com",
           "password": "Xysrd4",
           "phone": "+541170498152",
-          "seguro": "OSDE"
+          "sure": "OSDE"
         },
         {
           "id": 65931724,
-          "nombre": "Aurora Núñez",
+          "name": "Aurora Núñez",
           "email": "aurora.nunez@gmail.com",
           "password": "Yzabcd5",
           "phone": "+541152839714",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 48192637,
-          "nombre": "León Torres",
+          "name": "León Torres",
           "email": "leon.torres@gmail.com",
           "password": "Zxbnm6",
           "phone": "+541169512378",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 37521984,
-          "nombre": "Lucía Díaz",
+          "name": "Lucía Díaz",
           "email": "lucia.diaz@gmail.com",
           "password": "Zxtgb7",
           "phone": "+541183461592",
-          "seguro": "OSDE"
+          "sure": "OSDE"
         },
         {
           "id": 89412637,
-          "nombre": "Rubén Soto",
+          "name": "Rubén Soto",
           "email": "ruben.soto@gmail.com",
           "password": "Yzabcd8",
           "phone": "+541157286931",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 27186539,
-          "nombre": "Diana Guzmán",
+          "name": "Diana Guzmán",
           "email": "diana.guzman@gmail.com",
           "password": "Zxolp9",
           "phone": "+541149372865",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 58392147,
-          "nombre": "Guillermo Núñez",
+          "name": "Guillermo Núñez",
           "email": "guillermo.nunez@gmail.com",
           "password": "Yzabcd0",
           "phone": "+541172859163",
-          "seguro": "OSDE"
+          "sure": "OSDE"
         },
         {
           "id": 74629815,
-          "nombre": "Adriana Morales",
+          "name": "Adriana Morales",
           "email": "adriana.morales@gmail.com",
           "password": "Zcddk1",
           "phone": "+541161982347",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 15297384,
-          "nombre": "Hugo Castro",
+          "name": "Hugo Castro",
           "email": "hugo.castro@gmail.com",
           "password": "Yzabcd2",
           "phone": "+541145027839",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 83714926,
-          "nombre": "Beatriz Sánchez",
+          "name": "Beatriz Sánchez",
           "email": "beatriz.sanchez@gmail.com",
           "password": "Zxcvb3",
           "phone": "+541180192746",
-          "seguro": "OSDE"
+          "sure": "OSDE"
         },
         {
           "id": 92468137,
-          "nombre": "Juan Pablo Torres",
+          "name": "Juan Pablo Torres",
           "email": "juanpablo.torres@gmail.com",
           "password": "Yzabcd4",
           "phone": "+541163721984",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 36812457,
-          "nombre": "Elena Díaz",
+          "name": "Elena Díaz",
           "email": "elena.diaz@gmail.com",
           "password": "Asdfg5",
           "phone": "+541189234175",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 71539284,
-          "nombre": "Enrique Ramírez",
+          "name": "Enrique Ramírez",
           "email": "enrique.ramirez@gmail.com",
           "password": "Yzabcd6",
           "phone": "+541150382917",
-          "seguro": "OSDE"
+          "sure": "OSDE"
         },
         {
           "id": 42981375,
-          "nombre": "Gabriela Medina",
+          "name": "Gabriela Medina",
           "email": "gabriela.medina@gmail.com",
           "password": "Zxbnm6",
           "phone": "+541173649182",
-          "seguro": "Galeno"
+          "sure": "Galeno"
         },
         {
           "id": 18397526,
-          "nombre": "Oscar Herrera",
+          "name": "Oscar Herrera",
           "email": "oscar.herrera@gmail.com",
           "password": "Zxtgb7",
           "phone": "+541157298341",
-          "seguro": "Swiss Medical"
+          "sure": "Swiss Medical"
         },
         {
           "id": 76531892,
-          "nombre": "Sylvia Torres",
+          "name": "Sylvia Torres",
           "email": "sylvia.torres@gmail.com",
           "password": "Yzabcd8",
           "phone": "+541149832175",
-          "seguro": "OSDE"
+          "sure": "OSDE"
         }
       
     ]
