@@ -38,8 +38,13 @@ Specialty.hasMany(Doctor, { foreignKey: 'SpecialtyId'});
 Doctor.belongsTo(Specialty, { foreignKey: 'SpecialtyId'});
 
 Appointment.belongsTo(Doctor, { foreignKey: 'doctorId'});
-Appointment.belongsTo(Patient, {foreignKey: 'patientId'});
+Doctor.hasMany(Appointment, { foreignKey: 'doctorId' })
 
+Appointment.belongsTo(Patient, {foreignKey: 'patientId'});
+Patient.hasMany(Appointment, { foreignKey: 'patientId' })
+
+Sure.hasMany(Patient, {foreignKey: 'sureId'});
+Patient.belongsTo(Sure, {foreignKey: "sureId"})
 
 
 
