@@ -1,8 +1,9 @@
 const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) => {
-    sequelize.define("Doctor", {
-        id: {
+    sequelize.define('Patient',{
+
+        id:{
             type: DataTypes.INTEGER,
             primaryKey: true,
         },
@@ -22,13 +23,9 @@ module.exports = (sequelize) => {
                 },
             },
         },
-        profilePicture: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
         password: {
             type: DataTypes.STRING,
-            allowNull: true, // cuando hagamos el mockup de las claves cambiar a true de nuevo
+            allowNull: true, // cuando este el mockup de las claves hecho pasar a true
             validate: {
               len: {
                 args: [8, 15], // Mínimo 8 caracteres, máximo 15 
@@ -47,10 +44,6 @@ module.exports = (sequelize) => {
               },
             },
           },
-        price:{
-            type: DataTypes.INTEGER,
-            allowNull: true,
-        },
         state: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -62,8 +55,5 @@ module.exports = (sequelize) => {
               },
             },
           },
-    }, {
-        timestamps: false
     })
-
 }
