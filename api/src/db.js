@@ -28,13 +28,18 @@ let entries = Object.entries(sequelize.models);
 let capsEntries = entries.map((entry) => [entry[0][0].toUpperCase() + entry[0].slice(1), entry[1]]);
 sequelize.models = Object.fromEntries(capsEntries);
 
-const { Doctor, Specialty, Sure } = sequelize.models;
+const {Appointment, Doctor,  Patient, Specialty, Sure,  } = sequelize.models;
 
 // Aca vendrian las relaciones
 Doctor.belongsToMany(Sure, { through: "DoctorSure" });
 Sure.belongsToMany(Doctor, { through: "DoctorSure" });
+
 Specialty.hasMany(Doctor, { foreignKey: 'SpecialtyId'});
 Doctor.belongsTo(Specialty, { foreignKey: 'SpecialtyId'});
+
+Appointment.belongsTo(Doctor, { foreignKey: 'doctorId'});
+Appointment.belongsTo(Patient, {foreignKey: 'patientId'});
+
 
 
 
