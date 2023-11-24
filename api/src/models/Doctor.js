@@ -28,7 +28,7 @@ module.exports = (sequelize) => {
         },
         password: {
             type: DataTypes.STRING,
-            allowNull: true, // cuando hagamos el mockup de las claves cambiar a true de nuevo
+            allowNull: true, // cuando hagamos el mockup de las claves cambiar a false de nuevo
             validate: {
               len: {
                 args: [8, 15], // Mínimo 8 caracteres, máximo 15 
