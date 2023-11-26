@@ -8,6 +8,7 @@ const { getAllUsers } = require('../controllers/getAllUsers');
 //const { getDate } = require('../controllers/getDates');
 const { pagosMP } = require('../controllers/mercadopago');
 const { notifyPay } = require('../controllers/notificationMP');
+const { changeStatus } = require('../controllers/toggleAccount');
 
 
 
@@ -18,7 +19,7 @@ router.get('/doctors/:idDoc', detailDoctor);
 router.post('/doctor', postDoctor);
 router.get('/specialty', getSpecialty)
 router.get('/sure', getSure)
-router.get('/admin',getAllUsers)
+router.get('/admin', getAllUsers)
 //router.get('/date', getDate)
 
 // MERCADOPAGO
