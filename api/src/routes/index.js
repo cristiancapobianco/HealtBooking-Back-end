@@ -24,6 +24,8 @@ router.get('/sure', getSure);
 router.get('/admin', getAllUsers);
 router.patch('/admin/doctors/:idDoc', updateDoctor)
 router.post('/pacient/register', postPatient);
+router.patch('/toggle/:idUser', changeStatus);
+
 
 //router.get('/date', getDate)
 
