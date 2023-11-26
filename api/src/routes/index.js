@@ -5,7 +5,8 @@ const { detailDoctor } = require("../controllers/detailDoctors");
 const { getSpecialty } = require('../controllers/getSpecialty');
 const { getSure } = require('../controllers/getSure');
 const { getAllUsers } = require('../controllers/getAllUsers');
-const { updateDoctor } = require('../controllers/updateDotor')
+const { updateDoctor } = require('../controllers/updateDotor');
+const { postPatient } = require('../controllers/postPatient');
 //const { getDate } = require('../controllers/getDates');
 
 const router = Router();
@@ -17,6 +18,8 @@ router.get('/specialty', getSpecialty);
 router.get('/sure', getSure);
 router.get('/admin',getAllUsers);
 router.patch('/admin/doctors/:idDoc',updateDoctor)
+router.post('/pacient/register',postPatient);
+
 //router.get('/date', getDate)
 
 module.exports = router
