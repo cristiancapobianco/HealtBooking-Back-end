@@ -7,7 +7,9 @@
           "phone": "+541155943326",
           "specialty":  "Radiología e Imágenes Médicas",
           "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/jdcch5dshqe6cupwdubx.jpg",
-          "arraySure": []
+          "arraySure": [],
+          "password":"Zcddk1"
+         
         },
         {
           "name": "Carlos García",
@@ -16,7 +18,9 @@
           "phone": "+541156372894",
           "specialty": "Neumonología",
           "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/uiddrwmboauusqh8hdaq.jpg",
-          "arraySure": ["Swiss Medical"]
+          "arraySure": ["Swiss Medical"],
+          "password": "Zxcvb3"
+         
         },
         {
           "name": "Carlos López",
@@ -25,7 +29,9 @@
           "phone": "+541156740981",
           "specialty":  "Radiología e Imágenes Médicas",
           "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/fiox2awavxyrmgljijgy.jpg",
-          "arraySure": ["Galeno"]
+          "arraySure": ["Galeno"],
+          "password":  "Asdfg5"
+          
         },
         {
             "name": "Diego Ramos",
@@ -34,7 +40,9 @@
             "phone": "+541159082147",
             "specialty": "Oftalmología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/qkzjxs7740l6zu5fxnfc.jpg",
-            "arraySure": ["Swiss Medical", "Sancor Salud"]
+            "arraySure": ["Swiss Medical", "Sancor Salud"],
+            "password":"Zxvnmc7"
+           
           },
           {
             "name": "Diego Rojas",
@@ -43,7 +51,9 @@
             "phone": "+541153545289",
             "specialty":  "Endocrinología y Nutrición",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/zgxq5hnchjd6whytswy4.jpg",
-            "arraySure": ["OSDE", "Swiss Medical", "Medifé"]
+            "arraySure": ["OSDE", "Swiss Medical", "Medifé"],
+            "password": "Qwerty8"
+           
           },
           {
             "name": "Eduardo Ramírez",
@@ -52,7 +62,9 @@
             "phone": "+541153846270",
             "specialty": "Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/bqipe6jtu0pwludsmhep.jpg",
-            "arraySure": ["Galeno"]
+            "arraySure": ["Galeno"],
+            "password": "Zxlbv0"
+            
           },
           {
             "name": "Gustavo Martínez",
@@ -61,7 +73,9 @@
             "phone": "+541157270219",
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/uymntobwmr6vrffegg3h.jpg",
-            "arraySure": ["Swiss Medical", "Galeno"]
+            "arraySure": ["Swiss Medical", "Galeno"],
+            "password":"Arewq1"
+            
           },
           {
             "name": "Hernán Reyes",
@@ -70,7 +84,9 @@
             "phone": "+541153337401",
             "specialty": "Neurología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/x48ibmgp9zcugsrelr45.jpg",
-            "arraySure": ["OSDE", "Sancor Salud"]
+            "arraySure": ["OSDE", "Sancor Salud"],
+            "password":"Xysrd4"
+         
           },
           {
             "name":"Javier Hernández",
@@ -79,7 +95,9 @@
             "phone": "+541154573513",
             "specialty": "Cirugía Ortopédica y Traumatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/juxkpxyyoq4sikugllfc.jpg",
-            "arraySure": ["Medifé"]
+            "arraySure": ["Medifé"],
+            "password":   "Zxbnm6"
+           
           },
           {
             "name": "Jorge Santos",
@@ -88,7 +106,9 @@
             "phone": "+541156948501",
             "specialty": "Neurología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/g7wm3wubscwtmtac1ww1.jpg",
-            "arraySure": ["Swiss Medical", "Galeno", "Sancor Salud"]
+            "arraySure": ["Swiss Medical", "Galeno", "Sancor Salud"],
+            "password": "Zxtgb7"
+           
           },
           {
             "name": "Juan Martinez",
@@ -97,7 +117,9 @@
             "phone": "+541150246833",
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/tv7jwqgm69wrpyxgeh41.jpg",
-            "arraySure": ["Swiss Medical"]
+            "arraySure": ["Swiss Medical"],
+            "password": "Zxolp9"
+            
         },
         
           {
@@ -107,7 +129,9 @@
             "phone": "+541156150743",
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/rvtcfmu40e8zyv6ofrsi.jpg",
-            "arraySure": ["Medifé", "Galeno"]
+            "arraySure": ["Medifé", "Galeno"],
+            "password":"Yzabcd0"
+            
           },
           {
             "name": "Luis Torres",
@@ -116,7 +140,9 @@
             "phone": "+541155119864",
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/eih5pujfveeajwnym5as.jpg",
-            "arraySure": []
+            "arraySure": [],
+            "password":"Yzabcd2"
+           
           },
           {
             "name": "Martín Díaz",
@@ -125,7 +151,9 @@
             "phone": "+541158237594",
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/qvxzwyjdfzodssjsorcm.jpg",
-            "arraySure": ["Swiss Medical", "Medifé"]
+            "arraySure": ["Swiss Medical", "Medifé"],
+            "password": "Yzabcd4"
+          
           },
           {
             "name": "Miguel Martínez",
@@ -134,7 +162,9 @@
             "phone": "+541158315472",
             "specialty": "Neurología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/f8ftcngt9joz8ighqnub.jpg",
-            "arraySure": ["Sancor Salud"]
+            "arraySure": ["Sancor Salud"],
+            "password":  "Yzabcd6"
+           
           },
           {
             "name": "Pablo Mendoza",
@@ -143,7 +173,9 @@
             "phone": "+541158563926",
             "specialty":  "Oftalmología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/ajnqiwfe0tli6qjtqnxs.jpg",
-            "arraySure": ["Swiss Medical", "Medifé", "Galeno"]
+            "arraySure": ["Swiss Medical", "Medifé", "Galeno"],
+            "password": "Yzabcd8"
+            
           },
           {
             "name": "Pedro Gómez",
@@ -152,7 +184,9 @@
             "phone": "+541157536492",
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/dvbplc4qtaiauffive4y.jpg",
-            "arraySure": ["OSDE", "Galeno"]
+            "arraySure": ["OSDE", "Galeno"],
+            "password":"Yzabcd9"
+           
           },
           {
             
@@ -162,7 +196,9 @@
             "phone": "+541157403982",
             "specialty": "Neumonología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/u02jgg0rsj4pgujq0bvl.jpg",
-            "arraySure": ["OSDE", "Medifé", "Sancor Salud"]
+            "arraySure": ["OSDE", "Medifé", "Sancor Salud"],
+            "password": "Zqxlkw1"
+         
         },
         {
             "name":"Ricardo Torres",
@@ -171,7 +207,9 @@
             "phone": "+541154039218",
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/ordjka639kweeo7dbncc.jpg",
-            "arraySure": ["Sancor Salud"]
+            "arraySure": ["Sancor Salud"],
+            "password":   "Mjupno2"
+           
           },
           {
             "name": "Roberto Torres",
@@ -180,7 +218,9 @@
             "phone": "+541151037935",
             "specialty": "Oftalmología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/zzxnrzp7tgo9ikwcd1ju.jpg",
-            "arraySure": ["OSDE", "Swiss Medical"]
+            "arraySure": ["OSDE", "Swiss Medical"],
+            "password":  "LsNzhr3"
+          
 
           },
           {
@@ -190,7 +230,9 @@
             "phone": "+541155185781",
             "specialty": "Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/f9ugyqjbhzz2ybg1g7v5.jpg",
-            "arraySure": ["Galeno", "Sancor Salud"]
+            "arraySure": ["Galeno", "Sancor Salud"],
+            "password":  "BvTrdg4"
+            
           },
           {
             "name":  "Adriana Navarro",
@@ -199,7 +241,9 @@
             "phone": "+541151428076",
             "specialty":"Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189767/doctors/women/vkc7qw9313n3oppah4nh.jpg",
-            "arraySure": ["OSDE", "Swiss Medical", "Galeno"]
+            "arraySure": ["OSDE", "Swiss Medical", "Galeno"],
+            "password":"IeHtyx5"
+           
           },
           {
             
@@ -209,7 +253,9 @@
             "phone": "+541154926701",
             "specialty": "Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189767/doctors/women/szi8yr1s2qfzhnp5uvyj.jpg",
-            "arraySure": ["Swiss Medical"]
+            "arraySure": ["Swiss Medical"],
+            "password": "UcRvqs6"
+            
           },
         
           {
@@ -219,7 +265,9 @@
             "phone": "+541155627349",
             "specialty": "Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189767/doctors/women/f0jvs1orwqu74epkk4zt.jpg",
-            "arraySure": ["OSDE", "Swiss Medical", "Medifé", "Galeno"]
+            "arraySure": ["OSDE", "Swiss Medical", "Medifé", "Galeno"],
+            "password":"FpLyxv7"
+         
           },
           {
             "name":"Andrea Soto",
@@ -228,7 +276,9 @@
             "phone": "+541154432507",
             "specialty": "Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/pn959480kk3hclyaqo8l.jpg",
-            "arraySure": ["Medifé", "Sancor Salud"]
+            "arraySure": ["Medifé", "Sancor Salud"],
+            "password":   "WkzYnb8"
+           
           },
           {
             "name":  "Antonella Nieva",
@@ -237,7 +287,9 @@
             "phone": "+541151892734",
             "specialty":  "Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/id231fv4ulkvxlbcy440.jpg",
-            "arraySure": ["OSDE", "Swiss Medical", "Sancor Salud"]
+            "arraySure": ["OSDE", "Swiss Medical", "Sancor Salud"],
+            "password": "ZxCbUa9"
+          
           },
           {
             "name": "Camila Ruiz",
@@ -246,7 +298,9 @@
             "phone": "+541156482852",
             "specialty":"Endocrinología y Nutrición",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/xfkixq1inlgahozvapjj.jpg",
-            "arraySure": ["OSDE", "Swiss Medical", "Galeno", "Sancor Salud"]
+            "arraySure": ["OSDE", "Swiss Medical", "Galeno", "Sancor Salud"],
+            "password":  "StYpNr0"
+            
           },
           {
             "name":  "Carmen López",
@@ -255,7 +309,9 @@
             "phone": "+541158396140",
             "specialty": "Cirugía Ortopédica y Traumatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/kdy6xd8tctnn340zp2uv.jpg",
-            "arraySure": ["OSDE", "Medifé", "Galeno", "Sancor Salud"]
+            "arraySure": ["OSDE", "Medifé", "Galeno", "Sancor Salud"],
+            "password":"QkSbXd1"
+           
           },
           {
             "name": "Carolina Ramírez",
@@ -264,7 +320,9 @@
             "phone": "+541157028143",
             "specialty": "Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/dqtdzdkz5rcuf5ouogzl.jpg",
-            "arraySure": ["OSDE", "Swiss Medical", "Medifé", "Galeno"]
+            "arraySure": ["OSDE", "Swiss Medical", "Medifé", "Galeno"],
+            "password": "ZlKwGb2"
+           
           },
           {
             "name": "Elena Hernández",
@@ -273,7 +331,9 @@
             "phone": "+541151630987",
             "specialty": "Psiquiatría",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700190229/doctors/women/xlyqcvlfeahg7bghx0di.jpg",
-            "arraySure": ["Swiss Medical", "Medifé", "Galeno", "Sancor Salud"]
+            "arraySure": ["Swiss Medical", "Medifé", "Galeno", "Sancor Salud"],
+            "password": "XrIjCt3"
+            
           },
           
           {
@@ -283,7 +343,9 @@
             "phone": "+541155254607",
             "specialty": "Neumonología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/yzz96ougt7nlbgdmx2ir.jpg",
-            "arraySure": ["Medifé", "Sancor Salud"]
+            "arraySure": ["Medifé", "Sancor Salud"],
+            "password":"YzAxCb4"
+           
           },
           {
             "name": "Gabriela Ortega",
@@ -292,7 +354,9 @@
             "phone": "+541159765982",
             "specialty":  "Oftalmología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/eazbqmd9uwbynjgknqld.jpg",
-            "arraySure": ["Swiss Medical", "Sancor Salud"]
+            "arraySure": ["Swiss Medical", "Sancor Salud"],
+            "password": "WzVnHg5"
+            
           },
           {
             "name": "Julieta Godoy",
@@ -301,7 +365,9 @@
             "phone": "+541159257836",
             "specialty":  "Endocrinología y Nutrición",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/iggyfil7fpazdeyttezd.jpg",
-            "arraySure": ["Swiss Medical", "Medifé", "Sancor Salud"]
+            "arraySure": ["Swiss Medical", "Medifé", "Sancor Salud"],
+            "password":"RgXqZp6"
+           
           },
           {
            
@@ -311,7 +377,9 @@
             "phone": "+541159814625",
             "specialty":  "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/whgme8zkratrwllcujco.jpg",
-            "arraySure": ["OSDE", "Medifé"]
+            "arraySure": ["OSDE", "Medifé"],
+            "password": "ZvYsBc7"
+         
         },
           
         {
@@ -321,7 +389,9 @@
             "phone": "+541154689207",
             "specialty": "Radiología e Imágenes Médicas",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/rsoizdrefk0s3x75nygs.jpg",
-            "arraySure": ["Swiss Medical", "Galeno", "Sancor Salud"]
+            "arraySure": ["Swiss Medical", "Galeno", "Sancor Salud"],
+            "password":   "EwQgUz8"
+            
           },
             
           {
@@ -331,7 +401,9 @@
             "phone": "+541159679562",
             "specialty": "Neumonología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/nlou2jn30rnjdetbisqj.jpg",
-            "arraySure": ["Swiss Medical", "Galeno"]
+            "arraySure": ["Swiss Medical", "Galeno"],
+            "password":"PdSjYx9"
+           
           },
           {
             "name":"Natalia Molina",
@@ -340,7 +412,9 @@
             "phone": "+541157352654",
             "specialty":"Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/btrtzsapqelisa8c8hp4.jpg",
-            "arraySure": ["Medifé", "Galeno"]
+            "arraySure": ["Medifé", "Galeno"],
+            "password": "KxWlHz0"
+           
           },
     
           {
@@ -350,7 +424,8 @@
             "phone": "+541151469328",
             "specialty":"Cirugía Ortopédica y Traumatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/ldiyhysm5tuxuxpldcfb.jpg",
-            "arraySure": ["Medifé"]
+            "arraySure": ["Medifé"],
+            "password": "ZoIxNm1"
           },
           {
             "name": "Sofía García",
@@ -359,7 +434,9 @@
             "phone": "+541154741389",
             "specialty": "Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700192307/doctors/women/toppvsxbyy9zcmb3i4iq.jpg",
-            "arraySure": ["Swiss Medical", "Medifé", "Galeno", "Sancor Salud"]
+            "arraySure": ["Swiss Medical", "Medifé", "Galeno", "Sancor Salud"],
+            "password":"Iuiww9"
+            
           },
           {
             "name": "Valeria Pérez",
@@ -368,7 +445,9 @@
             "phone": "+541153714865",
             "specialty": "Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189770/doctors/women/r0z9ptldvmiprxcofron.jpg",
-            "arraySure": ["OSDE", "Swiss Medical", "Sancor Salud"]
+            "arraySure": ["OSDE", "Swiss Medical", "Sancor Salud"],
+            "password":"Zxusy8"
+            
           }
     ]
 }

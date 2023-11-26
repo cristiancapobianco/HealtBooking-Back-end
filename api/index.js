@@ -1,12 +1,14 @@
 const app = require("./src/app");
 const loadDbDoctor = require("./src/controllers/loadDb/loadDbDoctor.js");
+const loadDbPatient = require("./src/controllers/loadDb/loadDbPatient.js");
 const loadDbSpecialty = require("./src/controllers/loadDb/loadDbSpecialty");
 const loadDbSure = require("./src/controllers/loadDb/loadDbSure.js");
-const loadRalationships = require("./src/controllers/loadDb/loadRelationships.js");
+const loadPatientSure = require("./src/controllers/loadDb/loadPatientSure.js");
+const loadRelationships = require("./src/controllers/loadDb/loadRelationships.js");
 const { conn } = require('./src/db.js');
 const PORT = 3001;
 
-const {Doctor, Specialty,Sure} = require('./src/db.js')
+const {Doctor, Specialty,Sure, Patient} = require('./src/db.js')
 
 // conn.sync({ altern: true }).then(() => { SI YA ESTA LISTA LA BASE DE DATOS USAR ESTE QUE NO BORRA DATOS
 
@@ -17,12 +19,15 @@ conn.sync({ force: true }).then(() => {
         const countDoctor = await Doctor.count()
         const countSure= await Sure.count()
         const countSpecialty= await Specialty.count()
-        if(countDoctor <= 0 && countSure <=0 && countSpecialty <=0){
+        const countPatient=  await Patient.count()
+        if(countDoctor <= 0 && countSure <=0 && countSpecialty <=0 && countPatient <=0){
     
             await loadDbSure()
             await loadDbSpecialty()
             await loadDbDoctor()
-            await loadRalationships()
+            await loadRelationships()
+            await loadDbPatient()
+            await loadPatientSure()
   } 
         console.log(`Server listening on port ${PORT}`);
     })
