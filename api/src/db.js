@@ -8,6 +8,7 @@ const {
   DB_USER, DB_PASSWORD, DB_HOST,
 } = process.env;
 
+
 const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/healthbooking`, {
   logging: false,
   native: false,
@@ -39,6 +40,7 @@ Patient.belongsToMany(Doctor, {through: "DoctorPatient"})
 
 Specialty.hasMany(Doctor, { foreignKey: 'SpecialtyId'});
 Doctor.belongsTo(Specialty, { foreignKey: 'SpecialtyId'});
+
 
 Appointment.belongsTo(Doctor, { foreignKey: 'doctorId'});
 Doctor.hasMany(Appointment, { foreignKey: 'doctorId' })
