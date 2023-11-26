@@ -8,6 +8,10 @@ const { getAllUsers } = require('../controllers/getAllUsers');
 const { updateDoctor } = require('../controllers/updateDotor');
 const { postPatient } = require('../controllers/postPatient');
 //const { getDate } = require('../controllers/getDates');
+const { pagosMP } = require('../controllers/mercadopago');
+const { notifyPay } = require('../controllers/notificationMP');
+
+
 
 const router = Router();
 
@@ -21,5 +25,10 @@ router.patch('/admin/doctors/:idDoc',updateDoctor)
 router.post('/pacient/register',postPatient);
 
 //router.get('/date', getDate)
+
+// MERCADOPAGO
+router.post("/pay", pagosMP)
+router.post("/notificationPay", notifyPay)
+
 
 module.exports = router
