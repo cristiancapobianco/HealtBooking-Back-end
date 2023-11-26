@@ -15,6 +15,16 @@ module.exports = (sequelize) => {
             type: DataTypes.TIME(4),
             allowNull: false
         },
+        // idPatient:{
+        //     type:DataTypes.INTEGER,
+        //     allowNull: false,
+            
+        // },
+        // idDoctor:{
+        //     type: DataTypes.INTEGER,
+        //     allowNull: false,
+           
+        // },
         finalAmount:{
             type: DataTypes.FLOAT,
             allowNull: false,

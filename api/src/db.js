@@ -34,17 +34,14 @@ const {Appointment, Doctor,  Patient, Specialty, Sure,  } = sequelize.models;
 Doctor.belongsToMany(Sure, { through: "DoctorSure" });
 Sure.belongsToMany(Doctor, { through: "DoctorSure" });
 
-Doctor.belongsToMany(Patient, {through: "DoctorPatient"});
-Patient.belongsToMany(Doctor, {through: "DoctorPatient"})
-
 Specialty.hasMany(Doctor, { foreignKey: 'SpecialtyId'});
 Doctor.belongsTo(Specialty, { foreignKey: 'SpecialtyId'});
 
-Appointment.belongsTo(Doctor, { foreignKey: 'doctorId'});
-Doctor.hasMany(Appointment, { foreignKey: 'doctorId' })
+Appointment.belongsTo(Doctor, { foreignKey: 'idDoctor'});
+Doctor.hasMany(Appointment, { foreignKey: 'idDoctor' })
 
-Appointment.belongsTo(Patient, {foreignKey: 'patientId'});
-Patient.hasMany(Appointment, { foreignKey: 'patientId' })
+Appointment.belongsTo(Patient, {foreignKey: 'idPatient'});
+Patient.hasMany(Appointment, { foreignKey: 'idPatient' })
 
 Sure.hasMany(Patient, {foreignKey: 'sureId'});
 Patient.belongsTo(Sure, {foreignKey: "sureId"})

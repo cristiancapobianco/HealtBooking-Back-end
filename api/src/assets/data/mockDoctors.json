@@ -2,452 +2,527 @@
     "doctors":[
         {
           "name": "Alejandro Cruz",
-          "license": "33326",
+          "license": 33326,
           "email": "alejandro.cruz@gmail.com",
           "phone": "+541155943326",
           "specialty":  "Radiología e Imágenes Médicas",
           "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/jdcch5dshqe6cupwdubx.jpg",
           "arraySure": [],
-          "password":"Zcddk1"
+          "password":"Zcddk1",
+          "price":3360
          
         },
         {
           "name": "Carlos García",
-          "license": "73640",
+          "license": 73640,
           "email": "carlos.garcia@gmail.com",
           "phone": "+541156372894",
           "specialty": "Neumonología",
           "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/uiddrwmboauusqh8hdaq.jpg",
           "arraySure": ["Swiss Medical"],
-          "password": "Zxcvb3"
+          "password": "Zxcvb3",
+          "price":5040
          
         },
         {
           "name": "Carlos López",
-          "license": "40981",
+          "license": 40981,
           "email": "carlos.lopez@gmail.com",
           "phone": "+541156740981",
           "specialty":  "Radiología e Imágenes Médicas",
           "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/fiox2awavxyrmgljijgy.jpg",
           "arraySure": ["Galeno"],
-          "password":  "Asdfg5"
+          "password":  "Asdfg5",
+          "price":6720
+         
           
         },
         {
             "name": "Diego Ramos",
-            "license": "82147",
+            "license": 82147,
             "email": "diego.ramos@gmail.com",
             "phone": "+541159082147",
             "specialty": "Oftalmología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/qkzjxs7740l6zu5fxnfc.jpg",
             "arraySure": ["Swiss Medical", "Sancor Salud"],
-            "password":"Zxvnmc7"
+            "password":"Zxvnmc7",
+            "price":4800
+        
            
           },
           {
             "name": "Diego Rojas",
-            "license": "45289",
+            "license": 45289,
             "email": "diego.rojas@gmail.com",
             "phone": "+541153545289",
             "specialty":  "Endocrinología y Nutrición",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/zgxq5hnchjd6whytswy4.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Medifé"],
-            "password": "Qwerty8"
+            "password": "Qwerty8",
+            "price":7200
+           
            
           },
           {
             "name": "Eduardo Ramírez",
-            "license": "6270",
+            "license": 62701,
             "email": "eduardo.ramirez@gmail.com",
             "phone": "+541153846270",
             "specialty": "Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/bqipe6jtu0pwludsmhep.jpg",
             "arraySure": ["Galeno"],
-            "password": "Zxlbv0"
-            
+            "password": "Zxlbv0",
+            "price":9600
+          
           },
           {
             "name": "Gustavo Martínez",
-            "license": "70219",
+            "license": 70219,
             "email": "gustavo.martinez@gmail.com",
             "phone": "+541157270219",
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/uymntobwmr6vrffegg3h.jpg",
             "arraySure": ["Swiss Medical", "Galeno"],
-            "password":"Arewq1"
+            "password":"Arewq1",
+            "price":3360
+            
             
           },
           {
             "name": "Hernán Reyes",
-            "license": "37401",
+            "license": 37401,
             "email": "hernan.reyes@gmail.com",
             "phone": "+541153337401",
             "specialty": "Neurología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/x48ibmgp9zcugsrelr45.jpg",
             "arraySure": ["OSDE", "Sancor Salud"],
-            "password":"Xysrd4"
+            "password":"Xysrd4",
+            "price":5040
+            
          
           },
           {
             "name":"Javier Hernández",
-            "license": "73513",
+            "license": 73513,
             "email": "javier.hernandez@gmail.com",
             "phone": "+541154573513",
             "specialty": "Cirugía Ortopédica y Traumatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/juxkpxyyoq4sikugllfc.jpg",
             "arraySure": ["Medifé"],
-            "password":   "Zxbnm6"
+            "password":   "Zxbnm6",
+            "price":6720
+           
            
           },
           {
             "name": "Jorge Santos",
-            "license": "98501",
+            "license": 98501,
             "email": "jorge.santos@gmail.com",
             "phone": "+541156948501",
             "specialty": "Neurología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/g7wm3wubscwtmtac1ww1.jpg",
             "arraySure": ["Swiss Medical", "Galeno", "Sancor Salud"],
-            "password": "Zxtgb7"
+            "password": "Zxtgb7",
+            "price":4800
+          
            
           },
           {
             "name": "Juan Martinez",
-            "license": "20457",
+            "license": 20457,
             "email": "juan.martinez@hospital.com",
             "phone": "+541150246833",
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/tv7jwqgm69wrpyxgeh41.jpg",
             "arraySure": ["Swiss Medical"],
-            "password": "Zxolp9"
+            "password": "Zxolp9",
+            "price":7200
+            
             
         },
         
           {
             "name": "Lucas Silva",
-            "license": "50743",
+            "license": 50743,
             "email": "lucas.silva@gmail.com",
             "phone": "+541156150743",
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/rvtcfmu40e8zyv6ofrsi.jpg",
             "arraySure": ["Medifé", "Galeno"],
-            "password":"Yzabcd0"
+            "password":"Yzabcd0",
+            "price":9600
+           
             
           },
           {
             "name": "Luis Torres",
-            "license": "19864",
+            "license": 19864,
             "email": "luis.torres@gmail.com",
             "phone": "+541155119864",
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/eih5pujfveeajwnym5as.jpg",
             "arraySure": [],
-            "password":"Yzabcd2"
+            "password":"Yzabcd2",
+            "price":3360
+            
            
           },
           {
             "name": "Martín Díaz",
-            "license": "15432",
+            "license": 15432,
             "email": "martin.diaz@gmail.com",
             "phone": "+541158237594",
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/qvxzwyjdfzodssjsorcm.jpg",
             "arraySure": ["Swiss Medical", "Medifé"],
-            "password": "Yzabcd4"
+            "password": "Yzabcd4",
+            "price":5040
+            
           
           },
           {
             "name": "Miguel Martínez",
-            "license": "15472",
+            "license": 15472,
             "email":  "miguel.martinez@gmail.com",
             "phone": "+541158315472",
             "specialty": "Neurología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/f8ftcngt9joz8ighqnub.jpg",
             "arraySure": ["Sancor Salud"],
-            "password":  "Yzabcd6"
+            "password":  "Yzabcd6",
+            "price":6720
+           
            
           },
           {
             "name": "Pablo Mendoza",
-            "license": "63926",
+            "license": 63926,
             "email": "pablo.mendoza@gmail.com",
             "phone": "+541158563926",
             "specialty":  "Oftalmología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/ajnqiwfe0tli6qjtqnxs.jpg",
             "arraySure": ["Swiss Medical", "Medifé", "Galeno"],
-            "password": "Yzabcd8"
+            "password": "Yzabcd8",
+            "price":4800
+            
             
           },
           {
             "name": "Pedro Gómez",
-            "license": "36492",
+            "license": 36492,
             "email": "pedro.gomez@gmail.com",
             "phone": "+541157536492",
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/dvbplc4qtaiauffive4y.jpg",
             "arraySure": ["OSDE", "Galeno"],
-            "password":"Yzabcd9"
+            "password":"Yzabcd9",
+            "price":7200
+            
            
           },
           {
             
             "name": "Ricardo Rojas",
-            "license": "39825",
+            "license": 39825,
             "email": "ricardo.rojas@gmail.com",
             "phone": "+541157403982",
             "specialty": "Neumonología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/u02jgg0rsj4pgujq0bvl.jpg",
             "arraySure": ["OSDE", "Medifé", "Sancor Salud"],
-            "password": "Zqxlkw1"
+            "password": "Zqxlkw1",
+            "price":9600
+          
          
         },
         {
             "name":"Ricardo Torres",
-            "license": "39218",
+            "license": 39218,
             "email":"ricardo.torres@gmail.com",
             "phone": "+541154039218",
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/ordjka639kweeo7dbncc.jpg",
             "arraySure": ["Sancor Salud"],
-            "password":   "Mjupno2"
+            "password":   "Mjupno2",
+            "price":3360
+       
            
           },
           {
             "name": "Roberto Torres",
-            "license": "37935",
+            "license": 37935,
             "email": "roberto.torres@gmail.com",
             "phone": "+541151037935",
             "specialty": "Oftalmología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/zzxnrzp7tgo9ikwcd1ju.jpg",
             "arraySure": ["OSDE", "Swiss Medical"],
-            "password":  "LsNzhr3"
+            "password":  "LsNzhr3",
+            "price":5040
+            
           
 
           },
           {
             "name":  "Sebastián Díaz",
-            "license": "85781",
+            "license": 85781,
             "email":  "sebastian.diaz@gmail.com",
             "phone": "+541155185781",
             "specialty": "Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/f9ugyqjbhzz2ybg1g7v5.jpg",
             "arraySure": ["Galeno", "Sancor Salud"],
-            "password":  "BvTrdg4"
+            "password":  "BvTrdg4",
+            "price":6720
+           
             
           },
           {
             "name":  "Adriana Navarro",
-            "license": "28076",
+            "license": 28076,
             "email": "adriana.navarro@gmail.com",
             "phone": "+541151428076",
             "specialty":"Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189767/doctors/women/vkc7qw9313n3oppah4nh.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Galeno"],
-            "password":"IeHtyx5"
+            "password":"IeHtyx5",
+            "price":4800
+            
            
           },
           {
             
             "name": "Ana Gutiérrez",
-            "license": "26783",
+            "license": 26783,
             "email": "ana.gutierrez@gmail.com",
             "phone": "+541154926701",
             "specialty": "Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189767/doctors/women/szi8yr1s2qfzhnp5uvyj.jpg",
             "arraySure": ["Swiss Medical"],
-            "password": "UcRvqs6"
+            "password": "UcRvqs6",
+            "price":7200
+            
             
           },
         
           {
             "name": "Ana Rodríguez",
-            "license": "27349",
+            "license": 27349,
             "email": "ana.rodriguez@gmail.com",
             "phone": "+541155627349",
             "specialty": "Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189767/doctors/women/f0jvs1orwqu74epkk4zt.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Medifé", "Galeno"],
-            "password":"FpLyxv7"
+            "password":"FpLyxv7",
+            "price":9600
+          
          
           },
           {
             "name":"Andrea Soto",
-            "license": "32507",
+            "license": 32507,
             "email":  "andres.soto@gmail.com",
             "phone": "+541154432507",
             "specialty": "Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/pn959480kk3hclyaqo8l.jpg",
             "arraySure": ["Medifé", "Sancor Salud"],
-            "password":   "WkzYnb8"
+            "password":   "WkzYnb8",
+            "price":3360
            
           },
           {
             "name":  "Antonella Nieva",
-            "license": "92734",
+            "license": 92734,
             "email": "antonella.nieva@gmail.com",
             "phone": "+541151892734",
             "specialty":  "Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/id231fv4ulkvxlbcy440.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Sancor Salud"],
-            "password": "ZxCbUa9"
+            "password": "ZxCbUa9",
+            "price":5040
+            
+           
           
           },
           {
             "name": "Camila Ruiz",
-            "license": "52852",
+            "license": 52852,
             "email":"camila.ruiz@gmail.com",
             "phone": "+541156482852",
             "specialty":"Endocrinología y Nutrición",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/xfkixq1inlgahozvapjj.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Galeno", "Sancor Salud"],
-            "password":  "StYpNr0"
+            "password":  "StYpNr0",
+            "price":6720
+         
             
           },
           {
             "name":  "Carmen López",
-            "license": "96140",
+            "license": 96140,
             "email":  "carmen.lopez@gmail.com",
             "phone": "+541158396140",
             "specialty": "Cirugía Ortopédica y Traumatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/kdy6xd8tctnn340zp2uv.jpg",
             "arraySure": ["OSDE", "Medifé", "Galeno", "Sancor Salud"],
-            "password":"QkSbXd1"
+            "password":"QkSbXd1",
+            "price":4800
+            
            
           },
           {
             "name": "Carolina Ramírez",
-            "license": "28143",
+            "license": 28143,
             "email": "carolina.ramirez@gmail.com",
             "phone": "+541157028143",
             "specialty": "Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/dqtdzdkz5rcuf5ouogzl.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Medifé", "Galeno"],
-            "password": "ZlKwGb2"
+            "password": "ZlKwGb2",
+            "price":7200
+          
            
           },
           {
             "name": "Elena Hernández",
-            "license": "30987",
+            "license": 30987,
             "email": "elena.hernandez@gmail.com",
             "phone": "+541151630987",
             "specialty": "Psiquiatría",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700190229/doctors/women/xlyqcvlfeahg7bghx0di.jpg",
             "arraySure": ["Swiss Medical", "Medifé", "Galeno", "Sancor Salud"],
-            "password": "XrIjCt3"
+            "password": "XrIjCt3",
+            "price":9600
+           
             
           },
           
           {
             "name":  "Florencia Sánchez",
-            "license": "54607",
+            "license": 54607,
             "email": "florencia.sanchez@gmail.com",
             "phone": "+541155254607",
             "specialty": "Neumonología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/yzz96ougt7nlbgdmx2ir.jpg",
             "arraySure": ["Medifé", "Sancor Salud"],
-            "password":"YzAxCb4"
+            "password":"YzAxCb4",
+            "price":3360
+           
            
           },
           {
             "name": "Gabriela Ortega",
-            "license": "765982",
+            "license": 76598,
             "email": "gabriela.ortega@gmail.com",
             "phone": "+541159765982",
             "specialty":  "Oftalmología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/eazbqmd9uwbynjgknqld.jpg",
             "arraySure": ["Swiss Medical", "Sancor Salud"],
-            "password": "WzVnHg5"
+            "password": "WzVnHg5",
+            "price":5040
+           
             
           },
           {
             "name": "Julieta Godoy",
-            "license": "57836",
+            "license": 57836,
             "email": "julieta.godoy@gmail.com", 
             "phone": "+541159257836",
             "specialty":  "Endocrinología y Nutrición",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/iggyfil7fpazdeyttezd.jpg",
             "arraySure": ["Swiss Medical", "Medifé", "Sancor Salud"],
-            "password":"RgXqZp6"
+            "password":"RgXqZp6",
+            "price":6720
+          
            
           },
           {
            
             "name": "Laura Fernández",
-            "license": "51472",
+            "license": 51472,
             "email": "laura.fernandez@gmail.com",
             "phone": "+541159814625",
             "specialty":  "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/whgme8zkratrwllcujco.jpg",
             "arraySure": ["OSDE", "Medifé"],
-            "password": "ZvYsBc7"
+            "password": "ZvYsBc7",
+            "price":4800
+            
          
         },
           
         {
             "name": "Maria Lopez",
-            "license": "95814",
+            "license": 95814,
             "email": "maria.lopez@gmail.com",
             "phone": "+541154689207",
             "specialty": "Radiología e Imágenes Médicas",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/rsoizdrefk0s3x75nygs.jpg",
             "arraySure": ["Swiss Medical", "Galeno", "Sancor Salud"],
-            "password":   "EwQgUz8"
+            "password":   "EwQgUz8",
+            "price":7200
+        
             
           },
             
           {
             "name": "Marina González",
-            "license": "79562",
+            "license": 79562,
             "email": "marina.gonzalez@gmail.com",
             "phone": "+541159679562",
             "specialty": "Neumonología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/nlou2jn30rnjdetbisqj.jpg",
             "arraySure": ["Swiss Medical", "Galeno"],
-            "password":"PdSjYx9"
+            "password":"PdSjYx9",
+            "price":9600
+           
            
           },
           {
             "name":"Natalia Molina",
-            "license": "52654",
+            "license": 52654,
             "email":"natalia.molina@gmail.com",
             "phone": "+541157352654",
             "specialty":"Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/btrtzsapqelisa8c8hp4.jpg",
             "arraySure": ["Medifé", "Galeno"],
-            "password": "KxWlHz0"
+            "password": "KxWlHz0",
+            "price":3360
+            
            
           },
     
           {
             "name": "Silvia Luna",
-            "license": "92737",
+            "license": 92737,
             "email": "silvia.luna@gmail.com",
             "phone": "+541151469328",
             "specialty":"Cirugía Ortopédica y Traumatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/ldiyhysm5tuxuxpldcfb.jpg",
             "arraySure": ["Medifé"],
-            "password": "ZoIxNm1"
+            "password": "ZoIxNm1",
+            "price":5040
+          
           },
           {
             "name": "Sofía García",
-            "license": "41389",
+            "license": 41389,
             "email": "sofia.garcia@gmail.com",
             "phone": "+541154741389",
             "specialty": "Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700192307/doctors/women/toppvsxbyy9zcmb3i4iq.jpg",
             "arraySure": ["Swiss Medical", "Medifé", "Galeno", "Sancor Salud"],
-            "password":"Iuiww9"
+            "password":"Iuiww9",
+            "price":6720
+           
             
           },
           {
             "name": "Valeria Pérez",
-            "license": "14865",
+            "license": 14865,
             "email": "valeria.perez@gmail.com",
             "phone": "+541153714865",
             "specialty": "Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189770/doctors/women/r0z9ptldvmiprxcofron.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Sancor Salud"],
-            "password":"Zxusy8"
-            
+            "password":"Zxusy8",
+            "price":4800
           }
     ]
 }
