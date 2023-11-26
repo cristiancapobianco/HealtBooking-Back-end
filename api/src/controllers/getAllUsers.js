@@ -5,6 +5,9 @@ const getAllUsers = async (req, res) => {
     try {
         const doctors = await Doctor.findAll({
             attributes: ['id', 'name', 'profilePicture', 'state'],
+            where: {
+                state: ['active', 'inactive'],
+            },
         });
 
         const patients = await Patient.findAll({
