@@ -40,11 +40,11 @@ module.exports = (sequelize) => {
           msg: "The password must contain only letters and numbers.",
         },
         customValidation(value) {
-          // Validar que haya al menos una letra mayúscula
+          
           if (!/[A-Z]/.test(value)) {
             throw new Error("La contraseña debe contener al menos una letra mayúscula.");
           }
-          // Validar que haya al menos un número
+          
           if (!/\d/.test(value)) {
             throw new Error("La contraseña debe contener al menos un número.");
           }
