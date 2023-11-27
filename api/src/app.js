@@ -1,4 +1,4 @@
-import pg from 'pg'
+const pg = require('pg')
 
 const express = require('express');
 const routes = require('./routes/index')
