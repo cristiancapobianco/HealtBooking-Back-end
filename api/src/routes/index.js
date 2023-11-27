@@ -10,6 +10,7 @@ const { postPatient } = require('../controllers/postPatient');
 //const { getDate } = require('../controllers/getDates');
 const { pagosMP } = require('../controllers/mercadopago');
 const { notifyPay } = require('../controllers/notificationMP');
+const { changeStatus } = require('../controllers/toggleAccount');
 
 
 
@@ -20,9 +21,11 @@ router.get('/doctors/:idDoc', detailDoctor);
 router.post('/doctor', postDoctor);
 router.get('/specialty', getSpecialty);
 router.get('/sure', getSure);
-router.get('/admin',getAllUsers);
-router.patch('/admin/doctors/:idDoc',updateDoctor)
-router.post('/pacient/register',postPatient);
+router.get('/admin', getAllUsers);
+router.patch('/admin/doctors/:idDoc', updateDoctor)
+router.post('/pacient/register', postPatient);
+router.patch('/toggle/:idUser', changeStatus);
+
 
 //router.get('/date', getDate)
 
