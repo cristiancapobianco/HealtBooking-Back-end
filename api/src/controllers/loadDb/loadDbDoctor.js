@@ -10,7 +10,8 @@ const loadDbDoctor=async()=>{
             phone: doctor.phone,
             email: doctor.email,
             profilePicture: doctor.profilePicture,
-            password: doctor.password
+            password: doctor.password,
+            price:doctor.price
         }
     })
     const loadDoctors= await Doctor.bulkCreate(doctors)

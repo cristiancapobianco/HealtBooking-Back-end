@@ -21,7 +21,7 @@ const loadRelationships= ()=>{
                 }
               });
             const specialtyId = await Specialty.findOne({where:{name:doctor.specialty}})
-            doctorExist.setSpecialty(specialtyId);
+           await doctorExist.setSpecialty(specialtyId);
         }
     })
 
