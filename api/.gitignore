@@ -6,3 +6,5 @@ node_modules/
 
 # Ignorar archivos de configuración local
 config.local
+
+.env

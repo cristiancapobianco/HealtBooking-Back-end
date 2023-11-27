@@ -1,4 +1,6 @@
+
 const app = require("./src/app");
+
 
 const loadDbDoctor = require("./src/controllers/loadDb/loadDbDoctor.js");
 const loadDbPatient = require("./src/controllers/loadDb/loadDbPatient.js");
