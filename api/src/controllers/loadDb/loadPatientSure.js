@@ -15,7 +15,7 @@ const loadPatientSure= () => {
         const sureMedic=await Sure.findOne({where:{name: patient.sure}})
 
         if(patientExist && sureMedic){
-            patientExist.setSure(sureMedic)
+           await patientExist.setSure(sureMedic)
         }
 
     })
