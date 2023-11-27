@@ -1,10 +1,16 @@
 const { Appointment } = require('../db')
 
-const getDate = async (req, res) => {
+const getAppointmentByDoctor = async (req, res) => {
+
+    const {idDoctor} = req.params
+
     try {
         const allDates = await Appointment.findAll({
-            attributes: ['doctorId', 'date']
+            where:{
+                doctorId:idDoctor,
+            }
         })
+
         if (allDates) {
             res.status(201).send(allDates)
         } else {
@@ -16,5 +22,5 @@ const getDate = async (req, res) => {
 }
 
 module.exports = {
-    getDate
+    getAppointmentByDoctor
 }
