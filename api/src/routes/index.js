@@ -6,21 +6,33 @@ const { getSpecialty } = require('../controllers/getSpecialty');
 const { getSure } = require('../controllers/getSure');
 const { getAllUsers } = require('../controllers/getAllUsers');
 const handlerPostAppointment = require('../handlers/handlerPostAppointment');
+const { updateDoctor } = require('../controllers/updateDotor');
+const { postPatient } = require('../controllers/postPatient');
 //const { getDate } = require('../controllers/getDates');
+const { pagosMP } = require('../controllers/mercadopago');
+const { notifyPay } = require('../controllers/notificationMP');
+const { changeStatus } = require('../controllers/toggleAccount');
+
+
 
 const router = Router();
 
 router.get('/doctors', getAllDoctors);
 router.get('/doctors/:idDoc', detailDoctor);
 router.post('/doctor', postDoctor);
-
-router.get('/specialty', getSpecialty)
-
-router.get('/sure', getSure)
-
-router.get('/admin',getAllUsers)
-
+router.get('/specialty', getSpecialty);
+router.get('/sure', getSure);
+router.get('/admin', getAllUsers);
+router.patch('/admin/doctors/:idDoc', updateDoctor)
+router.post('/pacient/register', postPatient);
+router.patch('/toggle/:idUser', changeStatus);
 router.post('/appointment', handlerPostAppointment)
+
 //router.get('/date', getDate)
+
+// MERCADOPAGO
+router.post("/pay", pagosMP)
+router.post("/notificationPay", notifyPay)
+
 
 module.exports = router

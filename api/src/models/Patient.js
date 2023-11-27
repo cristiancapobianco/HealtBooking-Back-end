@@ -1,59 +1,66 @@
 const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) => {
-    sequelize.define("Patient",{
-
-        id:{
-            type: DataTypes.INTEGER,
-            primaryKey: true,
+  sequelize.define("Patient", {
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      validate: {
+        len: {
+          args: [8, 8],
+          msg: "The ID must have exactly 8 digits.",
         },
-        name: {
-            type: DataTypes.STRING,
-            allowNull: false,
+      },
+    },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    phone: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    email: {
+      type: DataTypes.STRING,
+      validate: {
+        isEmail: {
+          msg: "Enter a valid email address",
         },
-        phone: {
-            type: DataTypes.STRING,
-            allowNull: false,
+      },
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      validate: {
+        len: {
+          args: [8, 15],
+          msg: "The password must have at least 8 characters.",
         },
-        email: {
-            type: DataTypes.STRING,
-            validate: {
-                isEmail: {
-                    msg: "Enter a valid email address",
-                },
-            },
+        isAlphanumeric: {
+          msg: "The password must contain only letters and numbers.",
         },
-        password: {
-            type: DataTypes.STRING,
-            allowNull: true, // cuando este el mockup de las claves hecho pasar a true
-            validate: {
-              len: {
-                args: [8, 15], // Mínimo 8 caracteres, máximo 15 
-                msg: 'The password must have at least 8 characters.',
-              },
-              isAlphanumeric: {
-                msg: 'The password must contain only letters and numbers.',
-              },
-              containsUppercase: {
-                msg: 'The password must contain at least one uppercase letter.',
-                args: ['(?=.*[A-Z])'],
-              },
-              containsNumber: {
-                msg: 'The password must contain at least one number.',
-                args: ['(?=.*[0-9])'],
-              },
-            },
-          },
-        state: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            defaultValue: 'active',
-            validate: {
-              isIn: {
-                args: [['active', 'inactive']], 
-                msg: 'The default value must by "active" or "inactive".',
-              },
-            },
-          },
-    })
-}
+        customValidation(value) {
+          
+          if (!/[A-Z]/.test(value)) {
+            throw new Error("La contraseña debe contener al menos una letra mayúscula.");
+          }
+          
+          if (!/\d/.test(value)) {
+            throw new Error("La contraseña debe contener al menos un número.");
+          }
+        },
+      },
+    },
+    state: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      defaultValue: "active",
+      validate: {
+        isIn: {
+          args: [["active", "inactive"]],
+          msg: 'The default value must by "active" or "inactive".',
+        },
+      },
+    },
+  });
+};
