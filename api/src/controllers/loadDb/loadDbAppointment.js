@@ -15,7 +15,7 @@ const loadDbAppointment = async () => {
 
       console.log(finalAmount);
       
-    await postAppointment(date, time, idDoctor, idPatient, finalAmount);
+    await postAppointment(date, time,idPatient, idDoctor, finalAmount);
     
 
     }

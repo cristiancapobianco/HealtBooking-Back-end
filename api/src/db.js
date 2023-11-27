@@ -37,11 +37,11 @@ Sure.belongsToMany(Doctor, { through: "DoctorSure" });
 Specialty.hasMany(Doctor, { foreignKey: 'SpecialtyId'});
 Doctor.belongsTo(Specialty, { foreignKey: 'SpecialtyId'});
 
-Appointment.belongsTo(Doctor, { foreignKey: 'idDoctor'});
-Doctor.hasMany(Appointment, { foreignKey: 'idDoctor' })
+Appointment.belongsTo(Doctor, { foreignKey: 'doctorId'});
+Doctor.hasMany(Appointment, { foreignKey: 'doctorId' })
 
-Appointment.belongsTo(Patient, {foreignKey: 'idPatient'});
-Patient.hasMany(Appointment, { foreignKey: 'idPatient' })
+Appointment.belongsTo(Patient, {foreignKey: 'patientId'});
+Patient.hasMany(Appointment, { foreignKey: 'patientId' })
 
 Sure.hasMany(Patient, {foreignKey: 'sureId'});
 Patient.belongsTo(Sure, {foreignKey: "sureId"})
