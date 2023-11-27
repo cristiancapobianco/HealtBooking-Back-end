@@ -12,6 +12,7 @@ const { postPatient } = require('../controllers/postPatient');
 const { pagosMP } = require('../controllers/mercadopago');
 const { notifyPay } = require('../controllers/notificationMP');
 const { changeStatus } = require('../controllers/toggleAccount');
+const { getAppointmentByPatient } = require('../controllers/getAppointmentByPatient');
 
 
 
@@ -27,6 +28,7 @@ router.patch('/admin/doctors/:idDoc', updateDoctor)
 router.post('/pacient/register', postPatient);
 router.patch('/toggle/:idUser', changeStatus);
 router.post('/appointment', handlerPostAppointment)
+router.get('/appointment/:idPatient',getAppointmentByPatient)
 
 //router.get('/date', getDate)
 
