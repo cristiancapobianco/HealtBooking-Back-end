@@ -5,7 +5,7 @@ const getAllDoctors = async (req, res) => {
     try {
 
         const data = await Doctor.findAll({
-            attributes: ['name', 'id', 'profilePicture'],
+            attributes: ['name', 'id', 'profilePicture', 'price'],
             include: [
                 {
                     model: Specialty,
@@ -22,7 +22,7 @@ const getAllDoctors = async (req, res) => {
             ]
 
         })
-        
+
         return res.status(200).json(data);
 
     }
