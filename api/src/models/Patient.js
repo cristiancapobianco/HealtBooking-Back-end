@@ -64,3 +64,5 @@ module.exports = (sequelize) => {
     },
   });
 };
+
+//haciendo cambios al pedo a ver si puedo subier esto
