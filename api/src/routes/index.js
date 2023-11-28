@@ -15,6 +15,7 @@ const { changeStatus } = require('../controllers/toggleAccount');
 const { getAppointmentByPatient } = require('../controllers/getAppointmentByPatient');
 const { getAppointmentByDoctor } = require('../controllers/getAppointmentByDoctor');
 const { getAllAppointments } = require('../controllers/getAllAppointments');
+const { getUserByEmail } = require('../controllers/getUserByEmail');
 
 
 
@@ -33,6 +34,7 @@ router.post('/appointment', handlerPostAppointment)
 router.get('/appointment/:idPatient',getAppointmentByPatient)
 router.get('/appointment/:idDoctor', getAppointmentByDoctor)
 router.get('/admin/appointment',getAllAppointments)
+router.get('/logging',getUserByEmail)
 
 //router.get('/date', getDate)
 
