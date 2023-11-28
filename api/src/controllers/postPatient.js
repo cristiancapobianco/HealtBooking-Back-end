@@ -19,6 +19,11 @@ const postPatient = async(req,res) => {
         }
     })
 
+
+
+
+    
+
     if(existingPatient){
         res.send({message:"Paciente ya registrado"});
     }
