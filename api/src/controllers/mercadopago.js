@@ -22,8 +22,7 @@ const pagosMP = (req, res) => {
                     id: product.id,
                     title: product.name,
                     quantity: 1,
-                    unit_price: Number(product.price),
-                    picture_url: product.image
+                    unit_price: Number(product.price)
                 }
             ],
             back_urls: {
