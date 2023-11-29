@@ -1,6 +1,7 @@
 // ACA POST DOCTOR
 
 const { Doctor, Specialty, Sure } = require('../db')
+const sendEmailDoctor = require('./notifications/sendEmailDoctor')
 
 
 const postDoctor = async (req, res) => {
@@ -44,7 +45,7 @@ const postDoctor = async (req, res) => {
                     }
                 }
 
-
+                await sendEmailDoctor(name, email, specialty)
                 res.status(200).send({ message: "Doctor creado", doc })
             } catch (error) {
                 res.status(400).send(error.message)

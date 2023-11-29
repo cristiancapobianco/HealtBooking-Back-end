@@ -2,7 +2,8 @@ const { Patient, Doctor } = require('../db');
 
 const getUserByEmail = async(req,res) => {
 
-    const {email} = req.body;
+    const email = req.query.email;
+
     console.log(email);
 
     try {
@@ -22,7 +23,7 @@ const getUserByEmail = async(req,res) => {
         if(doctor || patient){
           return res.status(200).json(true);
         }else{
-          return res.status(400).json(false);
+          return res.status(200).json(false);
         }
 
 
