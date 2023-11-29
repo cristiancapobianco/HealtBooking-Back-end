@@ -1,28 +1,28 @@
 const { Patient, Doctor } = require('../db');
 
-const getUserByEmail = async(req,res) => {
+const getUserByEmail = async (req, res) => {
 
-    const {email} = req.body;
+    const email = req.query.email;
     console.log(email);
 
     try {
-        
+
         const doctor = await Doctor.findOne({
-            where:{
+            where: {
                 email: email
             }
         });
 
         const patient = await Patient.findOne({
-            where:{
+            where: {
                 email: email
             }
         });
 
-        if(doctor || patient){
-          return res.status(200).json(true);
-        }else{
-          return res.status(400).json(false);
+        if (doctor || patient) {
+            return res.status(200).json(true);
+        } else {
+            return res.status(200).json(false);
         }
 
 
