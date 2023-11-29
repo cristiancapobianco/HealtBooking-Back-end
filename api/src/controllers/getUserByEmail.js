@@ -3,6 +3,10 @@ const { Patient, Doctor } = require('../db');
 const getUserByEmail = async (req, res) => {
 
     const email = req.query.email;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 392a953f44935ff604c50b56989599c375cbf730
     console.log(email);
 
     try {
@@ -19,10 +23,17 @@ const getUserByEmail = async (req, res) => {
             }
         });
 
+<<<<<<< HEAD
         if (doctor || patient) {
             return res.status(200).json(true);
         } else {
             return res.status(200).json(false);
+=======
+        if(doctor || patient){
+          return res.status(200).json(true);
+        }else{
+          return res.status(200).json(false);
+>>>>>>> 392a953f44935ff604c50b56989599c375cbf730
         }
 
 
