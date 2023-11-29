@@ -1,4 +1,5 @@
 const {Patient} = require('../db');
+const sendEmailPatient = require('./notifications/sendEmailPatient');
 
 const postPatient = async(req,res) => {
 
@@ -34,6 +35,9 @@ const postPatient = async(req,res) => {
     else{
         try {
             const patientData = await Patient.create({id,name,phone,email,password});
+            
+            await sendEmailPatient(name, email)
+            
             return res.status(200).json({message:'Paciente registrado con éxito',patientData});
         } catch (error) {
             res.status(400).send(error.message)

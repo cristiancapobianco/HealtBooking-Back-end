@@ -1,12 +1,13 @@
 // ACA POST DOCTOR
 
 const { Doctor, Specialty, Sure } = require('../db')
+const sendEmailDoctor = require('./notifications/sendEmailDoctor')
 
 
 const postDoctor = async (req, res) => {
     try {
         const newDoc = req.body
-        const { name, id, email, phone, profilePicture, sure, specialty } = newDoc
+        const { name, id, email, phone, profilePicture, sure, specialty, price } = newDoc
 
         const existingDoc = await Doctor.findOne({
             where: {
@@ -26,7 +27,7 @@ const postDoctor = async (req, res) => {
                     return res.status(404).send({ message: `Especialidad '${specialty}' no encontrada.` });
                 }
 
-                const doc = await Doctor.create({ name, id, phone, email, profilePicture, SpecialtyId: existingSpecialty.id })
+                const doc = await Doctor.create({ name, id, phone, email, profilePicture, SpecialtyId: existingSpecialty.id, price })
 
                 if (!Array.isArray(sure)) {
                     return res.status(400).send({ message: "La propiedad 'sure' debe ser un array." });
@@ -44,7 +45,7 @@ const postDoctor = async (req, res) => {
                     }
                 }
 
-
+                await sendEmailDoctor(name, email, specialty)
                 res.status(200).send({ message: "Doctor creado", doc })
             } catch (error) {
                 res.status(400).send(error.message)
