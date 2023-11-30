@@ -9,17 +9,17 @@ const loadDbAppointment = async () => {
     for (const appointment of mockAppointment) {
       const { date, time, idPatient, idDoctor } = appointment;
 
-      console.log( idPatient, idDoctor);
+      //console.log( idPatient, idDoctor);
       
       const finalAmount = await calcPrice(idPatient, idDoctor);
 
-      console.log(finalAmount);
+      //console.log(finalAmount);
       
     await postAppointment(date, time,idPatient, idDoctor, finalAmount);
     
 
     }
-    console.log('Appointments loaded successfully.');
+   // console.log('Appointments loaded successfully.');
   } catch (error) {
     console.error('Error loading appointments:', error);
   }

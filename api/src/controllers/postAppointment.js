@@ -10,7 +10,7 @@ const postAppointment = async (date, time, idPatient, idDoctor, finalAmount) => 
     doctorId: idDoctor,
     patientId: idPatient,
   });
-  console.log('App registrado:', newAppointment);
+ // console.log('App registrado:', newAppointment);
  
   return newAppointment;
 };

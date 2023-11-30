@@ -3,7 +3,7 @@ const {Patient, Appointment } = require('../db');
 const getAppointmentByPatient = async(req,res) => {
 
     const {idPatient} = req.params;
-    console.log(idPatient)
+   // console.log(idPatient)
 
     const patient = await Patient.findOne({
         where:{
@@ -28,7 +28,7 @@ const getAppointmentByPatient = async(req,res) => {
                 return res.status(200).json(appointments);
     
             }else{
-                returnres.send('No hay citas registradas para ese paciente')
+                 return res.send('No hay citas registradas para ese paciente')
             }
             
     
