@@ -10,7 +10,7 @@ const loadDbDoctor=async()=>{
             phone: doctor.phone,
             email: doctor.email,
             profilePicture: doctor.profilePicture,
-            password: doctor.password,
+            rol:doctor.rol,
             price:doctor.price
         }
     })
