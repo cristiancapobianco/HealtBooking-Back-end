@@ -26,30 +26,14 @@ module.exports = (sequelize) => {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        password: {
-            type: DataTypes.STRING,
-            allowNull: true, // cuando hagamos el mockup de las claves cambiar a false de nuevo
-            validate: {
-              len: {
-                args: [8, 15], // Mínimo 8 caracteres, máximo 15 
-                msg: 'The password must have at least 8 characters.',
-              },
-              isAlphanumeric: {
-                msg: 'The password must contain only letters and numbers.',
-              },
-              containsUppercase: {
-                msg: 'The password must contain at least one uppercase letter.',
-                args: ['(?=.*[A-Z])'],
-              },
-              containsNumber: {
-                msg: 'The password must contain at least one number.',
-                args: ['(?=.*[0-9])'],
-              },
-            },
-          },
+       
         price:{
             type: DataTypes.INTEGER,
             allowNull: true,
+        },
+        rol:{
+          type:DataTypes.STRING,
+          allowNull: false,
         },
         state: {
             type: DataTypes.STRING,

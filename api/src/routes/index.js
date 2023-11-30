@@ -16,6 +16,7 @@ const { getAppointmentByPatient } = require('../controllers/getAppointmentByPati
 const { getAppointmentByDoctor } = require('../controllers/getAppointmentByDoctor');
 const { getAllAppointments } = require('../controllers/getAllAppointments');
 const { getUserByEmail } = require('../controllers/getUserByEmail');
+const { getPatientById } = require('../controllers/getPatientById');
 
 
 
@@ -29,6 +30,7 @@ router.get('/sure', getSure);
 router.get('/admin', getAllUsers);
 router.patch('/admin/doctors/:idDoc', updateDoctor)
 router.post('/pacient/register', postPatient);
+router.get('/patient/:idPatient',getPatientById)
 router.patch('/toggle/:idUser', changeStatus);
 router.post('/appointment', handlerPostAppointment)
 router.get('/appointment/:idPatient',getAppointmentByPatient)
