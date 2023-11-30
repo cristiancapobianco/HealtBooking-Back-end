@@ -8,6 +8,8 @@ const loadDbPatient= async ()=>{
             name:patient.name,
             phone:patient.phone,
             email:patient.email,
+            rol: patient.rol
+
         }
     })
     const loadPatients = await Patient.bulkCreate(patients)
