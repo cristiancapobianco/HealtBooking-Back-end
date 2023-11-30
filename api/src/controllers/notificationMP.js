@@ -1,16 +1,30 @@
+const { Appointment } = require("../db");
+
+const notifyPay = async (req, res) => {
+    const data = req.body;
+
+    try {
+
+        const appointment = await Appointment.findOne({
+            where: { id: data.id }
+        });
 
 
-const notifyPay = (req, res) => {
-    const data = req.body
+        if (!appointment) {
+            return res.status(404).json({ error: 'Cita no encontrada' });
+        }
 
+        await appointment.update({ status: 'paid' });
+        console.log(data)
 
-    // Aquí puedes procesar la información y actualizar tu base de datos según sea necesario
-    // Por ejemplo, puedes buscar la compra en tu base de datos usando el ID de la transacción
-    // y actualizar su estado en consecuencia
-
-    console.log(`Notificación de MercadoPago - ID de transacción: ${data.id}, Estado: ${data.status}`);
-    res.status(200).end();
+        return res.status(200).json({ message: 'Estado de la cita actualizado con éxito', data });
+    } catch (error) {
+        console.error('Error al procesar la notificación de MercadoPago:', error);
+        return res.status(500).json({ error: 'Error interno del servidor' });
+    }
 };
+
+module.exports = notifyPay;
 
 module.exports = {
     notifyPay

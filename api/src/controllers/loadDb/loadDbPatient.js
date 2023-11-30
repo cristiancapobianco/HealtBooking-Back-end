@@ -1,5 +1,5 @@
-const mockPatients= require('../../assets/data/mockPatients.json')
-const{Patient}= require('../../db')
+const mockPatients = require('../../assets/data/mockPatients.json')
+const { Patient } = require('../../db')
 
 const loadDbPatient= async ()=>{
     const patients= mockPatients.patients.map((patient)=>{
@@ -9,10 +9,11 @@ const loadDbPatient= async ()=>{
             phone:patient.phone,
             email:patient.email,
             rol: patient.rol
+
         }
     })
-    const loadPatients= await Patient.bulkCreate(patients)
+    const loadPatients = await Patient.bulkCreate(patients)
     return loadPatients;
 }
 
-module.exports= loadDbPatient
+module.exports = loadDbPatient
