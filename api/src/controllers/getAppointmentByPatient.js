@@ -2,11 +2,7 @@ const { Patient, Appointment, Doctor, Specialty } = require('../db');
 const { Op } = require('sequelize');
 
 const getAppointmentByPatient = async (req, res) => {
-
-    const {idPatient} = req.params;
-
- 
-
+    const { idPatient } = req.params;
 
     const patient = await Patient.findOne({
         where: {
@@ -15,12 +11,8 @@ const getAppointmentByPatient = async (req, res) => {
     });
 
     if (patient) {
-
         try {
-
             const appointments = await Appointment.findAll({
-                idPatient,
-
                 where: {
                     patientId: idPatient
                 },
@@ -38,33 +30,19 @@ const getAppointmentByPatient = async (req, res) => {
                 ],
             });
 
-            if (appointments) {
-
+            if (appointments && appointments.length > 0) {
                 return res.status(200).json(appointments);
-
-    
-            }else{
-                 return res.send('No hay citas registradas para ese paciente')
-
-
-
-
-
+            } else {
+                return res.send('No hay citas registradas para ese paciente');
+            }
         } catch (error) {
-
-            return res.status(500).json({ message: 'No hay citas registradas para ese paciente', error: error.message });
-
+            return res.status(500).json({ message: 'Error al obtener las citas del paciente', error: error.message });
         }
-
-
-
     } else {
-        res.send('No hay pacientes registrados con ese dni')
+        res.send('No hay pacientes registrados con ese ID');
     }
-
-
-
 };
+
 module.exports = {
     getAppointmentByPatient
-}
+};

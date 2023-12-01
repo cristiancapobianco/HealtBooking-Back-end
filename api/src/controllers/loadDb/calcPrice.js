@@ -4,8 +4,8 @@ const { Op } = require('sequelize');
 const calcPrice = async (idPatient, idDoctor) => {
     try {
         let price = 0;
-        let doctorSure='';
-        let patientSure='';
+        let doctorSure = '';
+        let patientSure = '';
         // Obtener la información del paciente
         const patient = await Patient.findOne({
             where: {
@@ -15,9 +15,9 @@ const calcPrice = async (idPatient, idDoctor) => {
             }
         });
 
-       
-        patientSure= patient.dataValues.sureId
-        //console.log(patientSure);
+
+        patientSure = patient.dataValues.sureId
+        console.log(patientSure);
 
         if (!patient) {
             throw new Error('Patient not found');
@@ -34,7 +34,7 @@ const calcPrice = async (idPatient, idDoctor) => {
             include: [
                 {
                     model: Sure,
-                    attributes: ['id','name', 'discount'],
+                    attributes: ['id', 'name', 'discount'],
                     through: {
                         model: DoctorSure,
                         attributes: []
@@ -42,42 +42,42 @@ const calcPrice = async (idPatient, idDoctor) => {
                 }
             ]
         });
-       // console.log(doctor);
+        console.log(doctor);
         if (!doctor) {
             throw new Error('Doctor not found');
         }
 
         // Verificar si hay Sures asociados al doctor
-       
-            // Obtener el primer Sure asociado al doctor (puedes ajustar esto según tus necesidades)
-        if(doctor.Sures && doctor.Sures.length>0){
-                
-            doctorSure = doctor.Sures.map(sure=>sure.dataValues)
-           // console.log(doctorSure);
-            
-            const matchSure= doctorSure.find(sure=>sure.id===patientSure)
-           // console.log('Coincidencia con : ' , matchSure);
+
+        // Obtener el primer Sure asociado al doctor (puedes ajustar esto según tus necesidades)
+        if (doctor.Sures && doctor.Sures.length > 0) {
+
+            doctorSure = doctor.Sures.map(sure => sure.dataValues)
+            console.log(doctorSure);
+
+            const matchSure = doctorSure.find(sure => sure.id === patientSure)
+            console.log('Coincidencia con : ', matchSure);
 
             // Comparar Sure del doctor con Sure del paciente
             if (matchSure) {
                 // Calcular el precio con descuento
-                price =doctor.dataValues.price - ( doctor.dataValues.price * (matchSure.discount / 100));
-                console.log('Tarifa doctor',doctor.dataValues.price );
-                console.log('Descuento: ',matchSure.discount);
-            } 
-            else{
+                price = doctor.dataValues.price - (doctor.dataValues.price * (matchSure.discount / 100));
+                console.log('Tarifa doctor', doctor.dataValues.price);
+                console.log('Descuento: ', matchSure.discount);
+            }
+            else {
                 price = doctor.dataValues.price;
-               // console.log('Tarifa sin coincidencia', price);
+                // console.log('Tarifa sin coincidencia', price);
             }
         } else {
             // Si no hay Sures asociados al doctor, asignar el precio normal del doctor
             price = doctor.dataValues.price;
-           // console.log('Tarifa sin cobertura', price);
+            // console.log('Tarifa sin cobertura', price);
         }
 
         return price;
     } catch (error) {
-       // console.error('Error in calcPrice:', error.message);
+        // console.error('Error in calcPrice:', error.message);
         throw error; // Puedes manejar o lanzar el error según tus necesidades
     }
 };
