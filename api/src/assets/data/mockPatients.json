@@ -1,11 +1,11 @@
 {
-    
+  
     "patients":[
         {
           "id": 52841367,
           "name": "Ana Martínez",
           "email": "ana.martinez@gmail.com",
-          "password": "Abcdefg1",
+          "rol":"paciente",
           "phone": "+541168432907",
           "sure": "Sancor Salud"
         },
@@ -13,7 +13,7 @@
           "id": 69382514,
           "name": "Juan Rodríguez",
           "email": "juan.rodriguez@gmail.com",
-          "password": "Hijklmn2",
+          "rol":"paciente",
           "phone": "+541150321976",
           "sure": "Swiss Medical"
         },
@@ -21,7 +21,7 @@
           "id": 47135698,
           "name": "María López",
           "email": "maria.lopez@gmail.com",
-          "password": "Opqrstuv3",
+          "rol":"paciente",
           "phone": "+541182964157",
           "sure": "Galeno"
         },
@@ -29,7 +29,7 @@
           "id": 81492763,
           "name": "Carlos González",
           "email": "carlos.gonzalez@gmail.com",
-          "password": "Wxyzabc4",
+          "rol":"paciente",
           "phone": "+541167503829",
           "sure": "Medifé"
         },
@@ -37,7 +37,7 @@
           "id": 63928417,
           "name": "Laura Pérez",
           "email": "laura.perez@gmail.com",
-          "password": "Defghij5",
+          "rol":"paciente",
           "phone": "+541119875062",
           "sure": "OSDE"
         },
@@ -45,7 +45,7 @@
           "id": 75219834,
           "name": "Pedro Hernández",
           "email": "pedro.hernandez@gmail.com",
-          "password": "Klmnopq6",
+          "rol":"paciente",
           "phone": "+541134526897",
           "sure": "Sancor Salud"
         },
@@ -53,7 +53,7 @@
           "id": 61739428,
           "name": "Gabriela Díaz",
           "email": "gabriela.diaz@gmail.com",
-          "password": "Rstuvwx7",
+          "rol":"paciente",
           "phone": "+541171029486",
           "sure": "Swiss Medical"
         },
@@ -61,7 +61,7 @@
           "id": 89513264,
           "name": "Andrés Sánchez",
           "email": "andres.sanchez@gmail.com",
-          "password": "Yzabcd8",
+          "rol":"paciente",
           "phone": "+541189431765",
           "sure": "Galeno"
         },
@@ -69,7 +69,7 @@
           "id": 42675931,
           "name": "Sofía Ramírez",
           "email": "sofia.ramirez@gmail.com",
-          "password": "Efghij9",
+          "rol":"paciente",
           "phone": "+541165283094",
           "sure": "Medifé"
         },
@@ -77,7 +77,7 @@
           "id": 58362197,
           "name": "Luis Torres",
           "email": "luis.torres@gmail.com",
-          "password": "Klmnopq0",
+          "rol":"paciente",
           "phone": "+541174105286",
           "sure": "Sancor Salud"
         },
@@ -85,7 +85,7 @@
           "id": 31927485,
           "name": "Valentina Flores",
           "email": "valentina.flores@gmail.com",
-          "password": "Rstuvwx1",
+          "rol":"paciente",
           "phone": "+541123876154",
           "sure": "Swiss Medical"
         },
@@ -93,7 +93,7 @@
           "id": 76419832,
           "name": "Javier Jiménez",
           "email": "javier.jimenez@gmail.com",
-          "password": "Yzabcd2",
+          "rol":"paciente",
           "phone": "+541179618432",
           "sure": "OSDE"
         },
@@ -101,7 +101,7 @@
           "id": 92856314,
           "name": "Carolina Vargas",
           "email": "carolina.vargas@gmail.com",
-          "password": "Bcdefgh3",
+          "rol":"paciente",
           "phone": "+541150496723",
           "sure": "Galeno"
         },
@@ -109,7 +109,7 @@
           "id": 53729184,
           "name": "Alejandro Cruz",
           "email": "alejandro.cruz@gmail.com",
-          "password": "Ijklmno4",
+          "rol":"paciente",
           "phone": "+541138621759",
           "sure": "Medifé"
         },
@@ -117,7 +117,7 @@
           "id": 49283675,
           "name": "Camila Morales",
           "email": "camila.morales@gmail.com",
-          "password": "Pqrstuv5",
+          "rol":"paciente",
           "phone": "+541192074386",
           "sure": "Sancor Salud"
         },
@@ -125,7 +125,7 @@
           "id": 76521498,
           "name": "Miguel Castro",
           "email": "miguel.castro@gmail.com",
-          "password": "Wxyzab6",
+          "rol":"paciente",
           "phone": "+541156841932",
           "sure": "Swiss Medical"
         },
@@ -133,7 +133,7 @@
           "id": 34857219,
           "name": "Isabella Ortega",
           "email": "isabella.ortega@gmail.com",
-          "password": "Cdefghi7",
+          "rol":"paciente",
           "phone": "+541130798412",
           "sure": "Sancor Salud"
         },
@@ -141,7 +141,7 @@
           "id": 98134257,
           "name": "José Mendoza",
           "email": "jose.mendoza@gmail.com",
-          "password": "Jklmnop8",
+          "rol":"paciente",
           "phone": "+541125638974",
           "sure": "Swiss Medical"
         },
@@ -149,7 +149,7 @@
           "id": 25719384,
           "name": "Daniela Ruiz",
           "email": "daniela.ruiz@gmail.com",
-          "password": "Qrstuvw9",
+          "rol":"paciente",
           "phone": "+541187401963",
           "sure": "Galeno"
         },
@@ -157,7 +157,7 @@
           "id": 64371928,
           "name": "Francisco Herrera",
           "email": "francisco.herrera@gmail.com",
-          "password": "Xyzabcd0",
+          "rol":"paciente",
           "phone": "+541153217894",
           "sure": "Medifé"
         },
@@ -165,7 +165,7 @@
           "id": 19824573,
           "name": "Victoria Medina",
           "email": "victoria.medina@gmail.com",
-          "password": "Defghij1",
+          "rol":"paciente",
           "phone": "+541196745812",
           "sure": "OSDE"
         },
@@ -173,7 +173,7 @@
           "id": 72583691,
           "name": "Diego Guzmán",
           "email": "diego.guzman@gmail.com",
-          "password": "Lmnopqr2",
+          "rol":"paciente",
           "phone": "+541140826957",
           "sure": "Galeno"
         },
@@ -181,7 +181,7 @@
           "id": 35918274,
           "name": "Paula Romero",
           "email": "paula.romero@gmail.com",
-          "password": "Stuvwx3",
+          "rol":"paciente",
           "phone": "+541173498162",
           "sure": "Medifé"
         },
@@ -189,7 +189,7 @@
           "id": 81736425,
           "name": "Rafael Gómez",
           "email": "rafael.gomez@gmail.com",
-          "password": "Yzabcd4",
+          "rol":"paciente",
           "phone": "+541158963027",
           "sure": "Sancor Salud"
         },
@@ -197,7 +197,7 @@
           "id": 92634715,
           "name": "Natalia Castro",
           "email": "natalia.castro@gmail.com",
-          "password": "Efghij5",
+          "rol":"paciente",
           "phone": "+541125694738",
           "sure": "Swiss Medical"
         },
@@ -205,7 +205,7 @@
           "id": 48375129,
           "name": "Martín Herrera",
           "email": "martin.herrera@gmail.com",
-          "password": "Mnopqr6",
+          "rol":"paciente",
           "phone": "+541170936285",
           "sure": "Galeno"
         },
@@ -213,7 +213,7 @@
           "id": 67219834,
           "name": "Antonia Reyes",
           "email": "antonia.reyes@gmail.com",
-          "password": "Tuvwx7",
+          "rol":"paciente",
           "phone": "+541138421509",
           "sure": "Medifé"
         },
@@ -221,7 +221,7 @@
           "id": 31597284,
           "name": "Felipe Torres",
           "email": "felipe.torres@gmail.com",
-          "password": "Yzabcd8",
+          "rol":"paciente",
           "phone": "+541191654072",
           "sure": "Sancor Salud"
         },
@@ -229,7 +229,7 @@
           "id": 84971326,
           "name": "Emma Núñez",
           "email": "emma.nunez@gmail.com",
-          "password": "Fghij9",
+          "rol":"paciente",
           "phone": "+541150867923",
           "sure": "Swiss Medical"
         },
@@ -237,7 +237,7 @@
           "id": 59428617,
           "name": "Raúl Martínez",
           "email": "raul.martinez@gmail.com",
-          "password": "Nopqrs0",
+          "rol":"paciente",
           "phone": "+541126738945",
           "sure": "Sancor Salud"
         },
@@ -245,7 +245,7 @@
           "id": 73196428,
           "name": "Renata Morales",
           "email": "renata.morales@gmail.com",
-          "password": "Uvwxy1",
+          "rol":"paciente",
           "phone": "+541175392806",
           "sure": "Medifé"
         },
@@ -253,7 +253,7 @@
           "id": 26984317,
           "name": "Sergio García",
           "email": "sergio.garcia@gmail.com",
-          "password": "Yzabcd2",
+          "rol":"paciente",
           "phone": "+541161083972",
           "sure": "OSDE"
         },
@@ -261,7 +261,7 @@
           "id": 51849763,
           "name": "Valeria Aguilar",
           "email": "valeria.aguilar@gmail.com",
-          "password": "Ghijsd3",
+          "rol":"paciente",
           "phone": "+541148209753",
           "sure": "Sancor Salud"
         },
@@ -269,7 +269,7 @@
           "id": 63718924,
           "name": "Ricardo Soto",
           "email": "ricardo.soto@gmail.com",
-          "password": "Opmntu4",
+          "rol":"paciente",
           "phone": "+541193542167",
           "sure": "Swiss Medical"
         },
@@ -277,7 +277,7 @@
           "id": 92531478,
           "name": "Gabriela Paredes",
           "email": "gabriela.paredes@gmail.com",
-          "password": "Vwxysf5",
+          "rol":"paciente",
           "phone": "+541157628319",
           "sure": "Galeno"
         },
@@ -285,7 +285,7 @@
           "id": 46791832,
           "name": "Mario Ramírez",
           "email": "mario.ramirez@gmail.com",
-          "password": "Yzabcd6",
+          "rol":"paciente",
           "phone": "+541130984752",
           "sure": "Medifé"
         },
@@ -293,7 +293,7 @@
           "id": 58247193,
           "name": "Fernanda Castro",
           "email": "fernanda.castro@gmail.com",
-          "password": "Hijklt7",
+          "rol":"paciente",
           "phone": "+541115467803",
           "sure": "Sancor Salud"
         },
@@ -301,7 +301,7 @@
           "id": 31972845,
           "name": "Ernesto González",
           "email": "ernesto.gonzalez@gmail.com",
-          "password": "Qrsghu8",
+          "rol":"paciente",
           "phone": "+541192735084",
           "sure": "Swiss Medical"
         },
@@ -309,7 +309,7 @@
           "id": 84513729,
           "name": "Mariana Pérez",
           "email": "mariana.perez@gmail.com",
-          "password": "Wxyzab9",
+          "rol":"paciente",
           "phone": "+541168351294",
           "sure": "Galeno"
         },
@@ -317,7 +317,7 @@
           "id": 57298641,
           "name": "Guillermo Sánchez",
           "email": "guillermo.sanchez@gmail.com",
-          "password": "Yzabcd0",
+          "rol":"paciente",
           "phone": "+541174209163",
           "sure": "OSDE"
         },
@@ -326,7 +326,7 @@
           "id": 39421857,
           "name": "Adriana Torres",
           "email": "adriana.torres@gmail.com",
-          "password": "Ijkjwn1",
+          "rol":"paciente",
           "phone": "+541158034671",
           "sure": "Swiss Medical"
         },
@@ -334,7 +334,7 @@
           "id": 71639284,
           "name": "Omar Ruiz",
           "email": "omar.ruiz@gmail.com",
-          "password": "Qrswnu2",
+          "rol":"paciente",
           "phone": "+541143697815",
           "sure": "Sancor Salud"
         },
@@ -342,7 +342,7 @@
           "id": 48516372,
           "name": "Vanessa Núñez",
           "email": "vanessa.nunez@gmail.com",
-          "password": "Yzabcd3",
+          "rol":"paciente",
           "phone": "+541197286531",
           "sure": "OSDE"
         },
@@ -350,7 +350,7 @@
           "id": 63748192,
           "name": "Gilberto Díaz",
           "email": "gilberto.diaz@gmail.com",
-          "password": "Lmopsd4",
+          "rol":"paciente",
           "phone": "+541138519276",
           "sure": "Swiss Medical"
         },
@@ -358,7 +358,7 @@
           "id": 21984637,
           "name": "Verónica Medina",
           "email": "veronica.medina@gmail.com",
-          "password": "Tuvkwe5",
+          "rol":"paciente",
           "phone": "+541161923748",
           "sure": "Galeno"
         },
@@ -366,7 +366,7 @@
           "id": 75328194,
           "name": "Salvador Rodríguez",
           "email": "salvador.rodriguez@gmail.com",
-          "password": "Yzabcd6",
+          "rol":"paciente",
           "phone": "+541179461852",
           "sure": "Medifé"
         },
@@ -374,7 +374,7 @@
           "id": 94613728,
           "name": "Elena Flores",
           "email": "elena.flores@gmail.com",
-          "password": "Mnoygh7",
+          "rol":"paciente",
           "phone": "+541153876124",
           "sure": "Sancor Salud"
         },
@@ -382,7 +382,7 @@
           "id": 38291746,
           "name": "Arturo Herrera",
           "email": "arturo.herrera@gmail.com",
-          "password": "Uvwdef8",
+          "rol":"paciente",
           "phone": "+541112764389",
           "sure": "Swiss Medical"
         },
@@ -390,7 +390,7 @@
           "id": 67428193,
           "name": "Clara Torres",
           "email": "clara.torres@gmail.com",
-          "password": "Yzabcd9",
+          "rol":"paciente",
           "phone": "+541191482037",
           "sure": "OSDE"
         },
@@ -398,7 +398,7 @@
           "id": 59382746,
           "name": "Armando Soto",
           "email": "armando.soto@gmail.com",
-          "password": "Pqrsdf0",
+          "rol":"paciente",
           "phone": "+541165729481",
           "sure": "Sancor Salud"
         },
@@ -406,7 +406,7 @@
           "id": 21894573,
           "name": "Aurora Guzmán",
           "email": "aurora.guzman@gmail.com",
-          "password": "Vwxstg1",
+          "rol":"paciente",
           "phone": "+541140897652",
           "sure": "Swiss Medical"
         },
@@ -414,7 +414,7 @@
           "id": 79643128,
           "name": "Héctor López",
           "email": "hector.lopez@gmail.com",
-          "password": "Yzabcd2",
+          "rol":"paciente",
           "phone": "+541123516974",
           "sure": "Galeno"
         },
@@ -422,7 +422,7 @@
           "id": 12475983,
           "name": "Regina Díaz",
           "email": "regina.diaz@gmail.com",
-          "password": "Rqwi3",
+          "rol":"paciente",
           "phone": "+541196738102",
           "sure": "Medifé"
         },
@@ -430,7 +430,7 @@
           "id": 98531724,
           "name": "Raquel Paredes",
           "email": "raquel.paredes@gmail.com",
-          "password": "Zxysj4",
+          "rol":"paciente",
           "phone": "+541171085329",
           "sure": "Sancor Salud"
         },
@@ -438,7 +438,7 @@
           "id": 63718925,
           "name": "Max Ramírez",
           "email": "max.ramirez@gmail.com",
-          "password": "Yzabcd5",
+          "rol":"paciente",
           "phone": "+541158432971",
           "sure": "Swiss Medical"
         },
@@ -446,7 +446,7 @@
           "id": 19472853,
           "name": "Isabel Morales",
           "email": "isabel.morales@gmail.com",
-          "password": "Stquk6",
+          "rol":"paciente",
           "phone": "+541132978564",
           "sure": "OSDE"
         },
@@ -454,7 +454,7 @@
           "id": 36582194,
           "name": "Federico Castro",
           "email": "federico.castro@gmail.com",
-          "password": "Yzabcd7",
+          "rol":"paciente",
           "phone": "+541147631895",
           "sure": "Galeno"
         },
@@ -462,7 +462,7 @@
           "id": 74819326,
           "name": "Rosario Núñez",
           "email": "rosario.nunez@gmail.com",
-          "password": "Zxvnmc7",
+          "rol":"paciente",
           "phone": "+541186153472",
           "sure": "Swiss Medical"
         },
@@ -470,7 +470,7 @@
           "id": 93186574,
           "name": "Ignacio González",
           "email": "ignacio.gonzalez@gmail.com",
-          "password": "Qwerty8",
+          "rol":"paciente",
           "phone": "+541159342781",
           "sure": "Sancor Salud"
         },
@@ -478,7 +478,7 @@
           "id": 24619785,
           "name": "Lourdes Sánchez",
           "email": "lourdes.sanchez@gmail.com",
-          "password": "Yzabcd9",
+          "rol":"paciente",
           "phone": "+541172891506",
           "sure": "Medifé"
         },
@@ -487,7 +487,7 @@
           "id": 59381726,
           "name": "Julio Medina",
           "email": "julio.medina@gmail.com",
-          "password": "Zxlbv0",
+          "rol":"paciente",
           "phone": "+541160587391",
           "sure": "Swiss Medical"
         },
@@ -495,7 +495,7 @@
           "id": 71839254,
           "name": "Consuelo Torres",
           "email": "consuelo.torres@gmail.com",
-          "password": "Arewq1",
+          "rol":"paciente",
           "phone": "+541184973621",
           "sure": "OSDE"
         },
@@ -503,7 +503,7 @@
           "id": 46927381,
           "name": "Esteban Ruiz",
           "email": "esteban.ruiz@gmail.com",
-          "password": "Yzabcd2",
+          "rol":"paciente",
           "phone": "+541193726041",
           "sure": "Galeno"
         },
@@ -511,7 +511,7 @@
           "id": 83519724,
           "name": "Patricia Herrera",
           "email": "patricia.herrera@gmail.com",
-          "password": "Zxqaz3",
+          "rol":"paciente",
           "phone": "+541126854937",
           "sure": "Swiss Medical"
         },
@@ -519,7 +519,7 @@
           "id": 21794368,
           "name": "Víctor Paredes",
           "email": "victor.paredes@gmail.com",
-          "password": "Xysrd4",
+          "rol":"paciente",
           "phone": "+541170498152",
           "sure": "OSDE"
         },
@@ -527,7 +527,7 @@
           "id": 65931724,
           "name": "Aurora Núñez",
           "email": "aurora.nunez@gmail.com",
-          "password": "Yzabcd5",
+          "rol":"paciente",
           "phone": "+541152839714",
           "sure": "Galeno"
         },
@@ -535,7 +535,7 @@
           "id": 48192637,
           "name": "León Torres",
           "email": "leon.torres@gmail.com",
-          "password": "Zxbnm6",
+          "rol":"paciente",
           "phone": "+541169512378",
           "sure": "Swiss Medical"
         },
@@ -543,7 +543,7 @@
           "id": 37521984,
           "name": "Lucía Díaz",
           "email": "lucia.diaz@gmail.com",
-          "password": "Zxtgb7",
+          "rol":"paciente",
           "phone": "+541183461592",
           "sure": "OSDE"
         },
@@ -551,7 +551,7 @@
           "id": 89412637,
           "name": "Rubén Soto",
           "email": "ruben.soto@gmail.com",
-          "password": "Yzabcd8",
+          "rol":"paciente",
           "phone": "+541157286931",
           "sure": "Galeno"
         },
@@ -559,7 +559,7 @@
           "id": 27186539,
           "name": "Diana Guzmán",
           "email": "diana.guzman@gmail.com",
-          "password": "Zxolp9",
+          "rol":"paciente",
           "phone": "+541149372865",
           "sure": "Swiss Medical"
         },
@@ -567,7 +567,7 @@
           "id": 58392147,
           "name": "Guillermo Núñez",
           "email": "guillermo.nunez@gmail.com",
-          "password": "Yzabcd0",
+          "rol":"paciente",
           "phone": "+541172859163",
           "sure": "OSDE"
         },
@@ -575,7 +575,7 @@
           "id": 74629815,
           "name": "Adriana Morales",
           "email": "adriana.morales@gmail.com",
-          "password": "Zcddk1",
+          "rol":"paciente",
           "phone": "+541161982347",
           "sure": "Galeno"
         },
@@ -583,7 +583,7 @@
           "id": 15297384,
           "name": "Hugo Castro",
           "email": "hugo.castro@gmail.com",
-          "password": "Yzabcd2",
+          "rol":"paciente",
           "phone": "+541145027839",
           "sure": "Swiss Medical"
         },
@@ -591,7 +591,7 @@
           "id": 83714926,
           "name": "Beatriz Sánchez",
           "email": "beatriz.sanchez@gmail.com",
-          "password": "Zxcvb3",
+          "rol":"paciente",
           "phone": "+541180192746",
           "sure": "OSDE"
         },
@@ -599,7 +599,7 @@
           "id": 92468137,
           "name": "Juan Pablo Torres",
           "email": "juanpablo.torres@gmail.com",
-          "password": "Yzabcd4",
+          "rol":"paciente",
           "phone": "+541163721984",
           "sure": "Galeno"
         },
@@ -607,7 +607,7 @@
           "id": 36812457,
           "name": "Elena Díaz",
           "email": "elena.diaz@gmail.com",
-          "password": "Asdfg5",
+          "rol":"paciente",
           "phone": "+541189234175",
           "sure": "Swiss Medical"
         },
@@ -615,7 +615,7 @@
           "id": 71539284,
           "name": "Enrique Ramírez",
           "email": "enrique.ramirez@gmail.com",
-          "password": "Yzabcd6",
+          "rol":"paciente",
           "phone": "+541150382917",
           "sure": "OSDE"
         },
@@ -623,7 +623,7 @@
           "id": 42981375,
           "name": "Gabriela Medina",
           "email": "gabriela.medina@gmail.com",
-          "password": "Zxbnm6",
+          "rol":"paciente",
           "phone": "+541173649182",
           "sure": "Galeno"
         },
@@ -631,7 +631,7 @@
           "id": 18397526,
           "name": "Oscar Herrera",
           "email": "oscar.herrera@gmail.com",
-          "password": "Zxtgb7",
+          "rol":"paciente",
           "phone": "+541157298341",
           "sure": "Swiss Medical"
         },
@@ -639,10 +639,12 @@
           "id": 76531892,
           "name": "Sylvia Torres",
           "email": "sylvia.torres@gmail.com",
-          "password": "Yzabcd8",
+          "rol":"paciente",
           "phone": "+541149832175",
           "sure": "OSDE"
         }
+        
       
     ]
+    
 }

@@ -1,33 +1,44 @@
-const {DataTypes} = require("sequelize");
+const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) => {
-    sequelize.define("Appointment",{
+    sequelize.define("Appointment", {
         id: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.UUID,
             primaryKey: true,
-            autoIncrement:true
+            // autoIncrement: true
+            // allowNull: true,
         },
-        date:{
+        date: {
             type: DataTypes.DATEONLY, //YYYY-MM-DD
             allowNull: false,
         },
-        time:{
+        time: {
             type: DataTypes.TIME(4),
             allowNull: false
         },
-        // idPatient:{
-        //     type:DataTypes.INTEGER,
-        //     allowNull: false,
-            
-        // },
-        // idDoctor:{
+        // idPatient: {
         //     type: DataTypes.INTEGER,
         //     allowNull: false,
-           
+
         // },
-        finalAmount:{
+        // idDoctor: {
+        //     type: DataTypes.INTEGER,
+        //     allowNull: false,
+
+        // },
+        finalAmount: {
             type: DataTypes.FLOAT,
             allowNull: false,
-        }
+        },
+        status: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            defaultValue: "pending",
+            validate: {
+                isIn: {
+                    args: [["pending", "paid"]]
+                },
+            },
+        },
     })
 }

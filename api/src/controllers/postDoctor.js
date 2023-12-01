@@ -27,7 +27,7 @@ const postDoctor = async (req, res) => {
                     return res.status(404).send({ message: `Especialidad '${specialty}' no encontrada.` });
                 }
 
-                const doc = await Doctor.create({ name, id, phone, email, profilePicture, SpecialtyId: existingSpecialty.id, price })
+                const doc = await Doctor.create({ name, id, phone, email, profilePicture, SpecialtyId: existingSpecialty.id, price, rol: "doctor" })
 
                 if (!Array.isArray(sure)) {
                     return res.status(400).send({ message: "La propiedad 'sure' debe ser un array." });

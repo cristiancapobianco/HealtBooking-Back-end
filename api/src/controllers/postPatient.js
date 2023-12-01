@@ -1,12 +1,12 @@
-const {Patient} = require('../db');
+const {Patient,Sure} = require('../db');
 const sendEmailPatient = require('./notifications/sendEmailPatient');
 
 const postPatient = async(req,res) => {
 
     const newPatient = req.body;
-    console.log(newPatient);
+    //console.log(req.body);
 
-    const {id,name,phone,email,password} = newPatient;
+    const {id,name,phone,email,height,weight,sure} = newPatient;
 
     const existingPatient = await Patient.findOne({
         where:{
@@ -14,27 +14,14 @@ const postPatient = async(req,res) => {
         }
     });
 
-    const existingPassword = await Patient.findOne({
-        where:{
-            password
-        }
-    })
 
-
-
-
-    
 
     if(existingPatient){
         res.send({message:"Paciente ya registrado"});
     }
-    else if(existingPassword)
-    {
-        res.send({message:'Password existente'});
-    }
     else{
         try {
-            const patientData = await Patient.create({id,name,phone,email,password});
+            const patientData = await Patient.create({id,name,phone,email,height,weight,sure});
             
             await sendEmailPatient(name, email)
             

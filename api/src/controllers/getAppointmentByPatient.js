@@ -1,53 +1,48 @@
-const {Patient, Appointment } = require('../db');
+const { Patient, Appointment, Doctor, Specialty } = require('../db');
+const { Op } = require('sequelize');
 
-const getAppointmentByPatient = async(req,res) => {
-
-    const {idPatient} = req.params;
-    console.log(idPatient)
+const getAppointmentByPatient = async (req, res) => {
+    const { idPatient } = req.params;
 
     const patient = await Patient.findOne({
-        where:{
+        where: {
             id: idPatient
         }
     });
 
-    if(patient){
-
+    if (patient) {
         try {
-        
-            const appointments = await Appointment.findAll({idPatient,
-    
-                where:{
+            const appointments = await Appointment.findAll({
+                where: {
                     patientId: idPatient
-                }
-    
+                },
+                include: [
+                    {
+                        model: Doctor,
+                        attributes: ['name'],
+                        include: [
+                            {
+                                model: Specialty,
+                                attributes: ['name']
+                            }
+                        ]
+                    }
+                ],
             });
-    
-            if(appointments){
-    
+
+            if (appointments && appointments.length > 0) {
                 return res.status(200).json(appointments);
-    
-            }else{
-                returnres.send('No hay citas registradas para ese paciente')
+            } else {
+                return res.send('No hay citas registradas para ese paciente');
             }
-            
-    
-    
         } catch (error) {
-            
-            return res.status(500).json({ message: 'No hay citas registradas para ese paciente', error: error.message });
-    
+            return res.status(500).json({ message: 'Error al obtener las citas del paciente', error: error.message });
         }
-    
-
-
-    }else{
-        res.send('No hay pacientes registrados con ese dni')
+    } else {
+        res.send('No hay pacientes registrados con ese ID');
     }
-
-   
-
 };
+
 module.exports = {
     getAppointmentByPatient
-}
+};
