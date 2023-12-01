@@ -17,6 +17,7 @@ const calcPrice = async (idPatient, idDoctor) => {
 
 
         patientSure = patient.dataValues.sureId
+        console.log(patientSure);
 
         if (!patient) {
             throw new Error('Patient not found');
@@ -41,7 +42,7 @@ const calcPrice = async (idPatient, idDoctor) => {
                 }
             ]
         });
-
+        console.log(doctor);
         if (!doctor) {
             throw new Error('Doctor not found');
         }
@@ -52,7 +53,7 @@ const calcPrice = async (idPatient, idDoctor) => {
         if (doctor.Sures && doctor.Sures.length > 0) {
 
             doctorSure = doctor.Sures.map(sure => sure.dataValues)
-            // console.log(doctorSure);
+            console.log(doctorSure);
 
             const matchSure = doctorSure.find(sure => sure.id === patientSure)
             console.log('Coincidencia con : ', matchSure);
@@ -66,17 +67,17 @@ const calcPrice = async (idPatient, idDoctor) => {
             }
             else {
                 price = doctor.dataValues.price;
-                console.log('Tarifa sin coincidencia', price);
+                // console.log('Tarifa sin coincidencia', price);
             }
         } else {
             // Si no hay Sures asociados al doctor, asignar el precio normal del doctor
             price = doctor.dataValues.price;
-            console.log('Tarifa sin cobertura', price);
+            // console.log('Tarifa sin cobertura', price);
         }
 
         return price;
     } catch (error) {
-        console.error('Error in calcPrice:', error.message);
+        // console.error('Error in calcPrice:', error.message);
         throw error; // Puedes manejar o lanzar el error según tus necesidades
     }
 };

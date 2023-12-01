@@ -19,7 +19,7 @@ const getAllUsers = async (req, res) => {
 
         const allUsers = [...doctors, ...patients];
 
-        console.log(allUsers);
+       // console.log(allUsers);
 
         return res.status(200).json(allUsers);
     } catch (error) {
