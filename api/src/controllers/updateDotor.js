@@ -23,7 +23,7 @@ const updateDoctor = async (req,res) => {
             return res.status(200).json(data);
             
         }else{
-            throw new Error('Médico no encontrado');
+            return res.status(404).json({message:"Médico no encontrado"});
         }
        
     } catch (error) {

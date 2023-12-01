@@ -8,7 +8,7 @@
           "specialty":  "Radiología e Imágenes Médicas",
           "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/jdcch5dshqe6cupwdubx.jpg",
           "arraySure": [],
-          "password":"Zcddk1",
+          "rol":"doctor",
           "price":3360
          
         },
@@ -20,7 +20,7 @@
           "specialty": "Neumonología",
           "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/uiddrwmboauusqh8hdaq.jpg",
           "arraySure": ["Swiss Medical"],
-          "password": "Zxcvb3",
+          "rol":"doctor",
           "price":5040
          
         },
@@ -32,7 +32,7 @@
           "specialty":  "Radiología e Imágenes Médicas",
           "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/fiox2awavxyrmgljijgy.jpg",
           "arraySure": ["Galeno"],
-          "password":  "Asdfg5",
+          "rol":"doctor",
           "price":6720
          
           
@@ -45,7 +45,7 @@
             "specialty": "Oftalmología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/qkzjxs7740l6zu5fxnfc.jpg",
             "arraySure": ["Swiss Medical", "Sancor Salud"],
-            "password":"Zxvnmc7",
+            "rol":"doctor",
             "price":4800
         
            
@@ -58,7 +58,7 @@
             "specialty":  "Endocrinología y Nutrición",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/zgxq5hnchjd6whytswy4.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Medifé"],
-            "password": "Qwerty8",
+            "rol":"doctor",
             "price":7200
            
            
@@ -71,7 +71,7 @@
             "specialty": "Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/bqipe6jtu0pwludsmhep.jpg",
             "arraySure": ["Galeno"],
-            "password": "Zxlbv0",
+            "rol":"doctor",
             "price":9600
           
           },
@@ -83,7 +83,7 @@
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/uymntobwmr6vrffegg3h.jpg",
             "arraySure": ["Swiss Medical", "Galeno"],
-            "password":"Arewq1",
+            "rol":"doctor",
             "price":3360
             
             
@@ -96,7 +96,7 @@
             "specialty": "Neurología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/x48ibmgp9zcugsrelr45.jpg",
             "arraySure": ["OSDE", "Sancor Salud"],
-            "password":"Xysrd4",
+            "rol":"doctor",
             "price":5040
             
          
@@ -109,7 +109,7 @@
             "specialty": "Cirugía Ortopédica y Traumatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189494/doctors/men/juxkpxyyoq4sikugllfc.jpg",
             "arraySure": ["Medifé"],
-            "password":   "Zxbnm6",
+            "rol":"doctor",
             "price":6720
            
            
@@ -122,7 +122,7 @@
             "specialty": "Neurología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/g7wm3wubscwtmtac1ww1.jpg",
             "arraySure": ["Swiss Medical", "Galeno", "Sancor Salud"],
-            "password": "Zxtgb7",
+            "rol":"doctor",
             "price":4800
           
            
@@ -135,7 +135,7 @@
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/tv7jwqgm69wrpyxgeh41.jpg",
             "arraySure": ["Swiss Medical"],
-            "password": "Zxolp9",
+            "rol":"doctor",
             "price":7200
             
             
@@ -149,7 +149,7 @@
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189495/doctors/men/rvtcfmu40e8zyv6ofrsi.jpg",
             "arraySure": ["Medifé", "Galeno"],
-            "password":"Yzabcd0",
+            "rol":"doctor",
             "price":9600
            
             
@@ -162,7 +162,7 @@
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/eih5pujfveeajwnym5as.jpg",
             "arraySure": [],
-            "password":"Yzabcd2",
+            "rol":"doctor",
             "price":3360
             
            
@@ -175,7 +175,7 @@
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/qvxzwyjdfzodssjsorcm.jpg",
             "arraySure": ["Swiss Medical", "Medifé"],
-            "password": "Yzabcd4",
+            "rol":"doctor",
             "price":5040
             
           
@@ -188,7 +188,7 @@
             "specialty": "Neurología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/f8ftcngt9joz8ighqnub.jpg",
             "arraySure": ["Sancor Salud"],
-            "password":  "Yzabcd6",
+            "rol":"doctor",
             "price":6720
            
            
@@ -201,7 +201,7 @@
             "specialty":  "Oftalmología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/ajnqiwfe0tli6qjtqnxs.jpg",
             "arraySure": ["Swiss Medical", "Medifé", "Galeno"],
-            "password": "Yzabcd8",
+            "rol":"doctor",
             "price":4800
             
             
@@ -214,7 +214,7 @@
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/dvbplc4qtaiauffive4y.jpg",
             "arraySure": ["OSDE", "Galeno"],
-            "password":"Yzabcd9",
+            "rol":"doctor",
             "price":7200
             
            
@@ -228,7 +228,7 @@
             "specialty": "Neumonología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/u02jgg0rsj4pgujq0bvl.jpg",
             "arraySure": ["OSDE", "Medifé", "Sancor Salud"],
-            "password": "Zqxlkw1",
+            "rol":"doctor",
             "price":9600
           
          
@@ -241,7 +241,7 @@
             "specialty": "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/ordjka639kweeo7dbncc.jpg",
             "arraySure": ["Sancor Salud"],
-            "password":   "Mjupno2",
+            "rol":"doctor",
             "price":3360
        
            
@@ -254,7 +254,7 @@
             "specialty": "Oftalmología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/zzxnrzp7tgo9ikwcd1ju.jpg",
             "arraySure": ["OSDE", "Swiss Medical"],
-            "password":  "LsNzhr3",
+            "rol":"doctor",
             "price":5040
             
           
@@ -268,7 +268,7 @@
             "specialty": "Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189496/doctors/men/f9ugyqjbhzz2ybg1g7v5.jpg",
             "arraySure": ["Galeno", "Sancor Salud"],
-            "password":  "BvTrdg4",
+            "rol":"doctor",
             "price":6720
            
             
@@ -281,7 +281,7 @@
             "specialty":"Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189767/doctors/women/vkc7qw9313n3oppah4nh.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Galeno"],
-            "password":"IeHtyx5",
+            "rol":"doctor",
             "price":4800
             
            
@@ -295,7 +295,7 @@
             "specialty": "Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189767/doctors/women/szi8yr1s2qfzhnp5uvyj.jpg",
             "arraySure": ["Swiss Medical"],
-            "password": "UcRvqs6",
+            "rol":"doctor",
             "price":7200
             
             
@@ -309,7 +309,7 @@
             "specialty": "Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189767/doctors/women/f0jvs1orwqu74epkk4zt.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Medifé", "Galeno"],
-            "password":"FpLyxv7",
+            "rol":"doctor",
             "price":9600
           
          
@@ -322,7 +322,7 @@
             "specialty": "Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/pn959480kk3hclyaqo8l.jpg",
             "arraySure": ["Medifé", "Sancor Salud"],
-            "password":   "WkzYnb8",
+            "rol":"doctor",
             "price":3360
            
           },
@@ -334,7 +334,7 @@
             "specialty":  "Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/id231fv4ulkvxlbcy440.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Sancor Salud"],
-            "password": "ZxCbUa9",
+            "rol":"doctor",
             "price":5040
             
            
@@ -348,7 +348,7 @@
             "specialty":"Endocrinología y Nutrición",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/xfkixq1inlgahozvapjj.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Galeno", "Sancor Salud"],
-            "password":  "StYpNr0",
+            "rol":"doctor",
             "price":6720
          
             
@@ -361,7 +361,7 @@
             "specialty": "Cirugía Ortopédica y Traumatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/kdy6xd8tctnn340zp2uv.jpg",
             "arraySure": ["OSDE", "Medifé", "Galeno", "Sancor Salud"],
-            "password":"QkSbXd1",
+            "rol":"doctor",
             "price":4800
             
            
@@ -374,7 +374,7 @@
             "specialty": "Ginecología y Obstetricia",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/dqtdzdkz5rcuf5ouogzl.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Medifé", "Galeno"],
-            "password": "ZlKwGb2",
+            "rol":"doctor",
             "price":7200
           
            
@@ -387,7 +387,7 @@
             "specialty": "Psiquiatría",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700190229/doctors/women/xlyqcvlfeahg7bghx0di.jpg",
             "arraySure": ["Swiss Medical", "Medifé", "Galeno", "Sancor Salud"],
-            "password": "XrIjCt3",
+            "rol":"doctor",
             "price":9600
            
             
@@ -401,7 +401,7 @@
             "specialty": "Neumonología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189768/doctors/women/yzz96ougt7nlbgdmx2ir.jpg",
             "arraySure": ["Medifé", "Sancor Salud"],
-            "password":"YzAxCb4",
+            "rol":"doctor",
             "price":3360
            
            
@@ -414,7 +414,7 @@
             "specialty":  "Oftalmología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/eazbqmd9uwbynjgknqld.jpg",
             "arraySure": ["Swiss Medical", "Sancor Salud"],
-            "password": "WzVnHg5",
+            "rol":"doctor",
             "price":5040
            
             
@@ -427,7 +427,7 @@
             "specialty":  "Endocrinología y Nutrición",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/iggyfil7fpazdeyttezd.jpg",
             "arraySure": ["Swiss Medical", "Medifé", "Sancor Salud"],
-            "password":"RgXqZp6",
+            "rol":"doctor",
             "price":6720
           
            
@@ -441,7 +441,7 @@
             "specialty":  "Cardiología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/whgme8zkratrwllcujco.jpg",
             "arraySure": ["OSDE", "Medifé"],
-            "password": "ZvYsBc7",
+            "rol":"doctor",
             "price":4800
             
          
@@ -455,7 +455,7 @@
             "specialty": "Radiología e Imágenes Médicas",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/rsoizdrefk0s3x75nygs.jpg",
             "arraySure": ["Swiss Medical", "Galeno", "Sancor Salud"],
-            "password":   "EwQgUz8",
+            "rol":"doctor",
             "price":7200
         
             
@@ -469,7 +469,7 @@
             "specialty": "Neumonología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/nlou2jn30rnjdetbisqj.jpg",
             "arraySure": ["Swiss Medical", "Galeno"],
-            "password":"PdSjYx9",
+            "rol":"doctor",
             "price":9600
            
            
@@ -482,7 +482,7 @@
             "specialty":"Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/btrtzsapqelisa8c8hp4.jpg",
             "arraySure": ["Medifé", "Galeno"],
-            "password": "KxWlHz0",
+            "rol":"doctor",
             "price":3360
             
            
@@ -496,7 +496,7 @@
             "specialty":"Cirugía Ortopédica y Traumatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189769/doctors/women/ldiyhysm5tuxuxpldcfb.jpg",
             "arraySure": ["Medifé"],
-            "password": "ZoIxNm1",
+            "rol":"doctor",
             "price":5040
           
           },
@@ -508,7 +508,7 @@
             "specialty": "Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700192307/doctors/women/toppvsxbyy9zcmb3i4iq.jpg",
             "arraySure": ["Swiss Medical", "Medifé", "Galeno", "Sancor Salud"],
-            "password":"Iuiww9",
+            "rol":"doctor",
             "price":6720
            
             
@@ -521,7 +521,7 @@
             "specialty": "Dermatología",
             "profilePicture": "https://res.cloudinary.com/dvpo44a4q/image/upload/v1700189770/doctors/women/r0z9ptldvmiprxcofron.jpg",
             "arraySure": ["OSDE", "Swiss Medical", "Sancor Salud"],
-            "password":"Zxusy8",
+            "rol":"doctor",
             "price":4800
           }
     ]

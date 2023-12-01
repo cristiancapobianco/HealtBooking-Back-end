@@ -16,6 +16,14 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    height:{
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    weight:{
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
     phone: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -28,34 +36,11 @@ module.exports = (sequelize) => {
         },
       },
     },
-    rol: {
+   rol:{
       type: DataTypes.STRING,
-      defaultValue: "patient",
+      defaultValue: "paciente",
       allowNull: false
-    },
-    // password: {
-    //   type: DataTypes.STRING,
-    //   allowNull: true,
-    //   validate: {
-    //     len: {
-    //       args: [8, 15],
-    //       msg: "The password must have at least 8 characters.",
-    //     },
-    //     isAlphanumeric: {
-    //       msg: "The password must contain only letters and numbers.",
-    //     },
-    //     customValidation(value) {
-
-    //       if (!/[A-Z]/.test(value)) {
-    //         throw new Error("La contraseña debe contener al menos una letra mayúscula.");
-    //       }
-
-    //       if (!/\d/.test(value)) {
-    //         throw new Error("La contraseña debe contener al menos un número.");
-    //       }
-    //     },
-    //   },
-    // },
+   },
     state: {
       type: DataTypes.STRING,
       allowNull: false,
