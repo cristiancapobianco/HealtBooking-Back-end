@@ -4,9 +4,9 @@ const sendEmailPatient = require('./notifications/sendEmailPatient');
 const postPatient = async(req,res) => {
 
     const newPatient = req.body;
-    console.log(newPatient);
+    //console.log(req.body);
 
-    const {id,name,phone,email,sure} = newPatient;
+    const {id,name,phone,email,height,weight,sure} = newPatient;
 
     const existingPatient = await Patient.findOne({
         where:{
@@ -21,7 +21,7 @@ const postPatient = async(req,res) => {
     }
     else{
         try {
-            const patientData = await Patient.create({id,name,phone,email,sure});
+            const patientData = await Patient.create({id,name,phone,email,height,weight,sure});
             
             await sendEmailPatient(name, email)
             

@@ -16,6 +16,14 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    height:{
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    weight:{
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
     phone: {
       type: DataTypes.STRING,
       allowNull: false,

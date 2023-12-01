@@ -13,13 +13,14 @@ const getPatientById = async(req,res) => {
         });
         if(patientById){
             return res.status(200).json(patientById);
-        }else{
-            return res.send("Error al buscar el paciente");
+        }
+        else{
+            return  res.status(404).json({message:"Error al buscar paciente"});
         }
        
     
     } catch (error) {
-      return  res.status(400).json({message:"Error al buscar paciente",error:error.message});
+      return  res.status(404).json({message:"Error al buscar paciente",error:error.message});
     }
   
 };
