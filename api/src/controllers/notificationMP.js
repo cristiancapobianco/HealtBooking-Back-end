@@ -2,10 +2,10 @@ const { Appointment } = require("../db");
 
 const notifyPay = async (req, res) => {
     const data = req.body;
-    const { id } = data
+    const { id } = data.data
     try {
-        if (id === 123456) {
-            return res.status(200).json({ message: 'Estado de la cita actualizado con éxito', data });
+        if (id === "123456789") {
+            return res.status(200).json({ message: 'Estado de la cita actualizado con éxito', id });
         }
         const appointment = await Appointment.findOne({
             where: { id: data.id }
