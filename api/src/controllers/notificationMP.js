@@ -2,11 +2,14 @@ const { Appointment } = require("../db");
 
 const notifyPay = async (req, res) => {
     const data = req.body;
+    const { id } = data.data
     console.log(data)
     try {
-        // if (id === "123456789") {
-        return res.status(200).json({ message: 'Estado de la cita actualizado con éxito', data });
-        // }
+        if (id !== "123456789") {
+            const compra = await axios.get(`
+            https://api.mercadopago.com/v1/payments/${id}`, { headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${ACCESS_TOKEN}` } })
+            return res.status(200).json({ message: 'Estado de la cita actualizado con éxito', compra });
+        }
         const appointment = await Appointment.findOne({
             where: { id: external_reference }
         });
