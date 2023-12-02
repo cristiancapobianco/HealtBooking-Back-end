@@ -8,9 +8,10 @@ const {
 
 const notifyPay = async (req, res) => {
     const data = req.body;
-    const { id } = data.data;
 
     try {
+
+        const { id } = data.data;
         let external_reference;
 
         if (id !== "123456789") {
