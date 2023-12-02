@@ -2,7 +2,7 @@ const { Appointment } = require("../db");
 
 const notifyPay = async (req, res) => {
     const { external_reference } = req.query;
-
+    console.log(external_reference)
     try {
         // if (id === "123456789") {
         //     return res.status(200).json({ message: 'Estado de la cita actualizado con éxito', id });
