@@ -53,6 +53,7 @@ const pagosMP = async (req, res) => {
         })
         .catch(function (error) {
             console.log(error);
+            res.status(500).json({ error: 'Error al crear la preferencia de pago.', m });
         });
 };
 
