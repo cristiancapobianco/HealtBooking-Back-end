@@ -1,4 +1,6 @@
 const { Appointment } = require("../db");
+const axios = require('axios');
+
 
 const notifyPay = async (req, res) => {
     const data = req.body;
