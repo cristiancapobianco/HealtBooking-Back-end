@@ -21,7 +21,9 @@ const pagosMP = async (req, res) => {
 
     const id = uuidv4();
 
-    const { date, time, idPatient, idDoctor } = req.body;
+    const { date, time, idPatient, idDoctor } = req.body
+
+    // console.log(req.body)
     const price = await calcPrice(idPatient, idDoctor);
 
     const newAppointment = await postAppointment(id, date, time, idPatient, idDoctor, price)
@@ -36,9 +38,10 @@ const pagosMP = async (req, res) => {
                     unit_price: Number(price)
                 }
             ],
+            external_reference: id,
             notification_url: 'https://healtbooking-backend.onrender.com/notificationPay',
             back_urls: {
-                success: "http://localhost:5173",
+                success: "http://localhost:5173/patient",
                 failure: "http://localhost:5173",
                 pending: "",
             },
