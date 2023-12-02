@@ -30,13 +30,13 @@ router.get('/sure', getSure);
 router.get('/admin', getAllUsers);
 router.patch('/admin/doctors/:idDoc', updateDoctor)
 router.post('/pacient/register', postPatient);
-router.get('/patient/:idPatient',getPatientById)
+router.get('/patient/:idPatient', getPatientById)
 router.patch('/toggle/:idUser', changeStatus);
 router.post('/appointment', handlerPostAppointment)
-router.get('/appointment/:idPatient',getAppointmentByPatient)
-router.get('/appointment/:idDoctor', getAppointmentByDoctor)
-router.get('/admin/appointment',getAllAppointments)
-router.get('/logging',getUserByEmail)
+router.get('/appointment/patient/:idPatient', getAppointmentByPatient)
+router.get('/appointment/doctor/:idDoctor', getAppointmentByDoctor)
+router.get('/admin/appointment', getAllAppointments)
+router.get('/logging', getUserByEmail)
 
 //router.get('/date', getDate)
 
