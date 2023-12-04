@@ -36,6 +36,10 @@ module.exports = (sequelize) => {
         },
       },
     },
+    hc:{
+      type:DataTypes.STRING,
+      allowNull:true
+    },
    rol:{
       type: DataTypes.STRING,
       defaultValue: "paciente",
