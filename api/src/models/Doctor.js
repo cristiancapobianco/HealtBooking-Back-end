@@ -33,6 +33,7 @@ module.exports = (sequelize) => {
         },
         rol:{
           type:DataTypes.STRING,
+          defaultValue: 'doctor',
           allowNull: false,
         },
         state: {
