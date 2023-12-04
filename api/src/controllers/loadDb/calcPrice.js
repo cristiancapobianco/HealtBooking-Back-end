@@ -17,7 +17,7 @@ const calcPrice = async (idPatient, idDoctor) => {
 
 
         patientSure = patient.dataValues.sureId
-        console.log(patientSure);
+        // console.log(patientSure);
 
         if (!patient) {
             throw new Error('Patient not found');
@@ -42,7 +42,7 @@ const calcPrice = async (idPatient, idDoctor) => {
                 }
             ]
         });
-        console.log(doctor);
+        // console.log(doctor);
         if (!doctor) {
             throw new Error('Doctor not found');
         }
@@ -53,17 +53,17 @@ const calcPrice = async (idPatient, idDoctor) => {
         if (doctor.Sures && doctor.Sures.length > 0) {
 
             doctorSure = doctor.Sures.map(sure => sure.dataValues)
-            console.log(doctorSure);
+            // console.log(doctorSure);
 
             const matchSure = doctorSure.find(sure => sure.id === patientSure)
-            console.log('Coincidencia con : ', matchSure);
+            // console.log('Coincidencia con : ', matchSure);
 
             // Comparar Sure del doctor con Sure del paciente
             if (matchSure) {
                 // Calcular el precio con descuento
                 price = doctor.dataValues.price - (doctor.dataValues.price * (matchSure.discount / 100));
-                console.log('Tarifa doctor', doctor.dataValues.price);
-                console.log('Descuento: ', matchSure.discount);
+                // console.log('Tarifa doctor', doctor.dataValues.price);
+                // console.log('Descuento: ', matchSure.discount);
             }
             else {
                 price = doctor.dataValues.price;

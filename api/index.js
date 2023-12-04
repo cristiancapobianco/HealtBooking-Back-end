@@ -7,6 +7,7 @@ const loadDbSure = require("./src/controllers/loadDb/loadDbSure.js");
 const loadPatientSure = require("./src/controllers/loadDb/loadPatientSure.js");
 const loadRelationships = require("./src/controllers/loadDb/loadRelationships.js");
 const loadDbAppointment = require("./src/controllers/loadDb/loadDbAppointment.js");
+const loadDbMaster= require("./src/controllers/loadDb/loadDbMaster.js")
 
 const { conn } = require('./src/db.js');
 const PORT = 3001;
@@ -34,6 +35,7 @@ conn.sync({ force: true }).then(() => {
             await loadDbPatient()
             await loadPatientSure()
             await loadDbAppointment()
+            await loadDbMaster()
         } 
       
         console.log(`Server listening on port ${PORT}`);

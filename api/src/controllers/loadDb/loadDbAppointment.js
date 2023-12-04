@@ -11,7 +11,7 @@ const loadDbAppointment = async () => {
     for (const appointment of mockAppointment) {
       const { date, time, idPatient, idDoctor } = appointment;
       const id = uuidv4();
-      console.log(idPatient, idDoctor);
+      // console.log(idPatient, idDoctor);
 
       const price = await calcPrice(idPatient, idDoctor);
 

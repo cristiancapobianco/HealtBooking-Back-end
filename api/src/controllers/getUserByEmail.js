@@ -1,10 +1,11 @@
-const { Patient, Doctor } = require('../db');
+const { Patient, Doctor, Master } = require('../db');
 
 const getUserByEmail = async(req,res) => {
 
     const email = req.query.email;
+    
 
-   // console.log(email);
+   console.log(email);
 
     try {
         
@@ -20,10 +21,24 @@ const getUserByEmail = async(req,res) => {
             }
         });
 
-        if(doctor || patient){
-          return res.status(200).json(true);
-        }else{
-          return res.status(200).json(false);
+        const master= await Master.findOne({
+            // attributes:["id","name", "email","rol"],
+            where:{
+            email:email
+        }})
+        
+        if(doctor){
+            return res.status(200).json({exist: true, rol: doctor.rol});
+        }
+        if(patient){
+            return res.status(200).json({exist: true, rol: patient.rol});
+        }
+        
+        if(master){
+          return res.status(200).json({exist: true, rol: master.rol});
+        }
+        else{
+          return res.status(200).json({exist: false, rol: 'patient'});
         }
 
 
