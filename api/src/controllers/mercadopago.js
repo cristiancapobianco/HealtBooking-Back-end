@@ -42,7 +42,7 @@ const pagosMP = async (req, res) => {
             notification_url: 'https://healtbooking-backend.onrender.com/notificationPay',
             back_urls: {
                 success: "http://localhost:5173/patient",
-                failure: "http://localhost:5173",
+                failure: "http://localhost:5173/patient",
                 pending: "",
             },
             auto_return: "approved",

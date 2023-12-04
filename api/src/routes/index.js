@@ -27,7 +27,6 @@ const doctorRouter=  require('./doctorRouter')
 
 const router = Router();
 
-
 router.get('/logging',getUserByEmail)
 router.use('/master', masterRouter)
 router.use('/patient', patientRouter)
