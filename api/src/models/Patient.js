@@ -42,7 +42,7 @@ module.exports = (sequelize) => {
     },
    rol:{
       type: DataTypes.STRING,
-      defaultValue: "paciente",
+      defaultValue: "patient",
       allowNull: false
    },
     state: {
