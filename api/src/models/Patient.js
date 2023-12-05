@@ -52,7 +52,10 @@ module.exports = (sequelize) => {
         },
       },
     },
-  });
+  },
+    {
+      timestamps: false
+    });
 };
 
 //haciendo cambios al pedo a ver si puedo subier esto
