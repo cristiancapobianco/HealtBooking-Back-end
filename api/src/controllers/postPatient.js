@@ -21,7 +21,11 @@ const postPatient = async(req,res) => {
     }
     else{
         try {
-            const patientData = await Patient.create({id,name,phone,email,height,weight,sure});
+            const patientData = await Patient.create({id,name,phone,email,height,weight});
+
+            const sureMedic=await Sure.findOne({where:{name: sure}})
+
+            await patientData.setSure(sureMedic);
             
             await sendEmailPatient(name, email)
             

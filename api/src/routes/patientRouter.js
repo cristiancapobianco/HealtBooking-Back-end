@@ -9,10 +9,12 @@ const { notifyPay } = require('../controllers/notificationMP');
 const { getSpecialty } = require('../controllers/getSpecialty');
 const { getSure } = require('../controllers/getSure');
 const { getAllDoctors } = require("../controllers/getAllDoctors")
+const { putPatient } = require('../controllers/putPatient');
 
 const patientRouter=Router();
 
 // URl_Base + /patient/
+patientRouter.put('/:idPatient', putPatient) //modifica los datos del paciente
 
 patientRouter.get('/doctor/:idDoc', detailDoctor) // busca la informacion del doctor por id
 
@@ -33,5 +35,6 @@ patientRouter.post('/pay', pagosMP) // MERCADOPAGO
 patientRouter.post("/notificationPay", notifyPay) // MERCADOPAGO
 
 patientRouter.get('/:idPatient',getPatientById ) //busca todos los datos del paciente
+
 
 module.exports= patientRouter
