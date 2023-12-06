@@ -16,11 +16,11 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    height:{
+    height: {
       type: DataTypes.INTEGER,
       allowNull: true
     },
-    weight:{
+    weight: {
       type: DataTypes.INTEGER,
       allowNull: true
     },
@@ -36,11 +36,11 @@ module.exports = (sequelize) => {
         },
       },
     },
-   rol:{
+    rol: {
       type: DataTypes.STRING,
       defaultValue: "patient",
       allowNull: false
-   },
+    },
     state: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -51,6 +51,10 @@ module.exports = (sequelize) => {
           msg: 'The default value must by "active" or "inactive".',
         },
       },
+    },
+    history: {
+      type: DataTypes.STRING,
+      allowNull: true,
     },
   });
 };

@@ -39,7 +39,7 @@ const pagosMP = async (req, res) => {
                 }
             ],
             external_reference: id,
-            notification_url: 'https://healtbooking-backend.onrender.com/notificationPay',
+            notification_url: 'https://healtbooking-backend.onrender.com/patient/notificationPay',
             back_urls: {
                 success: "http://localhost:5173/patient",
                 failure: "http://localhost:5173/patient",
