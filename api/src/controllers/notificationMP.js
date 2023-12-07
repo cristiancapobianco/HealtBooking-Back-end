@@ -14,6 +14,10 @@ const notifyPay = async (req, res) => {
         const { id } = data.data;
         let external_reference;
 
+        if (id === "123456789") {
+            return res.status(200).json({ message: 'Estado de la cita actualizado con éxito' });
+        }
+
         if (id !== "123456789") {
             const compraResponse = await axios.get(`https://api.mercadopago.com/v1/payments/${id}`, {
                 headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${ACCESS_TOKEN}` }
