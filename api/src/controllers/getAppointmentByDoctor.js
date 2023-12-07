@@ -1,14 +1,26 @@
-const { Appointment } = require('../db')
+const { Appointment, Patient, Sure } = require('../db')
 
 const getAppointmentByDoctor = async (req, res) => {
 
-    const {idDoctor} = req.params
+    const { idDoctor } = req.params
 
     try {
         const allDates = await Appointment.findAll({
-            where:{
-                doctorId:idDoctor,
-            }
+            where: {
+                doctorId: idDoctor,
+            },
+            include: [
+                {
+                    model: Patient,
+                    attributes: ['name', 'history'],
+                    include: [
+                        {
+                            model: Sure,
+                            attributes: ['name']
+                        }
+                    ]
+                }
+            ]
         })
 
         if (allDates) {
