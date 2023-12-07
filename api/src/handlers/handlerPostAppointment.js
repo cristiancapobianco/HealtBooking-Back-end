@@ -13,4 +13,4 @@ const handlerPostAppointment=async(req, res)=>{
     }
 }   
 
-module.exports = handlerPostAppointment
+module.exports = {handlerPostAppointment}
