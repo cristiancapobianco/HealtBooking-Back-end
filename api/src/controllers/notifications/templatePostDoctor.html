@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template post doctor</title>
+    <style type="text/css">
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      header {
+        color: #fff;
+        text-align: center;
+      }
+
+      .content {
+        background-color: #fff;
+        padding: 10px;
+        width: 60%;
+        height: 100%;
+        margin: 20px;
+        border-radius: 10px;
+      }
+
+    
+
+      a {
+        text-decoration: none;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
+        height: 100px;
+        width: 100%;
+      }
+      
+      
+
+      h2 {
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+
+      .dateTime {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .dateTime td{
+       width: 50%;
+       width: fit-content;
+       
+     }
+    
+      .data {
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      .date {
+        width: 100%;
+      }
+      .time {
+        width: 100%;
+      }
+      .label {
+        font-size: 10px;
+      }
+
+      .note {
+        margin: 20px;
+        font-size: 10px;
+      }
+
+      .img {
+        width: 40px;
+        margin-left: 10px;
+      }
+
+      .imageLogo {
+        width: 300px;
+        margin: 0;
+      }
+
+      h1,
+      h3 {
+        margin: 0;
+      }
+
+      .title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+      }
+
+      .titleRecorded {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+      }
+
+      .enlace {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      .button {
+        background-color: rgb(73, 191, 199);
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 10px rgba(42, 108, 113, 0.961),
+          inset 0 0 10px rgba(42, 108, 113, 0.961);
+        width: fit-content;
+      }
+
+      .button:hover {
+        background-color: rgb(37, 107, 112);
+      }
+    </style>
+  </head>
+  <body style="font-family: Arial, sans-serif; background-color: #f2f2f2">
+    <table width="100%" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
+          <table width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+              <td style="text-align: center">
+                <img
+                  class="imageLogo"
+                  src="https://res.cloudinary.com/dvpo44a4q/image/upload/v1701986961/full-logo-black-copia_rv0kl6.png"
+                  alt="Descripción de la imagen"
+                  style="max-width: 100%" />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table
+            class="container"
+            width="100%"
+            cellspacing="0"
+            cellpadding="0"
+            style="
+              background-image: url('https://res.cloudinary.com/dvpo44a4q/image/upload/v1701916787/Mask_group_qhv91y.png');
+              background-size: cover;
+              background-repeat: no-repeat;
+              border-radius: 30px;
+            ">
+            <tr align="right">
+              <td>
+                <table class="content" cellspacing="0" cellpadding="0">
+                  <tr class="content">
+                    <td style="justify-content: center">
+                      <div class="title">
+                        <h2>Registration successful</h2>
+                        <img
+                          class="img"
+                          src="https://res.cloudinary.com/dvpo44a4q/image/upload/v1702045450/approve_owljcl.png" />
+                      </div>
+                      <p
+                        style="
+                          border-bottom: 1px solid #5c5c5c;
+                          background: unset;
+                          height: 1px;
+                          width: 100%;
+                          margin: 0px 0px 0px 0px;
+                        "></p>
+                      <p class="note">
+                        Hello {{name}}. We are grateful that you have joined our institution as a <strong>doctor</strong>. It is a pleasure to welcome you to our team of health professionals specialized in {{specialty}}. Below we provide you with a summary of the information we have recorded. If you need to make any corrections or have additional questions, please do not hesitate to contact us.
+                      </p>
+                      <p
+                        style="
+                          border-bottom: 1px solid #5c5c5c;
+                          background: unset;
+                          height: 1px;
+                          width: 100%;
+                          margin: 0px 0px 0px 0px;
+                        "></p>
+                      <div class="titleRecorded">
+                        <h3>Recorded data</h3>
+                      </div>
+                      <div class="info">
+                        <table class="dateTime"  style="border-spacing: 10px 0;" cellspacing="5px" cellpadding="">
+                          <tr>
+                            <td>
+                              <div class="date">
+                                <label class="label">License:</label>
+                                <span class="data">{{id}}</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="time">
+                                <label class="label">Specialty:</label>
+                                <span class="data">{{specialty}}</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="time">
+                                <label class="label">Email:</label>
+                                <span class="data">{{email}}</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="doctor">
+                                <label class="label">Price: </label>
+                                <span class="data">{{price}}</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="time">
+                                <label class="label">Phone:</label>
+                                <span class="data">{{phone}}</span>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="doctor">
+                                <label class="label">Sure: </label>
+                                <span class="data">{{ sure }}</span>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="enlace" style="text-align: end">
+                        <a href="https://healthbooking-front.vercel.app/">
+                          <button class="button">Ir al sitio</button>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
