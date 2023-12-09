@@ -8,7 +8,7 @@ const postDoctor = async (req, res) => {
     try {
         const newDoc = req.body
         const { name, id, email, phone, profilePicture, sure, specialty, price } = newDoc
-        console.log(newDoc)
+        // console.log(newDoc)
 
         const existingDoc = await Doctor.findOne({
             where: {
@@ -42,7 +42,7 @@ const postDoctor = async (req, res) => {
                     if (existingSure) {
                         await doc.addSure(existingSure);
                     } else {
-                        console.log(`Sure '${sureName}' no encontrado.`);
+                        return res.status(404).send(`Sure '${sureName}' no encontrado.`);
                     }
                 }
 

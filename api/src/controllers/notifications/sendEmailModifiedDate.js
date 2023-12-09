@@ -38,7 +38,7 @@ const sendEmailPatient=async({id,email,date,time,doctor,specialty})=>{
     const transport= nodemailer.createTransport(config)
 
     const info = await transport.sendMail(message)
-    console.log(info);
+    // console.log(info);
 }
 
 module.exports = sendEmailPatient
