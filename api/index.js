@@ -7,12 +7,13 @@ const loadDbSure = require("./src/controllers/loadDb/loadDbSure.js");
 const loadPatientSure = require("./src/controllers/loadDb/loadPatientSure.js");
 const loadRelationships = require("./src/controllers/loadDb/loadRelationships.js");
 const loadDbAppointment = require("./src/controllers/loadDb/loadDbAppointment.js");
-const loadDbMaster= require("./src/controllers/loadDb/loadDbMaster.js")
+const loadDbMaster = require("./src/controllers/loadDb/loadDbMaster.js")
 
 const { conn } = require('./src/db.js');
-const PORT = 3001;
+require('dotenv').config();
+const { PORT } = process.env;
 
-const {Doctor, Specialty,Sure, Patient,Appointment} = require('./src/db.js');
+const { Doctor, Specialty, Sure, Patient, Appointment } = require('./src/db.js');
 
 
 // conn.sync({ altern: true }).then(() => { SI YA ESTA LISTA LA BASE DE DATOS USAR ESTE QUE NO BORRA DATOS
@@ -20,14 +21,14 @@ const {Doctor, Specialty,Sure, Patient,Appointment} = require('./src/db.js');
 
 
 conn.sync({ force: true }).then(() => {
-    app.listen(PORT,async () => {
+    app.listen(PORT, async () => {
         const countDoctor = await Doctor.count()
-        const countSure= await Sure.count()
-        const countSpecialty= await Specialty.count()
-        const countPatient=  await Patient.count()
-        const countAppointment= await Appointment.count()
-        if(countDoctor <= 0 && countSure <=0 && countSpecialty <=0 && countPatient <=0 && countAppointment <=0){
-    
+        const countSure = await Sure.count()
+        const countSpecialty = await Specialty.count()
+        const countPatient = await Patient.count()
+        const countAppointment = await Appointment.count()
+        if (countDoctor <= 0 && countSure <= 0 && countSpecialty <= 0 && countPatient <= 0 && countAppointment <= 0) {
+
             await loadDbSure()
             await loadDbSpecialty()
             await loadDbDoctor()
@@ -36,8 +37,8 @@ conn.sync({ force: true }).then(() => {
             await loadPatientSure()
             await loadDbAppointment()
             await loadDbMaster()
-        } 
-      
+        }
+
         console.log(`Server listening on port ${PORT}`);
     })
 }).catch(error => console.error(error))

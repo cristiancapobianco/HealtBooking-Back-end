@@ -1,7 +1,7 @@
 const {Patient,Sure} = require('../db');
 const sendEmailPatient = require('./notifications/sendEmailPatient');
 
-const postPatient = async(req,res) => {
+const postPatient = async (req, res) => {
 
     const newPatient = req.body;
     //console.log(req.body);
@@ -9,7 +9,7 @@ const postPatient = async(req,res) => {
     const {id,name,phone,email,height,weight,sure} = newPatient;
 
     const existingPatient = await Patient.findOne({
-        where:{
+        where: {
             id
         }
     });
@@ -44,6 +44,6 @@ const postPatient = async(req,res) => {
     }
 
 };
-module.exports ={
+module.exports = {
     postPatient
 }
