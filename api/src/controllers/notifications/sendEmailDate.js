@@ -4,18 +4,18 @@ const path = require('path');
 const nodemailer= require ('nodemailer')
 
 // Corrige la ruta del archivo eliminando una de las instancias de "notifications"
-const filePath = path.resolve(__dirname, 'templatePostPatient.html');
-const templatePostPatient = fs.readFileSync(filePath, 'utf8');
+const filePath = path.resolve(__dirname, 'templateConfirmDate.html');
+const templateConfirmDate = fs.readFileSync(filePath, 'utf8');
 
 // console.log(htmlContent);
-const templateSend = handlebars.compile(templatePostPatient);
+const templateSend = handlebars.compile(templateConfirmDate);
 
 
 
 
-const sendEmailPatient=async({id,name,phone,email,sure})=>{
+const sendEmailDate=async({id,email,date,time,doctor,specialty})=>{
 
-    const htmlContent = templateSend({id,name,phone,email,sure})
+    const htmlContent = templateSend({id,date,time,doctor,specialty})
 
     const config={
         host: 'smtp.gmail.com',
@@ -29,7 +29,7 @@ const sendEmailPatient=async({id,name,phone,email,sure})=>{
     const message={
         from: 'healthbookingPf@gmail.com',
         to: email,
-        subject: 'User register',
+        subject: 'Confirmed appointment',
         // text: `Bienvenido ${name}, su registro ha sido exitoso ya puede reservar su cita`
         html: htmlContent
     }
@@ -41,4 +41,4 @@ const sendEmailPatient=async({id,name,phone,email,sure})=>{
     console.log(info);
 }
 
-module.exports = sendEmailPatient
+module.exports = sendEmailDate

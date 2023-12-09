@@ -26,8 +26,16 @@ const postPatient = async(req,res) => {
             const sureMedic=await Sure.findOne({where:{name: sure}})
 
             await patientData.setSure(sureMedic);
+
+            const dataPatient={
+                id:id,
+                name:name,
+                phone:phone,
+                email:email,
+                sure:sureMedic.name
+            }
             
-            await sendEmailPatient(name, email)
+            await sendEmailPatient(dataPatient)
             
             return res.status(200).json({message:'Paciente registrado con éxito',patientData});
         } catch (error) {
