@@ -8,6 +8,7 @@ const postDoctor = async (req, res) => {
     try {
         const newDoc = req.body
         const { name, id, email, phone, profilePicture, sure, specialty, price } = newDoc
+        console.log(newDoc)
 
         const existingDoc = await Doctor.findOne({
             where: {
@@ -45,7 +46,18 @@ const postDoctor = async (req, res) => {
                     }
                 }
 
-                await sendEmailDoctor(name, email, specialty)
+                const dataDoctor={
+                    id:id,
+                    name:name,
+                    phone:phone,
+                    email:email,
+                    specialty:existingSpecialty.name,
+                    price:price,
+                    sure:sure
+                }
+
+                await sendEmailDoctor(dataDoctor)
+
                 res.status(200).send({ message: "Doctor creado", doc })
             } catch (error) {
                 res.status(400).send(error.message)

@@ -3,24 +3,20 @@ const mockAppointment = require('../../assets/data/mockAppointment.json').appoin
 const calcPrice = require('./calcPrice.js');
 const postAppointment = require('../postAppointment.js');
 
-const { v4: uuidv4 } = require('uuid');
-
+// const { v4: uuidv4 } = require('uuid');
 
 const loadDbAppointment = async () => {
   try {
     for (const appointment of mockAppointment) {
       const { date, time, idPatient, idDoctor } = appointment;
-      const id = uuidv4();
-      // console.log(idPatient, idDoctor);
 
-      //const price = await calcPrice(idPatient, idDoctor);
-      // console.log(finalAmount);
-      const price = 5000
-      await postAppointment(id, date, time, idPatient, idDoctor, price);
+      // const id = uuidv4();
+  
+      const price = await calcPrice(idPatient, idDoctor);
 
+      await postAppointment( date, time, idPatient, idDoctor, price);
 
     }
-    // console.log('Appointments loaded successfully.');
   } catch (error) {
     console.error('Error loading appointments:', error);
   }
