@@ -4,7 +4,7 @@ const { Appointment } = require("../db");
 const postAppointment = async (id, date, time, idPatient, idDoctor, price) => {
 
   const newAppointment = await Appointment.create({
-    id: id,
+    // id: id,
     date: date,
     time: time,
     finalAmount: price,

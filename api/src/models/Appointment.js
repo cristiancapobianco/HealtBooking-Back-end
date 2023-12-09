@@ -4,6 +4,7 @@ module.exports = (sequelize) => {
     sequelize.define("Appointment", {
         id: {
             type: DataTypes.UUID,
+            defaultValue: DataTypes.UUIDV4,
             primaryKey: true,
             // autoIncrement: true
             // allowNull: true,

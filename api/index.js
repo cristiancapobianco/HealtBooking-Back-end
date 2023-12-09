@@ -7,7 +7,7 @@ const loadDbSure = require("./src/controllers/loadDb/loadDbSure.js");
 const loadPatientSure = require("./src/controllers/loadDb/loadPatientSure.js");
 const loadRelationships = require("./src/controllers/loadDb/loadRelationships.js");
 const loadDbAppointment = require("./src/controllers/loadDb/loadDbAppointment.js");
-const loadDbMaster= require("./src/controllers/loadDb/loadDbMaster.js")
+const loadDbMaster = require("./src/controllers/loadDb/loadDbMaster.js")
 
 const { conn } = require('./src/db.js');
 require('dotenv').config();
@@ -33,17 +33,12 @@ conn.sync({ force: true }).then(() => {
             await loadDbSpecialty()
             await loadDbDoctor()
             await loadRelationships()
-            //await loadDbPatient()
+            await loadDbPatient()
             await loadPatientSure()
             await loadDbAppointment()
-<<<<<<< HEAD
+            await loadDbMaster()
         }
 
-=======
-            await loadDbMaster()
-        } 
-      
->>>>>>> 72f8308cbd967c81101518465098add296137342
         console.log(`Server listening on port ${PORT}`);
     })
 }).catch(error => console.error(error))

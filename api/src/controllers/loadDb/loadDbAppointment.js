@@ -13,15 +13,14 @@ const loadDbAppointment = async () => {
       const id = uuidv4();
       // console.log(idPatient, idDoctor);
 
-      const price = await calcPrice(idPatient, idDoctor);
-
+      //const price = await calcPrice(idPatient, idDoctor);
       // console.log(finalAmount);
-
+      const price = 5000
       await postAppointment(id, date, time, idPatient, idDoctor, price);
 
 
     }
-   // console.log('Appointments loaded successfully.');
+    // console.log('Appointments loaded successfully.');
   } catch (error) {
     console.error('Error loading appointments:', error);
   }
