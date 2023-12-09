@@ -1,13 +1,12 @@
 const { Appointment, Patient, Sure } = require('../db')
 
-const getAppointmentByDoctor = async (req, res) => {
+const getAppointmentById = async (req, res) => {
 
-    const { idDoctor } = req.params
-
+    const { idAppointment } = req.params
     try {
-        const allDates = await Appointment.findAll({
+        const date = await Appointment.findOne({
             where: {
-                doctorId: idDoctor,
+                id: idAppointment
             },
             include: [
                 {
@@ -22,9 +21,8 @@ const getAppointmentByDoctor = async (req, res) => {
                 }
             ]
         })
-
-        if (allDates) {
-            res.status(201).send(allDates)
+        if (date) {
+            res.status(201).send(date)
         } else {
             res.status(204).send("There are no registered appointments")
         }
@@ -34,5 +32,5 @@ const getAppointmentByDoctor = async (req, res) => {
 }
 
 module.exports = {
-    getAppointmentByDoctor
+    getAppointmentById
 }

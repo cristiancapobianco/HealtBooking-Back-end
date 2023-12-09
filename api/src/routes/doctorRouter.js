@@ -1,10 +1,13 @@
-const {Router}= require('express')
+const { Router } = require('express')
 const { getAllDoctors } = require("../controllers/getAllDoctors")
 const { getAppointmentByDoctor } = require('../controllers/getAppointmentByDoctor');
 const { getSpecialty } = require('../controllers/getSpecialty');
 const { getSure } = require('../controllers/getSure');
+const { changeHistory } = require('../controllers/clinicalHistory');
+const { getAppointmentById } = require('../controllers/getAppointmentById');
+const { updateAppointment } = require('../controllers/updateAppointment');
 
-const doctorRouter=Router();
+const doctorRouter = Router();
 
 // URl_Base + /doctor/
 
@@ -14,7 +17,12 @@ doctorRouter.get('/specialty', getSpecialty); //todas las especialidades
 
 doctorRouter.get('/sure', getSure); //todas las obras sociales
 
-doctorRouter.get('/', getAllDoctors ) //muestra todos los doctores
+doctorRouter.get('/', getAllDoctors) //muestra todos los doctores
 
+doctorRouter.patch('/clinicalHistory', changeHistory) //cambia historial clinico
 
-module.exports= doctorRouter
+doctorRouter.get('/appointmentById/:idAppointment', getAppointmentById) //muestra una cita por id
+
+doctorRouter.patch('/updateAppointment/:idAppointment', updateAppointment) // hace update a una cita
+
+module.exports = doctorRouter

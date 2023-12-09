@@ -16,11 +16,11 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    height:{
+    height: {
       type: DataTypes.INTEGER,
       allowNull: true
     },
-    weight:{
+    weight: {
       type: DataTypes.INTEGER,
       allowNull: true
     },
@@ -36,15 +36,11 @@ module.exports = (sequelize) => {
         },
       },
     },
-    hc:{
-      type:DataTypes.STRING,
-      allowNull:true
-    },
-   rol:{
+    rol: {
       type: DataTypes.STRING,
       defaultValue: "patient",
       allowNull: false
-   },
+    },
     state: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -56,10 +52,11 @@ module.exports = (sequelize) => {
         },
       },
     },
-  },
-    {
-      timestamps: false
-    });
+    history: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+  });
 };
 
 //haciendo cambios al pedo a ver si puedo subier esto

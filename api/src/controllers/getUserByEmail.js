@@ -1,6 +1,6 @@
 const { Patient, Doctor, Master } = require('../db');
 
-const getUserByEmail = async(req,res) => {
+const getUserByEmail = async (req, res) => {
 
     const email = req.query.email;
     
@@ -8,15 +8,15 @@ const getUserByEmail = async(req,res) => {
    console.log(email);
 
     try {
-        
+
         const doctor = await Doctor.findOne({
-            where:{
+            where: {
                 email: email
             }
         });
 
         const patient = await Patient.findOne({
-            where:{
+            where: {
                 email: email
             }
         });
