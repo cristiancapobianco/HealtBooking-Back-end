@@ -4,8 +4,7 @@ const getUserByEmail = async (req, res) => {
 
     const email = req.query.email;
 
-
-    console.log(email);
+//    console.log(email);
 
     try {
 

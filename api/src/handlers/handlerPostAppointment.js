@@ -14,10 +14,6 @@ const handlerPostAppointment=async(req, res)=>{
         const patient= await Patient.findByPk(idPatient);
         const specialty = await Specialty.findByPk(doctor.dataValues.SpecialtyId);
 
-        console.log(doctor);
-        console.log(patient);
-        console.log(specialty);
-
         const dataAppointment={
             id: doctor.dataValues.id,
             email:patient.email,
@@ -26,8 +22,7 @@ const handlerPostAppointment=async(req, res)=>{
             time: time,
             specialty: specialty.dataValues.name,
           }
-          console.log(dataAppointment);
-        
+         
         await sendEmailConfimDate(dataAppointment);
         
         res.status(200).send({ message: "Reserved appointment", newAppointment })
