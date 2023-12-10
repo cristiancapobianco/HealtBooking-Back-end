@@ -4,9 +4,10 @@ const { Appointment } = require('../db');
 
 const updateAppointment = async (req, res) => {
 
-    const { updateData } = req.body;
+    const updateData = req.body;
     const { idAppointment } = req.params;
-
+    console.log(updateData);
+    console.log(idAppointment);
     try {
 
         const existingAppointment = await Appointment.findOne({
