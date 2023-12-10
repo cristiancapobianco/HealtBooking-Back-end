@@ -7,7 +7,7 @@ const detailDoctor = async (req, res) => {
     try {
         if (idDoc) {
             const data = await Doctor.findOne({
-                attributes: ['name', 'id', 'phone', 'email', 'profilePicture', 'price'],
+                attributes: ['name', 'id', 'phone', 'email', 'profilePicture', 'price','reviews'],
                 where: {
                     id: {
                         [Op.eq]: idDoc
