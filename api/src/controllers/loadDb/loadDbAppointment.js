@@ -9,7 +9,7 @@ const loadDbAppointment = async () => {
     for (const appointment of mockAppointment) {
       const { date, time, idPatient, idDoctor } = appointment;
 
-      const dateMoment= await moment(date, 'DD/MM/YYYY');
+      const dateMoment= await moment(new Date(date)).format( 'YYYY-MM-DD')
 
       const price = await calcPrice(idPatient, idDoctor);
 
