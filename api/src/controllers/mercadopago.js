@@ -2,7 +2,7 @@ require("dotenv").config();
 const postAppointment = require("../controllers/postAppointment")
 const { v4: uuidv4 } = require('uuid');
 const calcPrice = require('../controllers/loadDb/calcPrice');
-
+const moment = require('moment');   
 
 const {
     ACCESS_TOKEN
@@ -26,7 +26,9 @@ const pagosMP = async (req, res) => {
     // console.log(req.body)
     const price = await calcPrice(idPatient, idDoctor);
 
-    const newAppointment = await postAppointment(id, date, time, idPatient, idDoctor, price)
+    const dateMoment= await moment(date, "YYYY-MM-DD")
+
+    const newAppointment = await postAppointment(id, dateMoment, time, idPatient, idDoctor, price)
 
     preference.create({
         body: {
