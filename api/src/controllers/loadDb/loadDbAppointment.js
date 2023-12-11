@@ -7,15 +7,15 @@ const postAppointment = require('../postAppointment.js');
 const loadDbAppointment = async () => {
   try {
     for (const appointment of mockAppointment) {
-      const { date, time, idPatient, idDoctor } = appointment;
+      const { date, time, idPatient, idDoctor,paymentDay } = appointment;
 
       const price = await calcPrice(idPatient, idDoctor);
 
-      await postAppointment( date, time, idPatient, idDoctor, price);
+      await postAppointment( date, time, idPatient, idDoctor, price,paymentDay);
 
     }
   } catch (error) {
-    throw alert('Error loading appointments:', error);
+    console.error('Error loading appointments:', error);
   }
 };
 
