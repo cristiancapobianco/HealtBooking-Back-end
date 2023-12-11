@@ -10,6 +10,7 @@ const { getSpecialty } = require('../controllers/getSpecialty');
 const { getSure } = require('../controllers/getSure');
 const { getAllDoctors } = require("../controllers/getAllDoctors")
 const { putPatient } = require('../controllers/putPatient');
+const patchScoreDoctor = require('../controllers/patchScoreDoctor');
 
 const patientRouter=Router();
 
@@ -35,6 +36,8 @@ patientRouter.post('/pay', pagosMP) // MERCADOPAGO
 patientRouter.post("/notificationPay", notifyPay) // MERCADOPAGO
 
 patientRouter.get('/:idPatient',getPatientById ) //busca todos los datos del paciente
+
+patientRouter.patch('/appointment' , patchScoreDoctor) //cargar score al appointment y al doctor
 
 
 module.exports= patientRouter

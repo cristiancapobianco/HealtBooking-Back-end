@@ -31,6 +31,10 @@ module.exports = (sequelize) => {
             type: DataTypes.FLOAT,
             allowNull: false,
         },
+        score:{
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
         paymentDay:{
             type: DataTypes.DATEONLY,
             allowNull:true,
