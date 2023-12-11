@@ -33,7 +33,11 @@ module.exports = (sequelize) => {
         },
         score:{
             type: DataTypes.INTEGER,
-            allowNull: true,
+            allowNull: true
+        },
+        paymentDay:{
+            type: DataTypes.DATEONLY,
+            allowNull:true,
         },
         status: {
             type: DataTypes.STRING,
