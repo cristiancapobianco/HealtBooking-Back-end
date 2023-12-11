@@ -47,6 +47,14 @@ module.exports = (sequelize) => {
               },
             },
           },
+        reviews:{
+            type: DataTypes.JSON,
+            defaultValue:{
+                count: 0,
+                acum: 0,
+                average:0
+            }
+        }
     }, {
         timestamps: false
     })
