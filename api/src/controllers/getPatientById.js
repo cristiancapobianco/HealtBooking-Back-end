@@ -1,4 +1,4 @@
-const { Patient } = require('../db');
+const { Patient, Sure } = require('../db');
 
 const getPatientById = async(req,res) => {
 
@@ -7,9 +7,13 @@ const getPatientById = async(req,res) => {
     try {
 
         const patientById = await Patient.findOne({
-            where:{
+            where: {
                 id: idPatient
-            }
+              },
+              include: {
+                model: Sure,
+                attributes: ['id', 'name'] // Asegúrate de poner los nombres de las columnas correctamente
+              }
         });
         if(patientById){
             return res.status(200).json(patientById);

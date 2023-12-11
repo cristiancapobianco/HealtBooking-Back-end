@@ -1,44 +1,44 @@
 const { Patient, Doctor, Master } = require('../db');
 
-const getUserByEmail = async(req,res) => {
+const getUserByEmail = async (req, res) => {
 
     const email = req.query.email;
-    
 
-   console.log(email);
+//    console.log(email);
 
     try {
-        
+
         const doctor = await Doctor.findOne({
-            where:{
+            where: {
                 email: email
             }
         });
 
         const patient = await Patient.findOne({
-            where:{
+            where: {
                 email: email
             }
         });
 
-        const master= await Master.findOne({
+        const master = await Master.findOne({
             // attributes:["id","name", "email","rol"],
-            where:{
-            email:email
-        }})
-        
-        if(doctor){
-            return res.status(200).json({exist: true, rol: doctor.rol});
+            where: {
+                email: email
+            }
+        })
+
+        if (doctor) {
+            return res.status(200).json({ exist: true, rol: doctor.rol, user: doctor });
         }
-        if(patient){
-            return res.status(200).json({exist: true, rol: patient.rol});
+        if (patient) {
+            return res.status(200).json({ exist: true, rol: patient.rol, user: patient });
         }
-        
-        if(master){
-          return res.status(200).json({exist: true, rol: master.rol});
+
+        if (master) {
+            return res.status(200).json({ exist: true, rol: master.rol, user: master });
         }
-        else{
-          return res.status(200).json({exist: false, rol: 'patient'});
+        else {
+            return res.status(200).json({ exist: false, rol: 'patient' });
         }
 
 

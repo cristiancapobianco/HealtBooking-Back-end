@@ -1,7 +1,7 @@
 const {Patient,Sure} = require('../db');
 const sendEmailPatient = require('./notifications/sendEmailPatient');
 
-const postPatient = async(req,res) => {
+const postPatient = async (req, res) => {
 
     const newPatient = req.body;
     //console.log(req.body);
@@ -9,7 +9,7 @@ const postPatient = async(req,res) => {
     const {id,name,phone,email,height,weight,sure} = newPatient;
 
     const existingPatient = await Patient.findOne({
-        where:{
+        where: {
             id
         }
     });
@@ -26,8 +26,16 @@ const postPatient = async(req,res) => {
             const sureMedic=await Sure.findOne({where:{name: sure}})
 
             await patientData.setSure(sureMedic);
+
+            const dataPatient={
+                id:id,
+                name:name,
+                phone:phone,
+                email:email,
+                sure:sureMedic.name
+            }
             
-            await sendEmailPatient(name, email)
+            await sendEmailPatient(dataPatient)
             
             return res.status(200).json({message:'Paciente registrado con éxito',patientData});
         } catch (error) {
@@ -36,6 +44,6 @@ const postPatient = async(req,res) => {
     }
 
 };
-module.exports ={
+module.exports = {
     postPatient
 }
