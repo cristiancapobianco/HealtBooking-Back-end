@@ -19,27 +19,28 @@ const pagosMP = async (req, res) => {
     const product = req.body;
     const preference = new Preference(client);
 
-    const id = uuidv4();
 
     const { date, time, idPatient, idDoctor } = req.body
 
     // console.log(req.body)
     const price = await calcPrice(idPatient, idDoctor);
 
-    const newAppointment = await postAppointment(id, date, time, idPatient, idDoctor, price)
+    const newAppointment = await postAppointment(date, time, idPatient, idDoctor, price)
+    const { dataValues } = newAppointment
+
 
     preference.create({
         body: {
             items: [
                 {
-                    id: id,
+                    id: dataValues.id,
                     title: product.name,
                     quantity: 1,
                     unit_price: Number(price)
                 }
             ],
-            external_reference: id,
-            notification_url: 'https://healtbooking-backend.onrender.com/patient/notificationPay',
+            external_reference: dataValues.id,
+            notification_url: 'https://healthbooking-backend.onrender.com/patient/notificationPay',
             back_urls: {
                 success: "http://localhost:5173/patient",
                 failure: "http://localhost:5173/patient",
@@ -53,7 +54,7 @@ const pagosMP = async (req, res) => {
         })
         .catch(function (error) {
             console.log(error);
-            res.status(500).json({ error: 'Error al crear la preferencia de pago.', m });
+            res.status(500).json({ error: 'Error al crear la preferencia de pago.', error });
         });
 };
 

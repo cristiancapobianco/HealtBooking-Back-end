@@ -6,7 +6,7 @@ const { getSure } = require('../controllers/getSure');
 const { changeHistory } = require('../controllers/clinicalHistory');
 const { getAppointmentById } = require('../controllers/getAppointmentById');
 const { updateAppointment } = require('../controllers/updateAppointment');
-const {getPatientById}= require ('../controllers/getPatientById');
+const { getPatientById } = require('../controllers/getPatientById');
 
 const doctorRouter = Router();
 
@@ -26,6 +26,6 @@ doctorRouter.get('/appointmentById/:idAppointment', getAppointmentById) //muestr
 
 doctorRouter.patch('/updateAppointment/:idAppointment', updateAppointment) // hace update a una cita
 
-doctorRouter.get('/patient/:idPatient',getPatientById ) //busca todos los datos del paciente
+doctorRouter.get('/patient/:idPatient', getPatientById) //busca todos los datos del paciente
 
 module.exports = doctorRouter

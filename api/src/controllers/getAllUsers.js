@@ -4,14 +4,14 @@ const getAllUsers = async (req, res) => {
 
     try {
         const doctors = await Doctor.findAll({
-            attributes: ['id', 'name', 'profilePicture', 'state', 'email'],
+            attributes: ['id', 'name', 'profilePicture', 'state', 'email', 'rol'],
             where: {
                 state: ['active', 'inactive'],
             },
         });
 
         const patients = await Patient.findAll({
-            attributes: ['id', 'name', 'state', 'email'],
+            attributes: ['id', 'name', 'state', 'email', 'rol'],
             where: {
                 state: ['active', 'inactive'],
             },
@@ -19,7 +19,7 @@ const getAllUsers = async (req, res) => {
 
         const allUsers = [...doctors, ...patients];
 
-       // console.log(allUsers);
+        // console.log(allUsers);
 
         return res.status(200).json(allUsers);
     } catch (error) {
