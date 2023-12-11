@@ -28,7 +28,7 @@ const pagosMP = async (req, res) => {
 
     const dateMoment= await moment(date, "YYYY-MM-DD")
 
-    const newAppointment = await postAppointment(id, dateMoment, time, idPatient, idDoctor, price)
+    const newAppointment = await postAppointment( dateMoment, time, idPatient, idDoctor, price)
 
     preference.create({
         body: {
