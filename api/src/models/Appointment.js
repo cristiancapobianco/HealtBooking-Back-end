@@ -31,6 +31,10 @@ module.exports = (sequelize) => {
             type: DataTypes.FLOAT,
             allowNull: false,
         },
+        paymentDay:{
+            type: DataTypes.DATEONLY,
+            allowNull:true,
+        },
         status: {
             type: DataTypes.STRING,
             allowNull: false,
