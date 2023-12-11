@@ -26,7 +26,7 @@ const pagosMP = async (req, res) => {
     // console.log(req.body)
     const price = await calcPrice(idPatient, idDoctor);
 
-    const dateMoment= await moment(date, "YYYY-MM-DD")
+    const dateMoment= await moment(new Date(date)).format( 'YYYY-MM-DD')
 
     const newAppointment = await postAppointment( dateMoment, time, idPatient, idDoctor, price)
 
