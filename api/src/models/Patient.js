@@ -44,11 +44,11 @@ module.exports = (sequelize) => {
     state: {
       type: DataTypes.STRING,
       allowNull: false,
-      defaultValue: "active",
+      defaultValue: "activo",
       validate: {
         isIn: {
-          args: [["active", "inactive"]],
-          msg: 'The default value must by "active" or "inactive".',
+          args: [["activo", "inactivo"]],
+          msg: 'The default value must by "activo" or "inactivo".',
         },
       },
     },
