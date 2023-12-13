@@ -7,7 +7,7 @@ const getSure = async (req, res) => {
         if (sures) {
             res.status(200).send(sures)
         } else {
-            res.status(204).send("No se encontraron las obars sociales")
+            res.status(204).send("No se encontraron las obras sociales")
         }
     } catch (error) {
         res.status(500).send(error.message)
