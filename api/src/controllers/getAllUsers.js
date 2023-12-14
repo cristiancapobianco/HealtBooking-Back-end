@@ -6,14 +6,14 @@ const getAllUsers = async (req, res) => {
         const doctors = await Doctor.findAll({
             attributes: ['id', 'name', 'profilePicture', 'state', 'email', 'rol'],
             where: {
-                state: ['activo', 'inactivo'],
+                state: ['active', 'inactive'],
             },
         });
 
         const patients = await Patient.findAll({
             attributes: ['id', 'name', 'state', 'email', 'rol'],
             where: {
-                state: ['activo', 'inactivo'],
+                state: ['active', 'inactive'],
             },
         });
 

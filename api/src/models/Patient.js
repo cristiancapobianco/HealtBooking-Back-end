@@ -8,7 +8,7 @@ module.exports = (sequelize) => {
       validate: {
         len: {
           args: [8, 8],
-          msg: "El id debe tener exactamente 8 numeros.",
+          msg: "The ID must have exactly 8 digits.",
         },
       },
     },
@@ -32,7 +32,7 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       validate: {
         isEmail: {
-          msg: "Ingrese un email valido",
+          msg: "Enter a valid email address",
         },
       },
     },
@@ -44,11 +44,11 @@ module.exports = (sequelize) => {
     state: {
       type: DataTypes.STRING,
       allowNull: false,
-      defaultValue: "activo",
+      defaultValue: "active",
       validate: {
         isIn: {
-          args: [["activo", "inactivo"]],
-          msg: 'The default value must by "activo" or "inactivo".',
+          args: [["active", "inactive"]],
+          msg: 'The default value must by "active" or "inactive".',
         },
       },
     },
