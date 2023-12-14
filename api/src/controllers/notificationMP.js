@@ -23,9 +23,9 @@ const notifyPay = async (req, res) => {
                 headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${ACCESS_TOKEN}` }
             });
 
-            console.log(compraResponse)
+            // console.log(compraResponse)
             external_reference = compraResponse.data.external_reference;
-            console.log(external_reference);
+            // console.log(external_reference);
         }
 
         const appointment = await Appointment.findOne({

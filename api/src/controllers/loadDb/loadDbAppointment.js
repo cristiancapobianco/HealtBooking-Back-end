@@ -18,7 +18,7 @@ const loadDbAppointment = async () => {
 
     }
   } catch (error) {
-    console.error('Error loading appointments:', error);
+    throw alert('Error loading appointments:', error);
   }
 };
 

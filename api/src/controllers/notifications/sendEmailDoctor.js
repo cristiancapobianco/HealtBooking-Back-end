@@ -26,15 +26,15 @@ const sendEmailDoctor=async({id,name,phone,email,specialty,price,sure})=>{
     const message={
         from: 'healthbookingPf@gmail.com',
         to: email,
-        subject: 'Doctor registration',
+        subject: 'Registro doctor',
         // text: `Bienvenido ${name} al Staff de HEALTBOOKING en la especialidad ${specialty}`
         html:htmlContent
     }
     const transport= nodemailer.createTransport(config)
 
     const info = await transport.sendMail(message)
-    console.log(info);
-    console.log({id,name,phone,email,specialty,price,sure});
+    // console.log(info);
+    // console.log({id,name,phone,email,specialty,price,sure});
 }
 
 module.exports = sendEmailDoctor
