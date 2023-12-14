@@ -26,33 +26,33 @@ module.exports = (sequelize) => {
             type: DataTypes.STRING,
             allowNull: false,
         },
-       
-        price:{
+
+        price: {
             type: DataTypes.INTEGER,
             allowNull: true,
         },
-        rol:{
-          type:DataTypes.STRING,
-          defaultValue: 'doctor',
-          allowNull: false,
+        rol: {
+            type: DataTypes.STRING,
+            defaultValue: 'doctor',
+            allowNull: false,
         },
         state: {
             type: DataTypes.STRING,
             allowNull: false,
-            defaultValue: 'active',
+            defaultValue: 'activo',
             validate: {
-              isIn: {
-                args: [['active', 'inactive']], 
-                msg: 'The default value must by "active" or "inactive".',
-              },
+                isIn: {
+                    args: [['activo', 'inactivo']],
+                    msg: 'The default value must by "activo" or "inactivo".',
+                },
             },
-          },
-        reviews:{
+        },
+        reviews: {
             type: DataTypes.JSON,
-            defaultValue:{
+            defaultValue: {
                 count: 0,
                 acum: 0,
-                average:0
+                average: 0
             }
         }
     }, {
