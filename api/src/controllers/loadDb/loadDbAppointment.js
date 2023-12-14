@@ -2,6 +2,7 @@
 const mockAppointment = require('../../assets/data/mockAppointment.json').appointments;
 const calcPrice = require('./calcPrice.js');
 const postAppointment = require('../postAppointment.js');
+const moment = require('moment')
 
 
 const loadDbAppointment = async () => {
