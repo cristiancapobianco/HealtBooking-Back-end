@@ -31,21 +31,21 @@ module.exports = (sequelize) => {
             type: DataTypes.FLOAT,
             allowNull: false,
         },
-        score: {
+        score:{
             type: DataTypes.INTEGER,
             allowNull: true
         },
-        paymentDay: {
+        paymentDay:{
             type: DataTypes.DATEONLY,
-            allowNull: true,
+            allowNull:true,
         },
         status: {
             type: DataTypes.STRING,
             allowNull: false,
-            defaultValue: "pendiente",
+            defaultValue: "pending",
             validate: {
                 isIn: {
-                    args: [["pendiente", "pago"]]
+                    args: [["pending", "paid"]]
                 },
             },
         },
