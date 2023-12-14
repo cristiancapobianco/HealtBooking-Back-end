@@ -31,6 +31,7 @@ const getAppointmentByPatient = async (req, res) => {
             });
 
             if (appointments && appointments.length > 0) {
+                
                 return res.status(200).json(appointments);
             } else {
                 return res.send('No hay citas registradas para ese paciente');

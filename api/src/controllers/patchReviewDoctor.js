@@ -2,7 +2,7 @@ const { Doctor } = require("../db");
 
 const patchReviewDoctor = async (idDoctor, score) => {
   
-  try {
+  // try {
     const doctor = await Doctor.findByPk(idDoctor);
     
 
@@ -15,13 +15,15 @@ const patchReviewDoctor = async (idDoctor, score) => {
 
       const updateDoctor = await doctor.update({ reviews: updateReviews  });
 
+      return updateDoctor;
+
       // return res.status(200).send('Reviews updated');
-    } else {
+    // } else {
       // return res.status(400).send("Doctor not found");
-    }
-  } catch (error) {
+    // }
+  // } catch (error) {
    
     // return res.status(500).send({ message: "Server error updating doctor" })
-  }
-};
+  // }
+}}
 module.exports = patchReviewDoctor;
