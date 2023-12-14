@@ -1,74 +1,516 @@
 {
-    "appointments":
-    [
-    {"idPatient": 39421857, "idDoctor": 33326, "date": "2023-12-01", "time": "08:00","paymentDay":"2023-12-01"},
-    {"idPatient": 71639284, "idDoctor": 73640, "date": "2023-12-04", "time": "09:00","paymentDay":"2023-12-01"},
-    {"idPatient": 48516372, "idDoctor": 40981, "date": "2023-12-04", "time": "10:00","paymentDay":"2023-12-01"},
-    {"idPatient": 63748192, "idDoctor": 82147, "date": "2023-12-06", "time": "11:00","paymentDay":"2023-12-02"},
-    {"idPatient": 21984637, "idDoctor": 45289, "date": "2023-12-07", "time": "12:00","paymentDay":"2023-12-02"},
-    {"idPatient": 75328194, "idDoctor": 62701, "date": "2023-12-08", "time": "13:00","paymentDay":"2023-12-02"},
-    {"idPatient": 94613728, "idDoctor": 70219, "date": "2023-12-11", "time": "14:00","paymentDay":"2023-12-02"},
-    {"idPatient": 38291746, "idDoctor": 37401, "date": "2023-12-11", "time": "15:00","paymentDay":"2023-12-03"},
-    {"idPatient": 67428193, "idDoctor": 73513, "date": "2023-12-13", "time": "16:00","paymentDay":"2023-12-03"},
-    {"idPatient": 59382746, "idDoctor": 98501, "date": "2023-12-14", "time": "17:00","paymentDay":"2023-12-03"},
-    {"idPatient": 21894573, "idDoctor": 20457, "date": "2023-12-15", "time": "09:00","paymentDay":"2023-12-04"},
-    {"idPatient": 79643128, "idDoctor": 50743, "date": "2023-12-18", "time": "09:00","paymentDay":"2023-12-04"},
-    {"idPatient": 12475983, "idDoctor": 19864, "date": "2023-12-18", "time": "10:00","paymentDay":"2023-12-04"},
-    {"idPatient": 98531724, "idDoctor": 15432, "date": "2023-12-20", "time": "11:00","paymentDay":"2023-12-05"},
-    {"idPatient": 63718925, "idDoctor": 15472, "date": "2023-12-21", "time": "12:00","paymentDay":"2023-12-05"},
-    {"idPatient": 19472853, "idDoctor": 63926, "date": "2023-12-22", "time": "13:00","paymentDay":"2023-12-05"},
-    {"idPatient": 36582194, "idDoctor": 36492, "date": "2023-12-25", "time": "14:00","paymentDay":"2023-12-06"},
-    {"idPatient": 74819326, "idDoctor": 39825, "date": "2023-12-25", "time": "15:00","paymentDay":"2023-12-06"},
-    {"idPatient": 93186574, "idDoctor": 39218, "date": "2023-12-27", "time": "10:00","paymentDay":"2023-12-06"},
-    {"idPatient": 24619785, "idDoctor": 37935, "date": "2023-12-28", "time": "17:00","paymentDay":"2023-12-07"},
-    {"idPatient": 12475983, "idDoctor": 85781, "date": "2023-12-01", "time": "08:00","paymentDay":"2023-12-07"},
-    {"idPatient": 98531724, "idDoctor": 28076, "date": "2023-12-04", "time": "12:00","paymentDay":"2023-12-07"},
-    {"idPatient": 63718925, "idDoctor": 26783, "date": "2023-12-04", "time": "13:00","paymentDay":"2023-12-08"},
-    {"idPatient": 19472853, "idDoctor": 27349, "date": "2023-12-06", "time": "11:00","paymentDay":"2023-12-08"},
-    {"idPatient": 36582194, "idDoctor": 32507, "date": "2023-12-07", "time": "12:00","paymentDay":"2023-12-08"},
-    {"idPatient": 74819326, "idDoctor": 92734, "date": "2023-12-08", "time": "13:00","paymentDay":"2023-12-09"},
-    {"idPatient": 93186574, "idDoctor": 52852, "date": "2023-12-11", "time": "14:00","paymentDay":"2023-12-09"},
-    {"idPatient": 24619785, "idDoctor": 96140, "date": "2023-12-11", "time": "15:00","paymentDay":"2023-12-10"},
-    {"idPatient": 59381726, "idDoctor": 28143, "date": "2023-12-13", "time": "16:00","paymentDay":"2023-12-10"},
-    {"idPatient": 71839254, "idDoctor": 30987, "date": "2023-12-14", "time": "17:00","paymentDay":"2023-12-10"},
-    {"idPatient": 46927381, "idDoctor": 54607, "date": "2023-12-15", "time": "08:00","paymentDay":"2023-12-11"},
-    {"idPatient": 83519724, "idDoctor": 76598, "date": "2023-12-18","time": "10:00","paymentDay":"2023-12-11"},
-    {"idPatient": 21794368, "idDoctor": 57836, "date": "2023-12-18", "time": "10:00","paymentDay":"2023-12-11"},
-    {"idPatient": 65931724, "idDoctor": 51472, "date": "2023-12-20", "time": "12:00","paymentDay":"2023-12-19"},
-    {"idPatient": 48192637, "idDoctor": 95814, "date": "2023-12-21", "time": "12:00","paymentDay":"2023-12-20"},
-    {"idPatient": 37521984, "idDoctor": 79562, "date": "2023-12-22", "time": "13:00","paymentDay":"2023-12-18"},
-    {"idPatient": 89412637, "idDoctor": 52654, "date": "2023-12-25", "time": "14:00","paymentDay":"2023-12-23"},
-    {"idPatient": 27186539, "idDoctor": 92737, "date": "2023-12-26", "time": "15:00","paymentDay":"2023-12-20"},
-    {"idPatient": 58392147, "idDoctor": 41389, "date": "2023-12-27", "time": "16:00","paymentDay":"2023-12-20"},
-    {"idPatient": 74629815, "idDoctor": 14865, "date": "2023-12-28", "time": "17:00","paymentDay":"2023-12-20"},
-
-    {"idPatient": 59381726, "idDoctor": 33326, "date": "2023-12-01", "time": "17:00","paymentDay":"2023-12-01"},
-    {"idPatient": 71839254, "idDoctor": 73640, "date": "2023-12-04", "time": "15:00","paymentDay":"2023-12-04"},
-    {"idPatient": 46927381, "idDoctor": 40981, "date": "2023-12-05", "time": "17:00","paymentDay":"2023-12-01"},
-    {"idPatient": 83519724, "idDoctor": 82147, "date": "2023-12-06", "time": "12:00","paymentDay":"2023-12-05"},
-    {"idPatient": 21794368, "idDoctor": 45289, "date": "2023-12-07", "time": "08:00","paymentDay":"2023-12-06"},
-    {"idPatient": 65931724, "idDoctor": 62701, "date": "2023-12-08", "time": "14:00","paymentDay":"2023-12-07"},
-    {"idPatient": 48192637, "idDoctor": 70219, "date": "2023-12-11", "time": "08:00","paymentDay":"2023-12-11"},
-    {"idPatient": 37521984, "idDoctor": 37401, "date": "2023-12-12", "time": "16:00","paymentDay":"2023-12-10"},
-    {"idPatient": 89412637, "idDoctor": 73513, "date": "2023-12-13", "time": "17:00","paymentDay":"2023-12-13"},
-    {"idPatient": 27186539, "idDoctor": 98501, "date": "2023-12-14", "time": "10:00","paymentDay":"2023-12-13"},
-    {"idPatient": 58392147, "idDoctor": 20457, "date": "2023-12-15", "time": "08:00","paymentDay":"2023-12-14"},
-    {"idPatient": 74629815, "idDoctor": 50743, "date": "2023-12-18", "time": "10:00","paymentDay":"2023-12-18"},
-    
-    {"idPatient": 59381726, "idDoctor": 33326, "date": "2023-12-01", "time": "14:00","paymentDay":"2023-12-01"},
-    {"idPatient": 71839254, "idDoctor": 73640, "date": "2023-12-07", "time": "8:00","paymentDay":"2023-12-06"},
-    {"idPatient": 46927381, "idDoctor": 40981, "date": "2023-12-08", "time": "8:00","paymentDay":"2023-12-08"},
-    {"idPatient": 83519724, "idDoctor": 82147, "date": "2023-12-06", "time": "13:00","paymentDay":"2023-12-05"},
-    {"idPatient": 21794368, "idDoctor": 45289, "date": "2023-12-07", "time": "17:00","paymentDay":"2023-12-06"},
-    {"idPatient": 65931724, "idDoctor": 62701, "date": "2023-12-08", "time": "15:00","paymentDay":"2023-12-07"},
-    {"idPatient": 48192637, "idDoctor": 70219, "date": "2023-12-12", "time": "10:00","paymentDay":"2023-12-12"},
-    {"idPatient": 37521984, "idDoctor": 37401, "date": "2023-12-13", "time": "17:00","paymentDay":"2023-12-13"},
-    {"idPatient": 89412637, "idDoctor": 73513, "date": "2023-12-13", "time": "08:00","paymentDay":"2023-12-14"},
-    {"idPatient": 27186539, "idDoctor": 98501, "date": "2023-12-14", "time": "11:00","paymentDay":"2023-12-13"},
-    {"idPatient": 58392147, "idDoctor": 20457, "date": "2023-12-15", "time": "10:00","paymentDay":"2023-12-15"},
-    {"idPatient": 74629815, "idDoctor": 50743, "date": "2023-12-19", "time": "11:00","paymentDay":"2023-12-18"}
-
-   
-]
-
+    "appointments": [
+        {
+            "idPatient": 39421857,
+            "idDoctor": 33326,
+            "date": "2023-12-01",
+            "time": "08:00",
+            "paymentDay": "2023-12-01",
+            "status": "pago"
+        },
+        {
+            "idPatient": 71639284,
+            "idDoctor": 73640,
+            "date": "2023-12-04",
+            "time": "09:00",
+            "paymentDay": "2023-12-01",
+            "status": "pago"
+        },
+        {
+            "idPatient": 48516372,
+            "idDoctor": 40981,
+            "date": "2023-12-04",
+            "time": "10:00",
+            "paymentDay": "2023-12-01",
+            "status": "pago"
+        },
+        {
+            "idPatient": 63748192,
+            "idDoctor": 82147,
+            "date": "2023-12-06",
+            "time": "11:00",
+            "paymentDay": "2023-12-02",
+            "status": "pago"
+        },
+        {
+            "idPatient": 21984637,
+            "idDoctor": 45289,
+            "date": "2023-12-07",
+            "time": "12:00",
+            "paymentDay": "2023-12-02",
+            "status": "pago"
+        },
+        {
+            "idPatient": 75328194,
+            "idDoctor": 62701,
+            "date": "2023-12-08",
+            "time": "13:00",
+            "paymentDay": "2023-12-02",
+            "status": "pago"
+        },
+        {
+            "idPatient": 94613728,
+            "idDoctor": 70219,
+            "date": "2023-12-11",
+            "time": "14:00",
+            "paymentDay": "2023-12-02",
+            "status": "pago"
+        },
+        {
+            "idPatient": 38291746,
+            "idDoctor": 37401,
+            "date": "2023-12-11",
+            "time": "15:00",
+            "paymentDay": "2023-12-03",
+            "status": "pago"
+        },
+        {
+            "idPatient": 67428193,
+            "idDoctor": 73513,
+            "date": "2023-12-13",
+            "time": "16:00",
+            "paymentDay": "2023-12-03",
+            "status": "pago"
+        },
+        {
+            "idPatient": 59382746,
+            "idDoctor": 98501,
+            "date": "2023-12-14",
+            "time": "17:00",
+            "paymentDay": "2023-12-03",
+            "status": "pago"
+        },
+        {
+            "idPatient": 21894573,
+            "idDoctor": 20457,
+            "date": "2023-12-15",
+            "time": "09:00",
+            "paymentDay": "2023-12-04",
+            "status": "pago"
+        },
+        {
+            "idPatient": 79643128,
+            "idDoctor": 50743,
+            "date": "2023-12-18",
+            "time": "09:00",
+            "paymentDay": "2023-12-04",
+            "status": "pago"
+        },
+        {
+            "idPatient": 12475983,
+            "idDoctor": 19864,
+            "date": "2023-12-18",
+            "time": "10:00",
+            "paymentDay": "2023-12-04",
+            "status": "pago"
+        },
+        {
+            "idPatient": 98531724,
+            "idDoctor": 15432,
+            "date": "2023-12-20",
+            "time": "11:00",
+            "paymentDay": "2023-12-05",
+            "status": "pago"
+        },
+        {
+            "idPatient": 63718925,
+            "idDoctor": 15472,
+            "date": "2023-12-21",
+            "time": "12:00",
+            "paymentDay": "2023-12-05",
+            "status": "pago"
+        },
+        {
+            "idPatient": 19472853,
+            "idDoctor": 63926,
+            "date": "2023-12-22",
+            "time": "13:00",
+            "paymentDay": "2023-12-05",
+            "status": "pago"
+        },
+        {
+            "idPatient": 36582194,
+            "idDoctor": 36492,
+            "date": "2023-12-25",
+            "time": "14:00",
+            "paymentDay": "2023-12-06",
+            "status": "pago"
+        },
+        {
+            "idPatient": 74819326,
+            "idDoctor": 39825,
+            "date": "2023-12-25",
+            "time": "15:00",
+            "paymentDay": "2023-12-06",
+            "status": "pago"
+        },
+        {
+            "idPatient": 93186574,
+            "idDoctor": 39218,
+            "date": "2023-12-27",
+            "time": "10:00",
+            "paymentDay": "2023-12-06",
+            "status": "pago"
+        },
+        {
+            "idPatient": 24619785,
+            "idDoctor": 37935,
+            "date": "2023-12-28",
+            "time": "17:00",
+            "paymentDay": "2023-12-07",
+            "status": "pago"
+        },
+        {
+            "idPatient": 12475983,
+            "idDoctor": 85781,
+            "date": "2023-12-01",
+            "time": "08:00",
+            "paymentDay": "2023-12-07",
+            "status": "pago"
+        },
+        {
+            "idPatient": 98531724,
+            "idDoctor": 28076,
+            "date": "2023-12-04",
+            "time": "12:00",
+            "paymentDay": "2023-12-07",
+            "status": "pago"
+        },
+        {
+            "idPatient": 63718925,
+            "idDoctor": 26783,
+            "date": "2023-12-04",
+            "time": "13:00",
+            "paymentDay": "2023-12-08",
+            "status": "pago"
+        },
+        {
+            "idPatient": 19472853,
+            "idDoctor": 27349,
+            "date": "2023-12-06",
+            "time": "11:00",
+            "paymentDay": "2023-12-08",
+            "status": "pago"
+        },
+        {
+            "idPatient": 36582194,
+            "idDoctor": 32507,
+            "date": "2023-12-07",
+            "time": "12:00",
+            "paymentDay": "2023-12-08",
+            "status": "pago"
+        },
+        {
+            "idPatient": 74819326,
+            "idDoctor": 92734,
+            "date": "2023-12-08",
+            "time": "13:00",
+            "paymentDay": "2023-12-09",
+            "status": "pago"
+        },
+        {
+            "idPatient": 93186574,
+            "idDoctor": 52852,
+            "date": "2023-12-11",
+            "time": "14:00",
+            "paymentDay": "2023-12-09",
+            "status": "pago"
+        },
+        {
+            "idPatient": 24619785,
+            "idDoctor": 96140,
+            "date": "2023-12-11",
+            "time": "15:00",
+            "paymentDay": "2023-12-10",
+            "status": "pago"
+        },
+        {
+            "idPatient": 59381726,
+            "idDoctor": 28143,
+            "date": "2023-12-13",
+            "time": "16:00",
+            "paymentDay": "2023-12-10",
+            "status": "pago"
+        },
+        {
+            "idPatient": 71839254,
+            "idDoctor": 30987,
+            "date": "2023-12-14",
+            "time": "17:00",
+            "paymentDay": "2023-12-10",
+            "status": "pago"
+        },
+        {
+            "idPatient": 46927381,
+            "idDoctor": 54607,
+            "date": "2023-12-15",
+            "time": "08:00",
+            "paymentDay": "2023-12-11",
+            "status": "pago"
+        },
+        {
+            "idPatient": 83519724,
+            "idDoctor": 76598,
+            "date": "2023-12-18",
+            "time": "10:00",
+            "paymentDay": "2023-12-11",
+            "status": "pago"
+        },
+        {
+            "idPatient": 21794368,
+            "idDoctor": 57836,
+            "date": "2023-12-18",
+            "time": "10:00",
+            "paymentDay": "2023-12-11",
+            "status": "pago"
+        },
+        {
+            "idPatient": 65931724,
+            "idDoctor": 51472,
+            "date": "2023-12-20",
+            "time": "12:00",
+            "paymentDay": "2023-12-19",
+            "status": "pago"
+        },
+        {
+            "idPatient": 48192637,
+            "idDoctor": 95814,
+            "date": "2023-12-21",
+            "time": "12:00",
+            "paymentDay": "2023-12-20",
+            "status": "pago"
+        },
+        {
+            "idPatient": 37521984,
+            "idDoctor": 79562,
+            "date": "2023-12-22",
+            "time": "13:00",
+            "paymentDay": "2023-12-18",
+            "status": "pago"
+        },
+        {
+            "idPatient": 89412637,
+            "idDoctor": 52654,
+            "date": "2023-12-25",
+            "time": "14:00",
+            "paymentDay": "2023-12-23",
+            "status": "pago"
+        },
+        {
+            "idPatient": 27186539,
+            "idDoctor": 92737,
+            "date": "2023-12-26",
+            "time": "15:00",
+            "paymentDay": "2023-12-20",
+            "status": "pago"
+        },
+        {
+            "idPatient": 58392147,
+            "idDoctor": 41389,
+            "date": "2023-12-27",
+            "time": "16:00",
+            "paymentDay": "2023-12-20",
+            "status": "pago"
+        },
+        {
+            "idPatient": 74629815,
+            "idDoctor": 14865,
+            "date": "2023-12-28",
+            "time": "17:00",
+            "paymentDay": "2023-12-20",
+            "status": "pago"
+        },
+        {
+            "idPatient": 59381726,
+            "idDoctor": 33326,
+            "date": "2023-12-01",
+            "time": "17:00",
+            "paymentDay": "2023-12-01",
+            "status": "pago"
+        },
+        {
+            "idPatient": 71839254,
+            "idDoctor": 73640,
+            "date": "2023-12-04",
+            "time": "15:00",
+            "paymentDay": "2023-12-04",
+            "status": "pago"
+        },
+        {
+            "idPatient": 46927381,
+            "idDoctor": 40981,
+            "date": "2023-12-05",
+            "time": "17:00",
+            "paymentDay": "2023-12-01",
+            "status": "pago"
+        },
+        {
+            "idPatient": 83519724,
+            "idDoctor": 82147,
+            "date": "2023-12-06",
+            "time": "12:00",
+            "paymentDay": "2023-12-05",
+            "status": "pago"
+        },
+        {
+            "idPatient": 21794368,
+            "idDoctor": 45289,
+            "date": "2023-12-07",
+            "time": "08:00",
+            "paymentDay": "2023-12-06",
+            "status": "pago"
+        },
+        {
+            "idPatient": 65931724,
+            "idDoctor": 62701,
+            "date": "2023-12-08",
+            "time": "14:00",
+            "paymentDay": "2023-12-07",
+            "status": "pago"
+        },
+        {
+            "idPatient": 48192637,
+            "idDoctor": 70219,
+            "date": "2023-12-11",
+            "time": "08:00",
+            "paymentDay": "2023-12-11",
+            "status": "pago"
+        },
+        {
+            "idPatient": 37521984,
+            "idDoctor": 37401,
+            "date": "2023-12-12",
+            "time": "16:00",
+            "paymentDay": "2023-12-10",
+            "status": "pago"
+        },
+        {
+            "idPatient": 89412637,
+            "idDoctor": 73513,
+            "date": "2023-12-13",
+            "time": "17:00",
+            "paymentDay": "2023-12-13",
+            "status": "pago"
+        },
+        {
+            "idPatient": 27186539,
+            "idDoctor": 98501,
+            "date": "2023-12-14",
+            "time": "10:00",
+            "paymentDay": "2023-12-13",
+            "status": "pago"
+        },
+        {
+            "idPatient": 58392147,
+            "idDoctor": 20457,
+            "date": "2023-12-15",
+            "time": "08:00",
+            "paymentDay": "2023-12-14",
+            "status": "pago"
+        },
+        {
+            "idPatient": 74629815,
+            "idDoctor": 50743,
+            "date": "2023-12-18",
+            "time": "10:00",
+            "paymentDay": "2023-12-18",
+            "status": "pago"
+        },
+        {
+            "idPatient": 59381726,
+            "idDoctor": 33326,
+            "date": "2023-12-01",
+            "time": "14:00",
+            "paymentDay": "2023-12-01",
+            "status": "pago"
+        },
+        {
+            "idPatient": 71839254,
+            "idDoctor": 73640,
+            "date": "2023-12-07",
+            "time": "8:00",
+            "paymentDay": "2023-12-06",
+            "status": "pago"
+        },
+        {
+            "idPatient": 46927381,
+            "idDoctor": 40981,
+            "date": "2023-12-08",
+            "time": "8:00",
+            "paymentDay": "2023-12-08",
+            "status": "pago"
+        },
+        {
+            "idPatient": 83519724,
+            "idDoctor": 82147,
+            "date": "2023-12-06",
+            "time": "13:00",
+            "paymentDay": "2023-12-05",
+            "status": "pago"
+        },
+        {
+            "idPatient": 21794368,
+            "idDoctor": 45289,
+            "date": "2023-12-07",
+            "time": "17:00",
+            "paymentDay": "2023-12-06",
+            "status": "pago"
+        },
+        {
+            "idPatient": 65931724,
+            "idDoctor": 62701,
+            "date": "2023-12-08",
+            "time": "15:00",
+            "paymentDay": "2023-12-07",
+            "status": "pago"
+        },
+        {
+            "idPatient": 48192637,
+            "idDoctor": 70219,
+            "date": "2023-12-12",
+            "time": "10:00",
+            "paymentDay": "2023-12-12",
+            "status": "pago"
+        },
+        {
+            "idPatient": 37521984,
+            "idDoctor": 37401,
+            "date": "2023-12-13",
+            "time": "17:00",
+            "paymentDay": "2023-12-13",
+            "status": "pago"
+        },
+        {
+            "idPatient": 89412637,
+            "idDoctor": 73513,
+            "date": "2023-12-13",
+            "time": "08:00",
+            "paymentDay": "2023-12-14",
+            "status": "pago"
+        },
+        {
+            "idPatient": 27186539,
+            "idDoctor": 98501,
+            "date": "2023-12-14",
+            "time": "11:00",
+            "paymentDay": "2023-12-13",
+            "status": "pago"
+        },
+        {
+            "idPatient": 58392147,
+            "idDoctor": 20457,
+            "date": "2023-12-15",
+            "time": "10:00",
+            "paymentDay": "2023-12-15",
+            "status": "pago"
+        },
+        {
+            "idPatient": 74629815,
+            "idDoctor": 50743,
+            "date": "2023-12-19",
+            "time": "11:00",
+            "paymentDay": "2023-12-18",
+            "status": "pago"
+        }
+    ]
 }

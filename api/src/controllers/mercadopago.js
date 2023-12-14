@@ -44,8 +44,8 @@ const pagosMP = async (req, res) => {
             external_reference: dataValues.id,
             notification_url: 'https://healthbooking-backend.onrender.com/patient/notificationPay',
             back_urls: {
-                success: "http://localhost:5173/patient",
-                failure: "http://localhost:5173/patient",
+                success: "https://healthbooking-front.vercel.app/patient",
+                failure: "https://healthbooking-front.vercel.app/patient",
                 pending: "",
             },
             auto_return: "approved",

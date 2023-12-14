@@ -36,7 +36,7 @@ const notifyPay = async (req, res) => {
             return res.status(404).json({ error: 'Cita no encontrada' });
         }
 
-        await appointment.update({ status: 'paid' });
+        await appointment.update({ status: 'pago' });
 
         return res.status(200).json({ message: 'Estado de la cita actualizado con éxito' });
     } catch (error) {
