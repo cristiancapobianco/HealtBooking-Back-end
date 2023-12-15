@@ -29,7 +29,7 @@ const sendEmailPatient=async({id,name,phone,email,sure})=>{
     const message={
         from: 'healthbookingPf@gmail.com',
         to: email,
-        subject: 'User register',
+        subject: 'Registro de usuario',
         // text: `Bienvenido ${name}, su registro ha sido exitoso ya puede reservar su cita`
         html: htmlContent
     }

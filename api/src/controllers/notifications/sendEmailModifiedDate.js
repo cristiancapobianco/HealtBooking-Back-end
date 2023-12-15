@@ -10,10 +10,7 @@ const templateModifiedDate = fs.readFileSync(filePath, 'utf8');
 // console.log(htmlContent);
 const templateSend = handlebars.compile(templateModifiedDate);
 
-
-
-
-const sendEmailPatient=async({id,email,date,time,doctor,specialty})=>{
+const sendEmailModifiedDate=async({id,email,date,time,doctor,specialty})=>{
 
     const htmlContent = templateSend({id,date,time,doctor,specialty})
 
@@ -29,7 +26,7 @@ const sendEmailPatient=async({id,email,date,time,doctor,specialty})=>{
     const message={
         from: 'healthbookingPf@gmail.com',
         to: email,
-        subject: 'Registro de usuario',
+        subject: 'Cita modificada',
         // text: `Bienvenido ${name}, su registro ha sido exitoso ya puede reservar su cita`
         html: htmlContent
     }
@@ -41,4 +38,4 @@ const sendEmailPatient=async({id,email,date,time,doctor,specialty})=>{
     // console.log(info);
 }
 
-module.exports = sendEmailPatient
+module.exports = sendEmailModifiedDate
