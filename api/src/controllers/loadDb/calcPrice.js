@@ -14,8 +14,8 @@ const calcPrice = async (idPatient, idDoctor) => {
                 }
             }
         });
-
-
+        console.log('paciente',patient)
+       // console.log('paciente',patient.dataValues.sureId)
         patientSure = patient.dataValues.sureId
         // console.log(patientSure);
 

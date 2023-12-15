@@ -2,9 +2,9 @@
 const { Appointment } = require("../db");
 
 
-const postAppointment = async (dateMoment, time, idPatient, idDoctor, price) => {
+const postAppointment = async (dateMoment, time, idPatient, idDoctor, price, paymentDay, status) => {
 
-// console.log( date, time, idPatient, idDoctor, price);
+  // console.log( date, time, idPatient, idDoctor, price);
 
   const newAppointment = await Appointment.create({
     date: dateMoment,
@@ -12,10 +12,12 @@ const postAppointment = async (dateMoment, time, idPatient, idDoctor, price) => 
     patientId: idPatient,
     doctorId: idDoctor,
     finalAmount: price,
-  
+    paymentDay: paymentDay,
+    status: status
+
   });
 
- 
+
   return newAppointment;
 };
 

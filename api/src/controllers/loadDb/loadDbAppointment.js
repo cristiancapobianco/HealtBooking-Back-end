@@ -7,7 +7,7 @@ const moment= require ('moment')
 const loadDbAppointment = async () => {
   try {
     for (const appointment of mockAppointment) {
-      const { date, time, idPatient, idDoctor } = appointment;
+      const { date, time, idPatient, idDoctor, paymentDay, status } = appointment;
 
       const dateMoment= await moment(new Date(date)).format( 'YYYY-MM-DD')
 

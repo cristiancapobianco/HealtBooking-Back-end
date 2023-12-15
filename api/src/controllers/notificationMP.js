@@ -23,6 +23,7 @@ const notifyPay = async (req, res) => {
                 headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${ACCESS_TOKEN}` }
             });
 
+            console.log(compraResponse)
             external_reference = compraResponse.data.external_reference;
             console.log(external_reference);
         }
@@ -35,7 +36,7 @@ const notifyPay = async (req, res) => {
             return res.status(404).json({ error: 'Cita no encontrada' });
         }
 
-        await appointment.update({ status: 'paid' });
+        await appointment.update({ status: 'pago' });
 
         return res.status(200).json({ message: 'Estado de la cita actualizado con éxito' });
     } catch (error) {

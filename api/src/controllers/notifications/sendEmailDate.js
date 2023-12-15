@@ -29,7 +29,7 @@ const sendEmailDate=async({id,email,date,time,doctor,specialty})=>{
     const message={
         from: 'healthbookingPf@gmail.com',
         to: email,
-        subject: 'Confirmed appointment',
+        subject: 'Cita confirmada',
         // text: `Bienvenido ${name}, su registro ha sido exitoso ya puede reservar su cita`
         html: htmlContent
     }
