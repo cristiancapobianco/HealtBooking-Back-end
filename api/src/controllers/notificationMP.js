@@ -23,9 +23,9 @@ const notifyPay = async (req, res) => {
                 headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${ACCESS_TOKEN}` }
             });
 
-            console.log(compraResponse)
+            // console.log(compraResponse)
             external_reference = compraResponse.data.external_reference;
-            console.log(external_reference);
+            // console.log(external_reference);
         }
 
         const appointment = await Appointment.findOne({
@@ -40,8 +40,8 @@ const notifyPay = async (req, res) => {
 
         return res.status(200).json({ message: 'Estado de la cita actualizado con éxito' });
     } catch (error) {
-        console.error('Error al procesar la notificación de MercadoPago:', error);
-        return res.status(500).json({ error: 'Error interno del servidor' });
+        // console.error('Error al procesar la notificación de MercadoPago:', error);
+        return res.status(500).json({ error: 'Error interno del servidor', error });
     }
 };
 
